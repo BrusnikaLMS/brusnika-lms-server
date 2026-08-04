@@ -1,0 +1,150 @@
+services:
+
+  # ============================================================
+  # БД для LMS (MariaDB 10.11 — совместима с дампами в dictionary/)
+  # ============================================================
+  db:
+    image: mariadb:10.11
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MARIADB_DATABASE: ${MYSQL_DATABASE}
+      MARIADB_USER: ${MYSQL_USER}
+      MARIADB_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - dbdata:/var/lib/mysql
+    networks:
+      - lms-net
+
+  # ============================================================
+  # PHP-FPM бэкенд Brusnika LMS (образ с Docker Hub)
+  # ============================================================
+  php:
+    image: brusnikalms/brusnika-lms:latest
+    restart: always
+    depends_on:
+      - db
+    environment:
+      - DOMAIN=${DOMAIN}
+      - H5P_DOMAIN=${H5P_DOMAIN}
+      - CFORJ_DOMAIN=${CFORJ_DOMAIN}
+      - FORCE_UPDATE=1
+    volumes:
+      - lms_data:/var/www/html
+      # constants.php и config.php содержат домены и пароль БД клиента —
+      # монтируем поверх /app-build/local/include/ чтобы entrypoint
+      # скопировал клиентские версии вместо дефолтных из образа
+      - ./lms/local/include:/app-build/local/include:ro
+    networks:
+      - lms-net
+
+  # ============================================================
+  # Внутренний reverse-proxy: LMS + маршруты на cforj/h5p
+  # ============================================================
+  lms:
+    image: nginx:1.27-alpine
+    restart: always
+    ports:
+      - "443:8443"
+      - "8443:8443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./default.conf.template:/etc/nginx/templates/default.conf.template:ro
+      - ./ssl:/etc/nginx/ssl:ro
+      - lms_data:/var/www/html:ro
+    environment:
+      - DOMAIN=${DOMAIN}
+      - H5P_DOMAIN=${H5P_DOMAIN}
+      - CFORJ_DOMAIN=${CFORJ_DOMAIN}
+    depends_on:
+      - php
+      - cforj
+      - h5p
+    networks:
+      - lms-net
+
+  # ============================================================
+  # H5P (встраиваемый редактор интерактивного контента)
+  # ============================================================
+  h5p:
+    build:
+      context: ./h5p
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - PORT=8088
+      - TEMP_UPLOADS=true
+    volumes:
+      - h5p-content:/app/h5p/content
+      - h5p-libraries:/app/h5p/libraries
+      - h5p-user-data:/app/h5p/user-data
+      - h5p-temporary:/app/h5p/temporary-storage
+    networks:
+      - lms-net
+
+  # ============================================================
+  # cforj — конструктор курсов (свой postgres + fastapi + SPA)
+  # ============================================================
+  cforj-db:
+    image: postgres:16-alpine
+    restart: always
+    environment:
+      POSTGRES_DB: cforj_embed
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${CFORJ_POSTGRES_PASSWORD:-cforj}
+    volumes:
+      - cforj_postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks:
+      - lms-net
+
+  cforj-api:
+    build:
+      context: ./cforj/apps/api
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:${CFORJ_POSTGRES_PASSWORD:-cforj}@cforj-db:5432/cforj_embed
+      SECRET_KEY: ${CFORJ_SECRET_KEY:-change-me-in-production}
+      CORS_ORIGINS: '["https://${DOMAIN}","https://${CFORJ_DOMAIN}","https://${H5P_DOMAIN}"]'
+      APP_URL: https://${CFORJ_DOMAIN}
+    volumes:
+      - cforj_uploads:/app/uploads
+    depends_on:
+      cforj-db:
+        condition: service_healthy
+    networks:
+      lms-net:
+        aliases:
+          - api
+
+  cforj:
+    build:
+      context: ./cforj
+      dockerfile: apps/studio/Dockerfile
+      args:
+        VITE_API_URL: /api
+    restart: always
+    depends_on:
+      - cforj-api
+    networks:
+      - lms-net
+
+volumes:
+  dbdata:
+  lms_data:
+  h5p-content:
+  h5p-libraries:
+  h5p-user-data:
+  h5p-temporary:
+  cforj_postgres:
+  cforj_uploads:
+
+networks:
+  lms-net:
+    driver: bridge

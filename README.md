@@ -1,0 +1,533 @@
+# Brusnika LMS Server Edition
+
+**Self-hosted LMS for Bitrix24 On-Premise**
+
+Deploy a complete employee learning platform inside your own
+infrastructure and use it directly from Bitrix24 On-Premise.
+
+> ⚠️ **For Bitrix24 On-Premise deployments only.** Not compatible with
+> Bitrix24 Cloud.
+
+`Bitrix24 On-Premise` · `Self-hosted` · `Docker` · `Ubuntu 22.04 LTS`
+
+============================================================
+
+## For Bitrix24 Partners
+
+Brusnika LMS Server Edition can be deployed and maintained by Bitrix24
+integrators as part of a customer's on-premise Bitrix24 environment. It
+allows partners to offer employee training, assessment and development
+without moving the customer's data to an external LMS cloud.
+
+============================================================
+
+## What is Brusnika LMS Server Edition?
+
+Brusnika LMS Server Edition is a self-hosted deployment of Brusnika LMS
+designed specifically for organizations running **Bitrix24 On-Premise**.
+Instead of connecting to the Brusnika LMS cloud, the entire application —
+LMS, database, and supporting services — runs inside your own
+infrastructure, integrated directly into your existing Bitrix24 portal.
+
+## Why deploy it on-premise?
+
+- Keep your LMS inside your own infrastructure
+- Keep learning data within the same infrastructure as your Bitrix24 deployment
+- Integrate employee learning directly with Bitrix24
+- Suitable for private and regulated environments
+- No dependency on the Brusnika LMS cloud environment
+- Deployable inside an isolated corporate network
+- Docker-based deployment
+- Versioned updates with rollback to a previous version at any time
+- Support for corporate/internal CA SSL certificates and internal DNS names
+
+## What's included
+
+**Brusnika LMS**
+- Courses and learning materials
+- Testing and assessments
+- Surveys
+- Competency management
+- 360° assessment
+- Employee development plans
+- Knowledge base
+- H5P interactive content
+- Course authoring with cforj
+- Bitrix24 integration
+
+**Infrastructure**
+- MariaDB 10.11
+- PHP 8.2-FPM
+- Nginx
+- H5P
+- cforj (course constructor)
+- Docker Compose
+
+============================================================
+
+## Architecture
+
+```
+                Corporate network
+        ────────────────────────────────
+
+              Bitrix24 On-Premise
+                       │
+                       │ HTTPS
+                       ▼
+              ┌──────────────────┐
+              │   Brusnika LMS   │
+              └────────┬─────────┘
+                       │
+             ┌─────────┼─────────┐
+             ▼         ▼         ▼
+          MariaDB     H5P       cforj
+```
+
+All services are defined in a single `docker-compose.yaml` at the package
+root:
+
+| Service    | Purpose                                                          |
+|------------|-------------------------------------------------------------------|
+| **db**     | MariaDB 10.11 — LMS database                                      |
+| **php**    | PHP 8.2-FPM — LMS backend + Quasar SPA build                      |
+| **lms**    | Internal nginx (SSL, SNI across 3 domains, port 8443)             |
+| **h5p**    | H5P plugin for interactive lessons                                |
+| **cforj**  | Course constructor (+ service cforj-db, cforj-api)                |
+
+The PHP image `brusnikalms/brusnika-lms` is pulled from Docker Hub during
+installation and updates. `sql/` and `dictionary/` (migrations and
+translations) are baked into the image itself, so `install.sh`/`update.sh`
+pull them straight from the running container — no separate file transfer
+needed for routine fixes.
+
+### Network topology
+
+```
+        ┌──────────────────────────────────────────────┐
+        │      External nginx (443, TLS termination)   │
+        │   <DOMAIN>, <H5P_DOMAIN>, <CFORJ_DOMAIN>      │
+        └───────────────────┬──────────────────────────┘
+                            │ HTTPS to 127.0.0.1:8443
+                            ▼
+            ┌───────────────────────────────┐
+            │  lms (nginx in docker, :8443) │
+            │  SNI: LMS / H5P / cforj       │
+            └──┬──────────┬────────────┬────┘
+               │          │            │
+          php-fpm     h5p:8088     cforj:80 + cforj-api:8000
+               │
+              db (MariaDB 10.11)
+
+        cforj-api → cforj-db (Postgres 16) — inside the docker network
+```
+
+> **Host nginx configuration:** the Docker nginx listens on port 8443 over
+> **HTTPS**. The host nginx must proxy to it over HTTPS as well — not HTTP:
+>
+> ```nginx
+> location / {
+>     proxy_pass https://127.0.0.1:8443;
+>     proxy_ssl_verify       off;
+>     proxy_ssl_server_name  on;
+>     proxy_set_header Host              $host;
+>     proxy_set_header X-Real-IP         $remote_addr;
+>     proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
+>     proxy_set_header X-Forwarded-Proto $scheme;
+> }
+> ```
+>
+> All three domain configs (lms, h5p, cforj) must have the same
+> `location /` block. Templates are generated by `setup.sh` into the
+> `nginx-external/` directory.
+
+============================================================
+
+## Supported environment
+
+| Requirement          | Support                              |
+|-----------------------|---------------------------------------|
+| Bitrix24 Cloud         | ❌ Not supported                      |
+| Bitrix24 On-Premise    | ✅                                     |
+| Isolated / private corporate network | ✅               |
+| Operating system       | Ubuntu 22.04 LTS                      |
+| Deployment              | Docker / Docker Compose               |
+| HTTPS                   | Required                              |
+
+> **Note on network isolation:** the installer pulls the
+> `brusnikalms/brusnika-lms` image from Docker Hub, so this is a
+> **self-hosted / isolated-network deployment**, not a fully air-gapped one.
+> If your environment has no outbound internet access at all, the Docker
+> image needs to be transferred to the server separately (`docker save` /
+> `docker load`) before running `install.sh`.
+
+## System requirements
+
+**Operating system**
+- Ubuntu 22.04 LTS
+
+**Container runtime**
+- Docker
+- Docker Compose plugin
+
+**Disk space**
+- 25–30 GB free space recommended for the initial installation (a full
+  h5p/cforj-api/cforj build needs headroom)
+
+**Network**
+- DNS names for LMS, H5P and cforj (internal DNS is fine)
+- HTTPS with valid SSL certificates (corporate/internal CA supported)
+
+**Bitrix24**
+- Bitrix24 On-Premise
+- A Local Application
+- The required API scopes (see [Bitrix24 configuration](#bitrix24-configuration))
+
+## Before you start
+
+You will need:
+
+1. A server running Ubuntu 22.04 LTS with 25–30 GB free disk space
+2. Docker and the Docker Compose plugin installed
+3. Three DNS names, e.g.:
+   - `lms.company.com`
+   - `h5p.company.com`
+   - `cforj.company.com`
+4. SSL certificates for all three domains
+5. Access to your Bitrix24 On-Premise administrator account
+6. A Bitrix24 Local Application (see below)
+7. A Brusnika LMS Server Edition license (optional — see
+   [Licensing](#licensing))
+
+============================================================
+
+## Installation
+
+### 1. Server preparation (Ubuntu 22.04 LTS)
+
+```bash
+apt update
+apt install -y ca-certificates curl gnupg lsb-release
+mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg \
+  | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] \
+https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" \
+  | tee /etc/apt/sources.list.d/docker.list > /dev/null
+apt update
+apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+docker --version
+docker compose version
+```
+
+### 2. Placing the package
+
+```bash
+mkdir -p /var/www/brusnika
+# unpack the lms-install archive here, then:
+cd /var/www/brusnika/lms-install
+chmod +x *.sh
+```
+
+### 3. Interactive configuration
+
+```bash
+sudo ./setup.sh
+```
+
+`setup.sh` will ask for:
+- **LMS domain** — main address (e.g. `lms.company.com`)
+- **H5P domain** — H5P plugin address (e.g. `h5p.company.com`)
+- **cforj domain** — course constructor address (e.g. `cforj.company.com`)
+- MariaDB settings (defaults: `lms`/`lms`, database `brusnika-lms-server`)
+
+The script automatically:
+- creates the root `.env`, `lms/local/include/constants.php`, `lms/local/include/config.php`
+- generates ready-to-use nginx configs in `nginx-external/`
+- if `/etc/nginx/sites-available` exists and the script runs as root — copies the
+  configs into `sites-available`, enables them in `sites-enabled` and runs
+  `nginx -t && systemctl reload nginx`
+- generates `CFORJ_POSTGRES_PASSWORD` and `CFORJ_SECRET_KEY`
+- checks for SSL certificates in `ssl/`
+
+> **Important about `localhost`:** Bitrix24 will not accept `localhost:port`
+> as an application address, so h5p and cforj must be reachable via full
+> domains with SSL (internal DNS names inside your perimeter work fine too).
+
+### 4. SSL certificates
+
+Place the following files into `ssl/`:
+
+```
+ssl/<DOMAIN>.crt
+ssl/<DOMAIN>.key
+ssl/<H5P_DOMAIN>.crt
+ssl/<H5P_DOMAIN>.key
+ssl/<CFORJ_DOMAIN>.crt
+ssl/<CFORJ_DOMAIN>.key
+```
+
+File name = exact domain name. Corporate/internal CA certificates are
+acceptable for an isolated network deployment.
+
+### 5. Running the installer
+
+```bash
+./install.sh
+```
+
+What it does:
+1. Pulls `brusnikalms/brusnika-lms` and starts all containers
+2. Imports the DB schema and dictionaries (`dictionary/*.sql`)
+3. Calls `https://<DOMAIN>/api/create_ib` — initialises iblock entities
+4. Applies idempotent SQL migrations from `lms/local/sql/*.sql`
+5. Runs `verify_db.sh` — checks the DB schema and prints a summary; if
+   problems are found it automatically runs `fix_db.sh` and re-checks
+
+============================================================
+
+## Bitrix24 configuration
+
+`setup.sh` has already populated `APP_REG_URL`, `APP_SERVER_URL`,
+`H5P_BASE`, `CFORJ_DEFAULT_BASE_URL` and `LMS_URLS` based on the `DOMAIN`
+you entered.
+
+Open `lms/local/include/constants.php` and fill in:
+
+```php
+define('APP_ID',          'client_id from Bitrix24');
+define('APP_SECRET_CODE', 'client_secret from Bitrix24');
+```
+
+> **Where to get `APP_ID` and `APP_SECRET_CODE`:** Bitrix24 → Developers →
+> Other → Local Applications → create new. After creation, open the app
+> card: "Application code" = `APP_ID`, "Application key" = `APP_SECRET_CODE`.
+
+In your on-premise Bitrix24, create a **Local Application**:
+- Install URL:   `https://<DOMAIN>/install.php`
+- Handler URL:   `https://<DOMAIN>/index.php`
+
+> **What is `<DOMAIN>`:** the DNS name of your LMS server that you
+> specified when running `setup.sh` (e.g. `lms.company.com`). Bitrix24
+> **does not accept IP addresses** — you need a real domain with an
+> A-record pointing to the server and a valid SSL certificate.
+
+Required scopes (select by name in the Bitrix24 interface):
+
+| Interface group          | Scope code                    |
+|---------------------------|--------------------------------|
+| Chat and notifications    | im                             |
+| Application embedding     | placement                      |
+| Users                     | user                           |
+| Workgroups                | sonet_group                    |
+| News                      | log                             |
+| Calendar                  | calendar                       |
+| CRM                       | crm                             |
+| Tasks                     | task / tasks / task_extended   |
+| Drive                     | disk                            |
+| Data storage              | entity                          |
+| Company structure         | department                      |
+| Mobile application        | mobile                          |
+
+> **Note:** "Notifications" and "Activity stream" may not appear as
+> separate items in the Bitrix24 interface — they are part of **im**
+> (Chat and notifications) and **log** (News). Select all groups listed
+> above.
+
+### First launch after installation
+
+1. Open the LMS through Bitrix24 — the interface should appear.
+2. Go to **Application Settings** (gear icon or the "Settings" tile).
+3. Add moderator users in the "Administrators" section.
+4. If needed, reinstall the local application in Bitrix24:
+   Developers → Integrations → LMS → ⋮ → Edit → Reinstall.
+
+============================================================
+
+## Updating
+
+To update an already-installed LMS, use `update.sh` — it is included in
+the package alongside `install.sh`.
+
+```bash
+cd /var/www/brusnika/lms-server   # your LMS install directory
+./update.sh
+```
+
+Each release is versioned and can be rolled back at any time. When
+started, `update.sh` first asks what to do:
+
+```
+What to do?
+  1) Update to the latest version
+  2) Roll back to a previous version
+```
+
+If you choose "2", the script shows up to 10 latest versions from Docker
+Hub — number, tag (e.g. `4751-20260726`) and a short changelog for that
+version — and lets you pick one to roll back to. The list is fetched live
+on every run, not from a cached snapshot.
+
+> Rolling back requires `jq` on the server (see `server_requirements.txt`).
+> Without `jq` the rollback option is unavailable and the script just
+> updates to latest.
+
+What `update.sh` does next:
+1. Pulls the chosen image (latest or a specific tag) from Docker Hub
+2. Recreates the `php` and `lms` containers with the new image
+   (`--force-recreate`) — user data and volumes (dbdata, lms_data, h5p-*,
+   cforj_*) are **not deleted**
+3. Fully syncs the frontend JS/CSS bundles from the image (does not rely
+   on specific filenames — the build may emit a different set of chunk
+   files)
+4. Applies SQL migrations from `lms/local/sql/*.sql` (idempotent)
+5. Runs `verify_db.sh` — checks the DB schema after the update
+
+> **Important:** `update.sh` does not re-run `import.sh` — the database
+> schema and dictionaries are not overwritten, user data is preserved.
+> The script first checks whether it's sitting next to its own
+> `install.sh` (i.e. you ran `update.sh` from inside the installed LMS
+> directory) and only falls back to searching `/var/www/*` if not.
+
+============================================================
+
+## Licensing
+
+If you have purchased a paid Server Edition license, you will receive two
+files: `license.enc` and `public.key`. These must be placed inside the
+running PHP container at `/var/www/html/local/license/`.
+
+The package includes a ready-made script for this: the `License/` folder —
+place the license files into `License/putlicense/` and run
+`License/install_license.sh`; it finds the PHP container automatically
+and copies the files in.
+
+**Manual method:**
+
+```bash
+# 1. Upload the license files to the server
+scp license.enc public.key your_user@your-server-ip:/tmp/
+
+# 2. Create the license directory inside the container
+docker exec brusnika-php-1 mkdir -p /var/www/html/local/license
+
+# 3. Copy the files into the container
+docker cp /tmp/license.enc brusnika-php-1:/var/www/html/local/license/license.enc
+docker cp /tmp/public.key  brusnika-php-1:/var/www/html/local/license/public.key
+
+# 4. Verify
+docker exec brusnika-php-1 ls -la /var/www/html/local/license/
+```
+
+> **Container name:** replace `brusnika-php-1` with the actual PHP
+> container name (`docker ps | grep php` — first column).
+
+**License files survive updates.** The `/var/www/html/local/license/`
+directory lives in the `lms_data` Docker volume. When `./update.sh` runs,
+the entrypoint only adds files from the new image — files already present
+in the volume are **never deleted or overwritten**. You do not need to
+re-install the license after updating the LMS.
+
+============================================================
+
+## Security & deployment
+
+Brusnika LMS Server Edition is designed for organizations that need to
+run their learning environment inside their own infrastructure. The
+application, database and supporting services run within the customer's
+environment, and the deployment supports internal DNS names and
+corporate/internal CA SSL certificates.
+
+The installer pulls the `brusnikalms/brusnika-lms` Docker image from
+Docker Hub during install and update — plan for outbound access to
+Docker Hub, or transfer the image manually if your network has none.
+
+============================================================
+
+## FAQ
+
+**Does it work with Bitrix24 Cloud?**
+No. Brusnika LMS Server Edition is designed specifically for Bitrix24
+On-Premise.
+
+**Can it be installed inside a private corporate network?**
+Yes.
+
+**Can we use our own SSL certificates?**
+Yes, including corporate/internal CA certificates.
+
+**Can we update or roll back the installation?**
+Yes. `update.sh` supports updating to the latest version and rolling
+back to any of the last 10 versions.
+
+See **FAQ.md** for more details, including troubleshooting steps for
+common installation issues.
+
+============================================================
+
+## Troubleshooting
+
+- **502** when opening any of the domains — check `server_name` in
+  `default.conf.template` and the files in `ssl/`.
+- **400 Bad Request** — the host nginx is proxying via `http://` but
+  Docker expects `https://`. Fix `proxy_pass` to `https://127.0.0.1:8443`
+  and add `proxy_ssl_verify off;` (see [Architecture](#architecture)).
+- **No tables** — `curl -k https://<DOMAIN>/api/create_ib`.
+- **401 Unauthorized in browser console** — a Bitrix24 authorization
+  issue. Steps:
+  1. Reinstall the local application in Bitrix24.
+  2. Run `./update.sh` to pull the latest image with fixes.
+- **Only admin can log in** — a consequence of the 401 issue above. Run
+  `./update.sh` to resolve it.
+- **CORS** — all three domains must be set correctly in `.env`;
+  `default.conf.template` sets
+  `Content-Security-Policy: frame-ancestors https://<DOMAIN>` for h5p and cforj.
+- **500 error when creating a poll / competency / LMS task** — missing
+  `UF_` properties in the `iblock_property` table. Run `verify_db.sh` to
+  diagnose — the fix is applied automatically via `fix_db.sh` (called
+  from `verify_db.sh`) during install/update.
+- **500 error when creating an assignment (Bitrix24 tasks not created)** —
+  on PHP 8.2 a `TypeError` in `prepareFromDB()` when the Bitrix24 portal
+  is not registered. Fixed in the image. For older installations: run
+  `./update.sh`.
+- **MariaDB vs MySQL** — dumps in `dictionary/` were produced from
+  MariaDB, we use MariaDB 10.11 (compatible). Do NOT use MySQL 8.0 — it
+  breaks `utf8_unicode_ci` in the existing dumps.
+- **`install_license.sh`: "PHP container not found"** even though
+  `docker compose ps -q php` from the project folder finds it fine — make
+  sure you're using the current version of the script, which finds the
+  container by its compose label (`com.docker.compose.service=php`)
+  regardless of where `License/` lives or what the compose project or
+  image is named.
+- **413 Request Entity Too Large when uploading files** — the host nginx
+  limits upload size to 1 MB by default. The most common cause is that
+  the server already has configs in `/etc/nginx/conf.d/` (e.g. `lms.conf`,
+  `h5p.conf`, `cforj.conf`) which are loaded **before** `sites-enabled/`
+  and do not contain `client_max_body_size 512M;`. `setup.sh` patches
+  these files automatically when run. If the issue appears after manual
+  edits — add `client_max_body_size 512M;` before the `location /` block
+  in each such config and run `nginx -t && systemctl reload nginx`.
+- **Duplicate `server_name` in nginx** — if `nginx -T` shows the same
+  domain in two different files (`conf.d/` and `sites-enabled/`), nginx
+  uses the first one loaded (`conf.d/` comes first). `setup.sh` patches
+  both sets. To remove the duplication, keep only one set.
+- **"No space left on device" during build** — a full h5p/cforj-api/cforj
+  build (`--no-cache`) needs a lot of space; repeated reinstalls quickly
+  accumulate unused images. Clean up with:
+  `docker image prune -a -f && docker volume prune -f` (safe: only
+  removes UNUSED images/volumes, does not touch containers of the active
+  install).
+- **cforj build fails at `corepack prepare pnpm` with a network error
+  (HTTP 522, etc.)** — usually a transient npm registry hiccup, not a
+  config problem. Fix: simply retry `docker-compose build --no-cache
+  cforj` (or the whole `./install.sh`) again. Details and alternatives →
+  **FAQ.md, question 2**.
+
+Detailed solutions to common errors → see **FAQ.md**.
+
+============================================================
+
+## 💬 Support
+
+**Brusnika Solutions** — info@brusnika-solutions.com — https://brusnika-lms.com

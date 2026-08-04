@@ -1,0 +1,157 @@
+# Docker internal DNS — резолвим upstream в момент запроса, не при старте nginx
+# Это предотвращает падение nginx если cforj/h5p ещё не успели подняться
+resolver 127.0.0.11 valid=10s ipv6=off;
+
+###########################################
+# LMS — основной домен (PHP-FPM + SPA)
+###########################################
+server {
+    listen 8443 ssl;
+    http2 on;
+    server_name ${DOMAIN};
+
+    root /var/www/html;
+    index index.php index.html;
+
+    ssl_certificate     /etc/nginx/ssl/${DOMAIN}.crt;
+    ssl_certificate_key /etc/nginx/ssl/${DOMAIN}.key;
+
+    client_max_body_size 512M;
+
+    location = /install.php {
+        try_files "" /index.php?$args;
+    }
+
+    location ^~ /api/ {
+        try_files $uri $uri/ /index.php?$args;
+    }
+
+    # H5P — проксируем запросы h5pApi.js к H5P-серверу через основной домен
+    location ^~ /h5p/ {
+        set $h5p_upstream http://h5p:8088;
+        proxy_pass $h5p_upstream;
+        proxy_http_version 1.1;
+        proxy_set_header Host              $host;
+        proxy_set_header X-Real-IP         $remote_addr;
+        proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header Upgrade           $http_upgrade;
+        proxy_set_header Connection        "upgrade";
+        proxy_read_timeout 120s;
+        client_max_body_size 512M;
+    }
+
+    location = /login {
+        set $h5p_upstream http://h5p:8088;
+        proxy_pass $h5p_upstream;
+        proxy_http_version 1.1;
+        proxy_set_header Host              $host;
+        proxy_set_header X-Real-IP         $remote_addr;
+        proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_read_timeout 30s;
+    }
+
+    location = /logout {
+        set $h5p_upstream http://h5p:8088;
+        proxy_pass $h5p_upstream;
+        proxy_http_version 1.1;
+        proxy_set_header Host              $host;
+        proxy_set_header X-Real-IP         $remote_addr;
+        proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_read_timeout 30s;
+    }
+
+    # SPA entry point — no cache so browsers always get the latest index.html
+    location = /index.html {
+        add_header Cache-Control "no-cache, no-store, must-revalidate";
+        add_header Pragma "no-cache";
+        add_header Expires "0";
+        add_header Permissions-Policy "clipboard-write=*" always;
+    }
+
+    location / {
+        try_files $uri $uri/ /index.php?$args;
+    }
+
+    add_header Permissions-Policy "clipboard-write=*" always;
+
+    location ~ \.php$ {
+        set $php_upstream php:9000;
+        include fastcgi_params;
+        fastcgi_pass $php_upstream;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_read_timeout 120s;
+    }
+}
+
+###########################################
+# H5P — плагин интерактивных уроков
+###########################################
+server {
+    listen 8443 ssl;
+    http2 on;
+    server_name ${H5P_DOMAIN};
+
+    ssl_certificate     /etc/nginx/ssl/${H5P_DOMAIN}.crt;
+    ssl_certificate_key /etc/nginx/ssl/${H5P_DOMAIN}.key;
+
+    client_max_body_size 512M;
+
+    # CORS: разрешаем встраивание из LMS
+    add_header X-Frame-Options "" always;
+    add_header Content-Security-Policy "frame-ancestors https://${DOMAIN};" always;
+
+    location / {
+        set $h5p_upstream http://h5p:8088;
+        proxy_pass $h5p_upstream;
+        proxy_http_version 1.1;
+        proxy_set_header Host              $host;
+        proxy_set_header X-Real-IP         $remote_addr;
+        proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header Upgrade           $http_upgrade;
+        proxy_set_header Connection        "upgrade";
+        proxy_read_timeout 120s;
+    }
+}
+
+###########################################
+# cforj — конструктор курсов
+###########################################
+server {
+    listen 8443 ssl;
+    http2 on;
+    server_name ${CFORJ_DOMAIN};
+
+    ssl_certificate     /etc/nginx/ssl/${CFORJ_DOMAIN}.crt;
+    ssl_certificate_key /etc/nginx/ssl/${CFORJ_DOMAIN}.key;
+
+    client_max_body_size 512M;
+
+    add_header X-Frame-Options "" always;
+    add_header Content-Security-Policy "frame-ancestors https://${DOMAIN};" always;
+
+    # FastAPI
+    location /api/ {
+        set $cforj_api_upstream http://cforj-api:8000;
+        proxy_pass $cforj_api_upstream;
+        proxy_set_header Host              $host;
+        proxy_set_header X-Real-IP         $remote_addr;
+        proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_read_timeout 120s;
+    }
+
+    # SPA (nginx внутри cforj-studio)
+    location / {
+        set $cforj_upstream http://cforj:80;
+        proxy_pass $cforj_upstream;
+        proxy_http_version 1.1;
+        proxy_set_header Host              $host;
+        proxy_set_header X-Real-IP         $remote_addr;
+        proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto https;
+    }
+}
