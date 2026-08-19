@@ -1,0 +1,19 @@
+## ✨ Highlights
+
+### 🌍 Fixed missing translations on report cards
+
+Four report cards ("Active users", "IDP", "Career tracks", "Status
+reports") were showing raw dictionary keys instead of translated labels.
+`dictionary3` now ships the missing rows (8 keys × 18 languages), and
+`verify_db.sh` checks for them automatically going forward.
+
+### 🛡️ Added `.gitattributes` to prevent line-ending corruption
+
+Shell and SQL files are now forced to LF line endings regardless of a
+developer's local git config, preventing CRLF corruption when scripts
+are transferred directly to a client server.
+
+### 📝 GitHub Release changelog now uses the full file
+
+`mirror:github` now publishes the complete `CHANGELOG_CURRENT.txt`
+(headings, bold, emoji) as the release body instead of a single line.
