@@ -1,0 +1,19 @@
+## ✨ Highlights
+
+### 🌍 Fixed more missing translations
+
+Four more spots were showing raw dictionary keys instead of translated
+text: the Assessment 360 task-assignment label, the IDP task-mode picker
+(individual development plans), and the assignment notification-settings
+panel. All affected keys now ship in `dictionary3` (18 languages each),
+and `verify_db.sh` checks for them automatically going forward.
+
+### 🔄 Translations now sync automatically on every update
+
+`update.sh` previously only refreshed the `dictionary/` file on disk —
+new translations never actually reached a client's live database unless
+we shipped a targeted patch for each one individually. It now also loads
+any new rows straight from the dump into `dictionary3`/`instructions`
+(`INSERT IGNORE`, existing rows and customizations are never touched), so
+future translation additions reach every install automatically instead
+of requiring a manual patch per key.

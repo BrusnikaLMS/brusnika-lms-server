@@ -1,0 +1,205 @@
+============================================================
+РЕКОМЕНДУЕМЫЕ ТРЕБОВАНИЯ К СЕРВЕРУ И АРХИТЕКТУРА ПРОЕКТА
+Brusnika LMS server-version (закрытый контур: LMS + H5P + cforj)
+============================================================
+
+Сценарий развёртывания:
+- Закрытый контур (например, внутри ИТ-периметра Банка).
+- Bitrix24 — свой, self-hosted (не облако).
+- Все 5 основных сервисов поднимаются одной командой из корня
+  /lms-server_version через docker compose.
+- LMS2 как отдельный контейнер больше не нужен — функционал
+  перенесён в основной SPA.
+
+============================================================
+
+1. АППАРАТНЫЕ ТРЕБОВАНИЯ
+------------------------------------------------------------
+
+Минимальные (dev / тестовый стенд Банка):
+  • CPU:    4 vCPU (x86_64)
+  • RAM:    8 GB + 4 GB swap
+            (Quasar-сборка LMS1 использует NODE_OPTIONS
+             --max-old-space-size=4096; параллельно собираются
+             h5p и cforj-studio — Node-билды)
+  • Диск:   40 GB SSD
+  • Сеть:   закрытая корпоративная сеть, 1 Gbit/s
+
+Рекомендуемые (production, ~200 активных пользователей):
+  • CPU:    8 vCPU (2.4 GHz+)
+  • RAM:    16 GB
+  • Диск:   100 GB SSD/NVMe
+            - MariaDB (volume dbdata)
+            - Postgres cforj (volume cforj_postgres)
+            - volume lms_data (собранный фронт + бэкенд LMS)
+            - h5p-content / h5p-libraries / h5p-user-data /
+              h5p-temporary (пользовательский контент)
+            - cforj_uploads
+            - docker-образы (~8–12 GB)
+  • Сеть:   1 Gbit/s; внешний nginx на хосте слушает 80/443,
+            внутренние 8443/8088/8000 только на localhost-интерфейсах
+
+Для >500 одновременных пользователей:
+  • 16 vCPU / 32 GB RAM / 250+ GB NVMe
+  • Вынос MariaDB и Postgres на отдельные хосты
+  • Отдельный nginx/HAProxy как балансировщик
+
+
+2. ПРОГРАММНЫЕ ТРЕБОВАНИЯ
+------------------------------------------------------------
+
+ОС:
+  • Ubuntu 22.04 LTS (рекомендуется)
+  • Debian 12 / RHEL 8–9 — совместимо
+  • Для закрытого контура — любой Linux с Docker Engine 20.10+
+
+Хост:
+  • Docker Engine          20.10+ (docker-ce, containerd.io)
+  • Docker Compose plugin  v2+
+  • nginx (внешний)        1.18+ — терминация HTTPS на 443,
+                                    проксирование на внутренний
+                                    nginx контейнера (8443)
+  • bash, curl, git, unzip, openssl
+  • jq — нужен update.sh для отката на предыдущую версию образа
+    (разбор списка тегов и changelog с Docker Hub). Без jq update.sh
+    работает как обычно, но пункт "откатиться до версии" недоступен.
+  • SSL-сертификаты (корпоративный CA допускается)
+
+DNS:
+  • Все 3 домена (LMS, H5P, cforj) должны резолвиться
+    внутри контура и указывать на IP сервера.
+  • Bitrix24 не принимает localhost:port — именно поэтому
+    h5p и cforj работают на отдельных поддоменах с SSL.
+
+Внешние сервисы:
+  • Self-hosted Bitrix24 в том же контуре.
+  • setup.sh автоматически генерирует APP_REG_URL,
+    APP_SERVER_URL, H5P_BASE, CFORJ_DEFAULT_BASE_URL в
+    lms/local/include/constants.php; вручную нужно прописать
+    только APP_ID и APP_SECRET_CODE от локального приложения
+    Битрикс24.
+
+
+3. АРХИТЕКТУРА ПРОЕКТА
+------------------------------------------------------------
+
+Корень: lms-server_version/
+
+Один docker-compose.yaml поднимает:
+
+  ┌────────────────────────────────────────────────────────┐
+  │      Внешний nginx на хосте (443, TLS termination)     │
+  │                                                        │
+  │  server_name: <DOMAIN>                                 │
+  │  server_name: <H5P_DOMAIN>                             │
+  │  server_name: <CFORJ_DOMAIN>                           │
+  └───────────────────────┬────────────────────────────────┘
+                          │ HTTPS 127.0.0.1:8443 (SNI)
+                          ▼
+            ┌──────────────────────────────┐
+            │ lms (nginx:1.27-alpine)      │
+            │ порт 8443                    │
+            │ default.conf.template:       │
+            │   <DOMAIN>       → php-fpm   │
+            │   <H5P_DOMAIN>   → h5p       │
+            │   <CFORJ_DOMAIN> → cforj +   │
+            │                    cforj-api │
+            └──┬──────────┬────────────┬───┘
+               │          │            │
+               ▼          ▼            ▼
+        ┌──────────┐ ┌──────────┐ ┌─────────────────────┐
+        │ php      │ │ h5p      │ │ cforj (nginx+SPA)   │
+        │ PHP 8.2  │ │ Node 20  │ │ + cforj-api (Py3.12)│
+        │ FPM      │ │ port 8088│ │   port 8000         │
+        └────┬─────┘ └──────────┘ └────────┬────────────┘
+             │                              │
+             ▼                              ▼
+      ┌─────────────┐              ┌──────────────────┐
+      │ db          │              │ cforj-db         │
+      │ MariaDB 10.11│             │ Postgres 16      │
+      └─────────────┘              └──────────────────┘
+
+Сервисы docker-compose (в порядке зависимостей):
+
+  db          — MariaDB 10.11. Совместимость с существующими
+                SQL-дампами в dictionary/ (они сняты с
+                MariaDB 10.3). MySQL 8.0 НЕ использовать —
+                ломаются utf8_unicode_ci collation'ы.
+
+  php         — PHP 8.2-FPM + Composer + модули
+                (mysqli, pdo, pdo_mysql, gd, zip, intl,
+                 mbstring, xml, opcache). Multi-stage
+                Dockerfile сначала билдит SPA через Node 20
+                + @quasar/cli, затем копирует dist/spa и
+                lms/local, lms/core, lms/*.php в volume
+                lms_data. Entrypoint при старте выкатывает
+                артефакты в /var/www/html.
+
+  lms         — nginx 1.27 (внутренний reverse-proxy), слушает
+                только 8443. Шаблон default.conf.template
+                подставляет ${DOMAIN}, ${H5P_DOMAIN},
+                ${CFORJ_DOMAIN} и отдаёт три SSL-виртхоста.
+
+  h5p         — Node 20 + @lumieducation/h5p-server. Хранит
+                контент в 4 volumes: h5p-content, h5p-libraries,
+                h5p-user-data, h5p-temporary. Слушает 8088
+                внутри docker-сети.
+
+  cforj-db    — Postgres 16-alpine для cforj-api (изолирован
+                от БД LMS).
+
+  cforj-api   — FastAPI (Python 3.12) + Alembic, порт 8000
+                внутри docker-сети. CORS_ORIGINS подставляется
+                из DOMAIN/H5P_DOMAIN/CFORJ_DOMAIN в .env.
+                APP_URL жёстко не задан — берётся
+                https://${CFORJ_DOMAIN}.
+
+  cforj       — SPA-редактор курсов на React + Vite, собран
+                pnpm, раздаётся nginx:alpine на порту 80.
+
+Сеть:
+  • единая docker-сеть lms-net (bridge);
+  • наружу публикуется ТОЛЬКО lms:8443;
+  • остальные сервисы общаются по именам внутри сети.
+
+Тома:
+  dbdata, lms_data, h5p-content, h5p-libraries, h5p-user-data,
+  h5p-temporary, cforj_postgres, cforj_uploads
+
+Конфигурация через .env (генерируется setup.sh):
+  DOMAIN                     — LMS
+  H5P_DOMAIN                 — h5p-плагин
+  CFORJ_DOMAIN               — конструктор курсов
+  MYSQL_ROOT_PASSWORD,
+  MYSQL_DATABASE,
+  MYSQL_USER,
+  MYSQL_PASSWORD             — MariaDB LMS
+  CFORJ_POSTGRES_PASSWORD    — Postgres для cforj
+  CFORJ_SECRET_KEY           — JWT-секрет cforj-api
+  APIURL, APP_SERVER_URL,
+  H5P_BASE,
+  CFORJ_DEFAULT_BASE_URL,
+  SERVER_VERSION, SHOW_NEW_UI — build-args Quasar
+
+
+4. СТЕК ТЕХНОЛОГИЙ
+------------------------------------------------------------
+
+  LMS backend           : PHP 8.2-FPM + Composer
+  LMS frontend          : Vue 2 / Quasar (build через @quasar/cli,
+                           Node 20, legacy peer deps). Модуль
+                           уроков встроен в SPA (бывший LMS2 ушёл).
+  База данных LMS       : MariaDB 10.11 (дампы от MariaDB 10.3)
+  H5P                   : @lumieducation/h5p-server (Node 20)
+  cforj studio          : React 18 + Vite + Tailwind, сборка pnpm
+  cforj api             : FastAPI + SQLAlchemy (async) + Alembic
+                          (Python 3.12)
+  cforj DB              : Postgres 16
+  Reverse proxy         : nginx 1.27 (внутренний) + внешний nginx
+                          на хосте для TLS termination
+  Контейнеризация       : Docker + docker compose (multi-stage)
+  ОС хоста              : Ubuntu 22.04 LTS
+
+============================================================
+Поддержка: Brusnika Solutions — info@brusnika-solutions.com
+============================================================
