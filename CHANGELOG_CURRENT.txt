@@ -1,0 +1,8 @@
+## ✨ Highlights
+
+### ☁️ Bitrix24 Cloud is now officially supported
+
+Server Edition previously documented Bitrix24 On-Premise as the only
+supported target. The same REST/OAuth local application also works
+against Bitrix24 Cloud — README.md and the requirements doc now reflect
+that, so Cloud portals are a documented deployment option too.
