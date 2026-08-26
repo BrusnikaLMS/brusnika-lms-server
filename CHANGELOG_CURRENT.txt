@@ -1,0 +1,12 @@
+## ✨ Highlights
+
+### 🔍 verify_db.sh now checks three more iblock property sets
+
+`uni_access_rights`, `uni_catalog_shares` and `uni_item_subs` were only
+checked for existence, not for their custom properties (`resource_type`,
+`recipient_user_id`, `principal_id`, etc.) — unlike `uni_polls` and
+`uni_poll_submissions`, which already had this check. A client missing
+these properties would see PHP warnings ("Undefined array key
+uf_resource_type") with no automatic fix triggered. `verify_db.sh` now
+detects this gap and runs the existing (idempotent) `iblocks_seed.sql`
+fix automatically.
