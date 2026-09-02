@@ -1,0 +1,16 @@
+## ✨ Highlights
+
+### 🗂️ Entity Cards with History and Diffs
+Moderators can now open entity cards directly from catalogs, with tabbed views for "Overview" and "Action History." The history tab includes human-readable diffs, and deleted courses/tests are clearly marked with options to remove them.
+
+### 📊 Dashboard and 360° Review Enhancements
+The "Statuses" report has evolved into a full "Dashboard" with raw data export. 360° review now supports partial results with labels, paginated assessment lists, spider charts, competency matrices, and a period-based overview dashboard.
+
+### 🔔 Smarter Notifications and Reminders
+Notification templates now show real link addresses, and links correctly route to the portal. Reminders for lagging learners include direct object links and can be triggered from the Moderator Home. Department template assignments now have multilingual unsaved-change notifications.
+
+### 🧩 Improved Catalog Integrity and Polls
+Warnings appear before deleting catalog entities that are in use, and modules removed from the catalog are flagged in courses and programs. Polls now open correctly from assignments and direct links, without being blocked by previous submissions.
+
+### 🎨 UI Polish and Clarifications
+Help blocks in test creation are now collapsible and use brand tokens, with clearer settings explanations. The lesson entity card has a refined header with icon-based preview actions, and the sidebar now places "Home" first.
