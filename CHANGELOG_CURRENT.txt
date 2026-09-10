@@ -1,0 +1,16 @@
+## ✨ Highlights
+
+### 📖 Interactive longread blocks
+Longread content now supports interactive blocks — continue buttons, cards, accordions, tabs, markers, and timelines — making learning materials more engaging.
+
+### 📊 Reports and dashboard improvements
+The dashboard now supports multi-select for assignments, and the assignments selector shows a summary instead of chips for a cleaner overview.
+
+### 💡 Improved UI hints and instructions
+FAQ hints now answer "where" questions and pull section names from the dictionary, with an instructions block and help icons added to the events and tasks section.
+
+### 🗂️ Knowledge base and UI fixes
+The knowledge base now shows an accurate material count instead of a false "Empty folder" message, and several layout issues were fixed — the form footer no longer slides under the left menu, and action column buttons stay on one line.
+
+### 🛠️ Server Edition fix
+The support widget that relied on the Bitrix CDN no longer appears on the server build.
