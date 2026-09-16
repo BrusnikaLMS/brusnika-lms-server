@@ -1,0 +1,321 @@
+## RU (Русский)
+
+## ✨ Главное в этом релизе
+
+### 🔗 Адрес ЛМС и порталы
+При регистрации нового портала теперь предлагается адрес ЛМС, а для экстранет-ЛМС он совпадает с адресом портала CRM. Приглашения в экстранет на портале Битрикса ведут на поддомен, как только он заработает.
+
+### 🪟 Открытие ЛМС в отдельной вкладке
+В CRM появилась команда «Открыть в браузере»: та же ЛМС открывается в отдельной вкладке по одноразовому коду.
+
+### 🔐 Улучшения входа и приглашений
+Страница из письма больше не ищет учётку по email, адрес ЛМС показывается под email с подсказкой-чипом, а карточка выбранной ЛМС стала спокойнее. Сброс handoff при выходе и обход handoff для invite/reset-ссылок сделали переходы надёжнее, а уведомления больше не показывают `[object Object]`.
+
+### 📊 Оценка компетенций 360
+Среднее по компетенции теперь делится на индикаторы с оценкой, а не на все — итоговые баллы стали точнее.
+
+---
+
+## EN (English)
+
+## ✨ Highlights of this release
+
+### 🔗 LMS address and portals
+When registering a new portal, an LMS address is now suggested, and for an extranet LMS it matches the CRM portal address. Extranet invitations on the Bitrix portal lead to the subdomain as soon as it becomes available.
+
+### 🪟 Opening the LMS in a separate tab
+CRM now has an "Open in browser" command: the same LMS opens in a separate tab using a one-time code.
+
+### 🔐 Sign-in and invitation improvements
+The page from the email no longer looks up an account by email, the LMS address is shown under the email with a hint chip, and the selected LMS card is calmer. Resetting handoff on sign-out and bypassing handoff for invite/reset links made transitions more reliable, and notifications no longer show `[object Object]`.
+
+### 📊 360 competency assessment
+The competency average is now divided by rated indicators rather than all of them — final scores are more accurate.
+
+---
+
+## UA (Українська)
+
+## ✨ Головне в цьому релізі
+
+### 🔗 Адреса ЛМС і портали
+Під час реєстрації нового порталу тепер пропонується адреса ЛМС, а для екстранет-ЛМС вона збігається з адресою порталу CRM. Запрошення до екстранету на порталі Бітрікс ведуть на піддомен, щойно він запрацює.
+
+### 🪟 Відкриття ЛМС в окремій вкладці
+У CRM з'явилася команда «Відкрити в браузері»: та сама ЛМС відкривається в окремій вкладці за одноразовим кодом.
+
+### 🔐 Покращення входу та запрошень
+Сторінка з листа більше не шукає обліковий запис за email, адреса ЛМС показується під email із підказкою-чипом, а картка вибраної ЛМС стала спокійнішою. Скидання handoff під час виходу та обхід handoff для invite/reset-посилань зробили переходи надійнішими, а повідомлення більше не показують `[object Object]`.
+
+### 📊 Оцінювання компетенцій 360
+Середнє за компетенцією тепер ділиться на індикатори з оцінкою, а не на всі — підсумкові бали стали точнішими.
+
+---
+
+## FR (Français)
+
+## ✨ Points clés de cette version
+
+### 🔗 Adresse LMS et portails
+Lors de l'enregistrement d'un nouveau portail, une adresse LMS est désormais proposée, et pour un LMS extranet elle correspond à l'adresse du portail CRM. Les invitations extranet sur le portail Bitrix mènent au sous-domaine dès qu'il devient disponible.
+
+### 🪟 Ouverture du LMS dans un onglet séparé
+Le CRM dispose maintenant d'une commande « Ouvrir dans le navigateur » : le même LMS s'ouvre dans un onglet séparé via un code à usage unique.
+
+### 🔐 Améliorations de connexion et d'invitation
+La page issue de l'e-mail ne recherche plus de compte par e-mail, l'adresse LMS est affichée sous l'e-mail avec une puce d'indication, et la carte du LMS sélectionné est plus apaisée. La réinitialisation du handoff à la déconnexion et le contournement du handoff pour les liens d'invitation/réinitialisation rendent les transitions plus fiables, et les notifications n'affichent plus `[object Object]`.
+
+### 📊 Évaluation des compétences 360
+La moyenne par compétence est désormais divisée par les indicateurs évalués, et non par tous — les scores finaux sont plus précis.
+
+---
+
+## IT (Italiano)
+
+## ✨ Punti salienti di questa release
+
+### 🔗 Indirizzo LMS e portali
+Durante la registrazione di un nuovo portale ora viene proposto un indirizzo LMS, e per un LMS extranet coincide con l'indirizzo del portale CRM. Gli inviti extranet sul portale Bitrix portano al sottodominio non appena diventa disponibile.
+
+### 🪟 Apertura dell'LMS in una scheda separata
+Il CRM ora ha un comando «Apri nel browser»: lo stesso LMS si apre in una scheda separata tramite un codice monouso.
+
+### 🔐 Miglioramenti ad accesso e inviti
+La pagina proveniente dall'email non cerca più l'account per email, l'indirizzo LMS è mostrato sotto l'email con un chip di suggerimento e la scheda dell'LMS selezionato è più sobria. Il reset dell'handoff all'uscita e il bypass dell'handoff per i link di invito/reset rendono le transizioni più affidabili, e le notifiche non mostrano più `[object Object]`.
+
+### 📊 Valutazione delle competenze 360
+La media per competenza ora è divisa per gli indicatori valutati, non per tutti — i punteggi finali sono più accurati.
+
+---
+
+## DE (Deutsch)
+
+## ✨ Highlights dieses Releases
+
+### 🔗 LMS-Adresse und Portale
+Bei der Registrierung eines neuen Portals wird jetzt eine LMS-Adresse vorgeschlagen, und bei einem Extranet-LMS entspricht sie der Adresse des CRM-Portals. Extranet-Einladungen im Bitrix-Portal führen auf die Subdomain, sobald sie verfügbar ist.
+
+### 🪟 LMS in einem separaten Tab öffnen
+Im CRM gibt es jetzt den Befehl „Im Browser öffnen“: dasselbe LMS öffnet sich in einem separaten Tab über einen Einmalcode.
+
+### 🔐 Verbesserungen bei Anmeldung und Einladungen
+Die Seite aus der E-Mail sucht kein Konto mehr per E-Mail, die LMS-Adresse wird unter der E-Mail mit einem Hinweis-Chip angezeigt, und die Karte des ausgewählten LMS ist ruhiger. Das Zurücksetzen des Handoffs beim Abmelden und die Umgehung des Handoffs für Einladungs-/Reset-Links machen Übergänge zuverlässiger, und Benachrichtigungen zeigen kein `[object Object]` mehr.
+
+### 📊 360-Kompetenzbewertung
+Der Kompetenzdurchschnitt wird jetzt durch bewertete Indikatoren geteilt, nicht durch alle — die Endergebnisse sind genauer.
+
+---
+
+## TR (Türkçe)
+
+## ✨ Bu sürümde öne çıkanlar
+
+### 🔗 LMS adresi ve portallar
+Yeni bir portal kaydedilirken artık bir LMS adresi öneriliyor ve ekstranet LMS için bu adres CRM portal adresiyle eşleşiyor. Bitrix portalındaki ekstranet davetleri, alt alan adı kullanılabilir olur olmaz oraya yönlendiriyor.
+
+### 🪟 LMS'yi ayrı sekmede açma
+CRM'de artık bir «Tarayıcıda aç» komutu var: aynı LMS, tek kullanımlık kodla ayrı bir sekmede açılıyor.
+
+### 🔐 Giriş ve davet iyileştirmeleri
+E-postadan gelen sayfa artık hesabı e-posta ile aramıyor, LMS adresi e-postanın altında bir ipucu çipiyle gösteriliyor ve seçili LMS kartı daha sakin. Çıkışta handoff sıfırlama ve davet/sıfırlama bağlantıları için handoff'u atlama geçişleri daha güvenilir hale getirdi; bildirimler artık `[object Object]` göstermiyor.
+
+### 📊 360 yetkinlik değerlendirmesi
+Yetkinlik ortalaması artık tüm göstergelere değil, değerlendirilmiş göstergelere bölünüyor — nihai puanlar daha doğru.
+
+---
+
+## PL (Polski)
+
+## ✨ Najważniejsze w tym wydaniu
+
+### 🔗 Adres LMS i portale
+Przy rejestracji nowego portalu proponowany jest teraz adres LMS, a dla LMS ekstranetowego pokrywa się on z adresem portalu CRM. Zaproszenia do ekstranetu w portalu Bitrix prowadzą do subdomeny, gdy tylko stanie się dostępna.
+
+### 🪟 Otwieranie LMS w osobnej karcie
+W CRM pojawiła się komenda „Otwórz w przeglądarce”: ten sam LMS otwiera się w osobnej karcie za pomocą jednorazowego kodu.
+
+### 🔐 Ulepszenia logowania i zaproszeń
+Strona z e-maila nie wyszukuje już konta po adresie e-mail, adres LMS jest pokazywany pod e-mailem z chipem-podpowiedzią, a karta wybranego LMS jest spokojniejsza. Reset handoffu przy wylogowaniu i obejście handoffu dla linków zaproszenia/resetu zwiększyły niezawodność przejść, a powiadomienia nie pokazują już `[object Object]`.
+
+### 📊 Ocena kompetencji 360
+Średnia dla kompetencji jest teraz dzielona przez ocenione wskaźniki, a nie wszystkie — wyniki końcowe są dokładniejsze.
+
+---
+
+## PT (Português)
+
+## ✨ Destaques desta versão
+
+### 🔗 Endereço do LMS e portais
+Ao registrar um novo portal, agora é sugerido um endereço de LMS e, para um LMS extranet, ele corresponde ao endereço do portal CRM. Os convites de extranet no portal Bitrix levam ao subdomínio assim que ele estiver disponível.
+
+### 🪟 Abrir o LMS em uma aba separada
+O CRM agora tem o comando «Abrir no navegador»: o mesmo LMS abre em uma aba separada por meio de um código de uso único.
+
+### 🔐 Melhorias de login e convites
+A página do e-mail não procura mais a conta por e-mail, o endereço do LMS é exibido abaixo do e-mail com um chip de dica, e o cartão do LMS selecionado ficou mais discreto. A redefinição do handoff ao sair e a dispensa do handoff para links de convite/redefinição tornaram as transições mais confiáveis, e as notificações não mostram mais `[object Object]`.
+
+### 📊 Avaliação de competências 360
+A média por competência agora é dividida pelos indicadores avaliados, e não por todos — as pontuações finais ficaram mais precisas.
+
+---
+
+## ES (Español)
+
+## ✨ Lo más destacado de esta versión
+
+### 🔗 Dirección del LMS y portales
+Al registrar un nuevo portal ahora se propone una dirección de LMS y, para un LMS extranet, coincide con la dirección del portal CRM. Las invitaciones de extranet en el portal Bitrix llevan al subdominio en cuanto esté disponible.
+
+### 🪟 Abrir el LMS en una pestaña aparte
+CRM ahora tiene el comando «Abrir en el navegador»: el mismo LMS se abre en una pestaña aparte mediante un código de un solo uso.
+
+### 🔐 Mejoras de inicio de sesión e invitaciones
+La página del correo ya no busca la cuenta por email, la dirección del LMS se muestra bajo el email con un chip de sugerencia y la tarjeta del LMS seleccionado es más sobria. El reinicio del handoff al salir y la omisión del handoff para enlaces de invitación/restablecimiento hicieron las transiciones más fiables, y las notificaciones ya no muestran `[object Object]`.
+
+### 📊 Evaluación de competencias 360
+El promedio por competencia ahora se divide entre los indicadores evaluados, no entre todos — las puntuaciones finales son más precisas.
+
+---
+
+## VN (Tiếng Việt)
+
+## ✨ Điểm chính trong bản phát hành này
+
+### 🔗 Địa chỉ LMS và các cổng
+Khi đăng ký cổng mới, hệ thống gợi ý địa chỉ LMS, và với LMS extranet thì địa chỉ này trùng với địa chỉ cổng CRM. Lời mời vào extranet trên cổng Bitrix sẽ dẫn đến tên miền phụ ngay khi nó hoạt động.
+
+### 🪟 Mở LMS trong tab riêng
+CRM nay có lệnh «Mở trong trình duyệt»: cùng một LMS mở trong tab riêng bằng mã dùng một lần.
+
+### 🔐 Cải thiện đăng nhập và lời mời
+Trang từ email không còn tìm tài khoản theo email, địa chỉ LMS hiển thị dưới email kèm chip gợi ý, và thẻ LMS đã chọn trông nhẹ nhàng hơn. Việc đặt lại handoff khi đăng xuất và bỏ qua handoff cho liên kết mời/đặt lại giúp chuyển trang đáng tin cậy hơn, và thông báo không còn hiển thị `[object Object]`.
+
+### 📊 Đánh giá năng lực 360
+Điểm trung bình theo năng lực nay được chia cho các chỉ báo đã được đánh giá, không phải tất cả — điểm cuối cùng chính xác hơn.
+
+---
+
+## ZH (中文)
+
+## ✨ 本次发布亮点
+
+### 🔗 LMS 地址与门户
+注册新门户时现在会推荐 LMS 地址，对于外联网 LMS，该地址与 CRM 门户地址一致。Bitrix 门户上的外联网邀请会在子域可用后立即指向该子域。
+
+### 🪟 在单独标签页中打开 LMS
+CRM 新增了“在浏览器中打开”命令：同一个 LMS 通过一次性代码在单独标签页中打开。
+
+### 🔐 登录与邀请改进
+来自邮件的页面不再按邮箱查找账号，LMS 地址显示在邮箱下方并带有提示标签，所选 LMS 的卡片也更简洁。退出时重置 handoff 以及为邀请/重置链接绕过 handoff 让跳转更可靠，通知也不再显示 `[object Object]`。
+
+### 📊 360 能力评估
+能力平均分现在除以已评分的指标，而不是全部指标——最终得分更准确。
+
+---
+
+## JA (日本語)
+
+## ✨ このリリースの主なポイント
+
+### 🔗 LMS アドレスとポータル
+新しいポータルの登録時に LMS アドレスが提案されるようになり、エクストラネット LMS では CRM ポータルのアドレスと一致します。Bitrix ポータルでのエクストラネット招待は、サブドメインが利用可能になり次第そこへ誘導されます。
+
+### 🪟 LMS を別タブで開く
+CRM に「ブラウザで開く」コマンドが追加されました。同じ LMS がワンタイムコードで別タブに開きます。
+
+### 🔐 サインインと招待の改善
+メールからのページはメールでアカウントを検索しなくなり、LMS アドレスはメールの下にヒントチップ付きで表示され、選択した LMS のカードも落ち着いた見た目になりました。サインアウト時の handoff リセットと招待/リセットリンクでの handoff バイパスにより遷移がより確実になり、通知に `[object Object]` が表示されなくなりました。
+
+### 📊 360 コンピテンシー評価
+コンピテンシーの平均は、すべての指標ではなく評価済みの指標で割られるようになり、最終スコアがより正確になりました。
+
+---
+
+## KZ (Қазақша)
+
+## ✨ Осы релиздегі басты жаңалықтар
+
+### 🔗 ЛМС мекенжайы және порталдар
+Жаңа порталды тіркеу кезінде енді ЛМС мекенжайы ұсынылады, ал экстранет-ЛМС үшін ол CRM порталының мекенжайымен сәйкес келеді. Bitrix порталындағы экстранет шақырулары қосымша домен іске қосылысымен сол жерге бағыттайды.
+
+### 🪟 ЛМС-ті бөлек қойындыда ашу
+CRM-де «Браузерде ашу» командасы пайда болды: сол ЛМС бір реттік код арқылы бөлек қойындыда ашылады.
+
+### 🔐 Кіру және шақыру жақсартулары
+Хаттан келген бет енді тіркелгіні email арқылы іздемейді, ЛМС мекенжайы email астында кеңес-чипімен көрсетіледі, ал таңдалған ЛМС картасы байыптырақ болды. Шығу кезінде handoff-ты қалпына келтіру және invite/reset сілтемелері үшін handoff-ты айналып өту ауысуларды сенімдірек етті, ал хабарламалар енді `[object Object]` көрсетпейді.
+
+### 📊 360 құзыреттілік бағалауы
+Құзыреттілік бойынша орташа мән енді барлық индикаторға емес, бағаланған индикаторларға бөлінеді — қорытынды балл дәлірек болды.
+
+---
+
+## AR (العربية)
+
+## ✨ أبرز ما في هذا الإصدار
+
+### 🔗 عنوان LMS والبوابات
+عند تسجيل بوابة جديدة يُقترح الآن عنوان LMS، وبالنسبة إلى LMS الخارجية فإنه يطابق عنوان بوابة CRM. تدعوات الشبكة الخارجية على بوابة Bitrix تؤدي إلى النطاق الفرعي بمجرد أن يصبح جاهزًا.
+
+### 🪟 فتح LMS في تبويب منفصل
+أصبح في CRM أمر «فتح في المتصفح»: يُفتح نفس LMS في تبويب منفصل عبر رمز لمرة واحدة.
+
+### 🔐 تحسينات تسجيل الدخول والدعوات
+لم تعد الصفحة الواردة من البريد تبحث عن الحساب بالبريد، ويُعرض عنوان LMS أسفل البريد مع شريحة تلميح، وأصبحت بطاقة LMS المحددة أهدأ. أدى إعادة ضبط handoff عند الخروج وتجاوز handoff لروابط الدعوة/إعادة الضبط إلى انتقالات أكثر موثوقية، ولم تعد الإشعارات تعرض `[object Object]`.
+
+### 📊 تقييم الكفاءات 360
+أصبح متوسط الكفاءة يُقسم على المؤشرات المُقيَّمة وليس على جميعها — النتائج النهائية أدق.
+
+---
+
+## ID (Bahasa Indonesia)
+
+## ✨ Sorotan rilis ini
+
+### 🔗 Alamat LMS dan portal
+Saat mendaftarkan portal baru, alamat LMS kini disarankan, dan untuk LMS ekstranet alamatnya sama dengan alamat portal CRM. Undangan ekstranet di portal Bitrix mengarah ke subdomain begitu tersedia.
+
+### 🪟 Membuka LMS di tab terpisah
+CRM kini memiliki perintah «Buka di browser»: LMS yang sama terbuka di tab terpisah melalui kode sekali pakai.
+
+### 🔐 Peningkatan masuk dan undangan
+Halaman dari email tidak lagi mencari akun berdasarkan email, alamat LMS ditampilkan di bawah email dengan chip petunjuk, dan kartu LMS yang dipilih lebih tenang. Reset handoff saat keluar dan melewati handoff untuk tautan undangan/reset membuat perpindahan lebih andal, dan notifikasi tidak lagi menampilkan `[object Object]`.
+
+### 📊 Penilaian kompetensi 360
+Rata-rata kompetensi kini dibagi dengan indikator yang dinilai, bukan semuanya — skor akhir lebih akurat.
+
+---
+
+## MS (Bahasa Melayu)
+
+## ✨ Sorotan dalam keluaran ini
+
+### 🔗 Alamat LMS dan portal
+Semasa mendaftar portal baharu, alamat LMS kini dicadangkan, dan untuk LMS ekstranet ia sepadan dengan alamat portal CRM. Jemputan ekstranet pada portal Bitrix membawa ke subdomain sebaik sahaja ia tersedia.
+
+### 🪟 Membuka LMS dalam tab berasingan
+CRM kini mempunyai arahan «Buka dalam pelayar»: LMS yang sama dibuka dalam tab berasingan melalui kod sekali guna.
+
+### 🔐 Penambahbaikan log masuk dan jemputan
+Halaman daripada e-mel tidak lagi mencari akaun melalui e-mel, alamat LMS dipaparkan di bawah e-mel dengan cip petunjuk, dan kad LMS yang dipilih lebih tenang. Set semula handoff semasa log keluar dan memintas handoff untuk pautan jemputan/set semula menjadikan peralihan lebih boleh dipercayai, dan pemberitahuan tidak lagi memaparkan `[object Object]`.
+
+### 📊 Penilaian kompetensi 360
+Purata kompetensi kini dibahagikan dengan penunjuk yang dinilai, bukan semuanya — skor akhir lebih tepat.
+
+---
+
+## TH (ไทย)
+
+## ✨ ไฮไลต์ของรีลีสนี้
+
+### 🔗 ที่อยู่ LMS และพอร์ทัล
+เมื่อลงทะเบียนพอร์ทัลใหม่ ระบบจะเสนอที่อยู่ LMS และสำหรับ LMS เอ็กซ์ทราเน็ต ที่อยู่จะตรงกับที่อยู่พอร์ทัล CRM คำเชิญเข้าเอ็กซ์ทราเน็ตบนพอร์ทัล Bitrix จะนำไปยังซับโดเมนทันทีที่พร้อมใช้งาน
+
+### 🪟 เปิด LMS ในแท็บแยก
+CRM มีคำสั่ง «เปิดในเบราว์เซอร์» แล้ว: LMS เดียวกันจะเปิดในแท็บแยกด้วยรหัสใช้ครั้งเดียว
+
+### 🔐 การปรับปรุงการเข้าสู่ระบบและคำเชิญ
+หน้าจากอีเมลไม่ค้นหาบัญชีด้วยอีเมลอีกต่อไป ที่อยู่ LMS แสดงใต้อีเมลพร้อมชิปคำแนะนำ และการ์ด LMS ที่เลือกดูสงบขึ้น การรีเซ็ต handoff เมื่อออกจากระบบและการข้าม handoff สำหรับลิงก์เชิญ/รีเซ็ตทำให้การเปลี่ยนหน้าต่างเชื่อถือได้มากขึ้น และการแจ้งเตือนไม่แสดง `[object Object]` อีกต่อไป
+
+### 📊 การประเมินสมรรถนะ 360
+ค่าเฉลี่ยตามสมรรถนะตอนนี้หารด้วยตัวชี้วัดที่ได้รับการประเมิน ไม่ใช่ทั้งหมด — คะแนนสุดท้ายแม่นยำขึ้น
