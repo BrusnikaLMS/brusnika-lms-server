@@ -1,0 +1,375 @@
+## RU (Русский)
+
+## ✨ Главное в этом релизе
+
+### 🔐 Улучшенный выбор ЛМС и вход
+Выбор ЛМС при входе и регистрации стал понятнее: отображается название, запоминается последний выбор и показывается предупреждение. Диалог «Забыли пароль» получил подтверждение и выбор ЛМС, а отказ сброса теперь виден пользователю.
+
+### 📝 Опросы, тесты и проверка ответов
+Опросы открываются сразу с вопросами, а не на узкой карточке каталога. В «Проверке ответов» появились фильтры по сотруднику и тесту/заданию, а ответы открытых вопросов больше не теряются без проверяющего.
+
+### 📊 Отчёты и выгрузки
+Выгрузка в Excel больше не обрезает текст вопросов. Исправлены ошибки в отчётах Assessment360, включая падение ReportsView.sql и отображение роли и вопроса в отчёте.
+
+### 🎁 Подарки, подсказки и интеграции
+На вкладке «Подарки» появились правила предоставления подарка за отзыв. На экране «Перенос данных» добавлен блок инструкций. В «Управление системой → Интеграции» добавлены 1С, LDAP и Bitrix24 REST, а также интеграция CharlieHR.
+
+### 📚 Библиотека и траектории
+Добавлен блок «Книга» (EPUB/FB2/DJVU) с вьюером и поддержкой в чате Ники. В личном кабинете появилась вкладка «Траектории» с аудиторией, задачами и мероприятиями.
+
+---
+
+## EN (English)
+
+## ✨ Highlights of this release
+
+### 🔐 Improved LMS selection and login
+LMS selection during login and registration is now clearer: the name is displayed, the last choice is remembered, and a warning is shown. The "Forgot password" dialog now has confirmation and LMS selection, and reset refusal is visible to the user.
+
+### 📝 Polls, tests, and answer review
+Polls open directly with questions instead of on a narrow catalog card. In "Answer Review," filters by employee and test/task have been added, and answers to open questions are no longer lost without a reviewer.
+
+### 📊 Reports and exports
+Excel export no longer truncates question text. Bugs in Assessment360 reports have been fixed, including the ReportsView.sql crash and the display of role and question in the report.
+
+### 🎁 Gifts, hints, and integrations
+The "Gifts" tab now has rules for providing a gift for a review. A block of instructions has been added to the "Data Transfer" screen. 1C, LDAP, and Bitrix24 REST, as well as CharlieHR integration, have been added to "System Management → Integrations."
+
+### 📚 Library and trajectories
+A "Book" block (EPUB/FB2/DJVU) with a viewer and support in Niki's chat has been added. A "Trajectories" tab with audience, tasks, and events has appeared in the personal account.
+
+---
+
+## UA (Українська)
+
+## ✨ Головне в цьому релізі
+
+### 🔐 Покращений вибір ЛМС і вхід
+Вибір ЛМС під час входу та реєстрації став зрозумілішим: відображається назва, запам'ятовується останній вибір і показується попередження. Діалог «Забули пароль» отримав підтвердження та вибір ЛМС, а відмова від скидання тепер видна користувачеві.
+
+### 📝 Опитування, тести та перевірка відповідей
+Опитування відкриваються одразу з питаннями, а не на вузькій картці каталогу. У «Перевірці відповідей» з'явилися фільтри за співробітником і тестом/завданням, а відповіді на відкриті питання більше не губляться без перевіряючого.
+
+### 📊 Звіти та вивантаження
+Вивантаження в Excel більше не обрізає текст питань. Виправлено помилки у звітах Assessment360, включно з падінням ReportsView.sql і відображенням ролі та питання у звіті.
+
+### 🎁 Подарунки, підказки та інтеграції
+На вкладці «Подарунки» з'явилися правила надання подарунка за відгук. На екрані «Перенесення даних» додано блок інструкцій. У «Управління системою → Інтеграції» додано 1С, LDAP і Bitrix24 REST, а також інтеграцію CharlieHR.
+
+### 📚 Бібліотека та траєкторії
+Додано блок «Книга» (EPUB/FB2/DJVU) з в'юером і підтримкою в чаті Нікі. В особистому кабінеті з'явилася вкладка «Траєкторії» з аудиторією, завданнями та заходами.
+
+---
+
+## FR (Français)
+
+## ✨ Points forts de cette version
+
+### 🔐 Sélection LMS et connexion améliorées
+La sélection du LMS lors de la connexion et de l'inscription est désormais plus claire : le nom est affiché, le dernier choix est mémorisé et un avertissement est présenté. La boîte de dialogue « Mot de passe oublié » dispose maintenant d'une confirmation et d'une sélection du LMS, et le refus de réinitialisation est visible par l'utilisateur.
+
+### 📝 Sondages, tests et révision des réponses
+Les sondages s'ouvrent directement avec les questions au lieu d'une carte étroite du catalogue. Dans « Révision des réponses », des filtres par employé et par test/tâche ont été ajoutés, et les réponses aux questions ouvertes ne sont plus perdues sans évaluateur.
+
+### 📊 Rapports et exports
+L'export Excel ne tronque plus le texte des questions. Des bugs dans les rapports Assessment360 ont été corrigés, notamment le plantage de ReportsView.sql et l'affichage du rôle et de la question dans le rapport.
+
+### 🎁 Cadeaux, astuces et intégrations
+L'onglet « Cadeaux » dispose désormais de règles pour offrir un cadeau en échange d'un avis. Un bloc d'instructions a été ajouté à l'écran « Transfert de données ». Les intégrations 1C, LDAP et Bitrix24 REST, ainsi que l'intégration CharlieHR, ont été ajoutées à « Gestion du système → Intégrations ».
+
+### 📚 Bibliothèque et trajectoires
+Un bloc « Livre » (EPUB/FB2/DJVU) avec visionneuse et prise en charge dans le chat de Niki a été ajouté. Un onglet « Trajectoires » avec audience, tâches et événements est apparu dans l'espace personnel.
+
+---
+
+## IT (Italiano)
+
+## ✨ Punti salienti di questa versione
+
+### 🔐 Selezione LMS e accesso migliorati
+La selezione del LMS durante l'accesso e la registrazione è ora più chiara: viene mostrato il nome, viene ricordata l'ultima scelta e viene visualizzato un avviso. La finestra «Password dimenticata» ora include conferma e selezione del LMS, e il rifiuto del ripristino è visibile all'utente.
+
+### 📝 Sondaggi, test e revisione delle risposte
+I sondaggi si aprono direttamente con le domande invece che su una scheda stretta del catalogo. In «Revisione delle risposte» sono stati aggiunti filtri per dipendente e test/attività, e le risposte alle domande aperte non vengono più perse senza un revisore.
+
+### 📊 Report ed esportazioni
+L'esportazione in Excel non tronca più il testo delle domande. Sono stati corretti bug nei report Assessment360, incluso il crash di ReportsView.sql e la visualizzazione di ruolo e domanda nel report.
+
+### 🎁 Regali, suggerimenti e integrazioni
+La scheda «Regali» ora include regole per offrire un regalo in cambio di una recensione. Un blocco di istruzioni è stato aggiunto alla schermata «Trasferimento dati». Le integrazioni 1C, LDAP e Bitrix24 REST, oltre all'integrazione CharlieHR, sono state aggiunte a «Gestione sistema → Integrazioni».
+
+### 📚 Libreria e traiettorie
+È stato aggiunto un blocco «Libro» (EPUB/FB2/DJVU) con visualizzatore e supporto nella chat di Niki. Nella pagina personale è apparsa una scheda «Traiettorie» con pubblico, attività ed eventi.
+
+---
+
+## DE (Deutsch)
+
+## ✨ Highlights dieser Version
+
+### 🔐 Verbesserte LMS-Auswahl und Anmeldung
+Die LMS-Auswahl bei Anmeldung und Registrierung ist jetzt klarer: Der Name wird angezeigt, die letzte Auswahl wird gespeichert und ein Hinweis wird eingeblendet. Der Dialog „Passwort vergessen“ bietet nun eine Bestätigung und LMS-Auswahl, und die Ablehnung des Zurücksetzens ist für den Nutzer sichtbar.
+
+### 📝 Umfragen, Tests und Antwortprüfung
+Umfragen öffnen sich direkt mit den Fragen statt auf einer schmalen Katalogkarte. In der „Antwortprüfung“ wurden Filter nach Mitarbeiter und Test/Aufgabe hinzugefügt, und Antworten auf offene Fragen gehen nicht mehr ohne Prüfer verloren.
+
+### 📊 Berichte und Exporte
+Der Excel-Export schneidet den Fragetext nicht mehr ab. Fehler in Assessment360-Berichten wurden behoben, darunter der Absturz von ReportsView.sql und die Anzeige von Rolle und Frage im Bericht.
+
+### 🎁 Geschenke, Hinweise und Integrationen
+Der Tab „Geschenke“ enthält nun Regeln für ein Geschenk als Gegenleistung für eine Bewertung. Auf dem Bildschirm „Datenübertragung“ wurde ein Anweisungsblock hinzugefügt. In „Systemverwaltung → Integrationen“ wurden 1C, LDAP und Bitrix24 REST sowie die CharlieHR-Integration hinzugefügt.
+
+### 📚 Bibliothek und Trajektorien
+Ein Block „Buch“ (EPUB/FB2/DJVU) mit Viewer und Unterstützung im Niki-Chat wurde hinzugefügt. Im persönlichen Bereich ist ein Tab „Trajektorien“ mit Zielgruppe, Aufgaben und Veranstaltungen erschienen.
+
+---
+
+## TR (Türkçe)
+
+## ✨ Bu sürümdeki öne çıkanlar
+
+### 🔐 İyileştirilmiş LMS seçimi ve giriş
+Giriş ve kayıt sırasında LMS seçimi artık daha anlaşılır: ad gösterilir, son seçim hatırlanır ve bir uyarı görüntülenir. «Parolamı unuttum» iletişim kutusunda artık onay ve LMS seçimi var, sıfırlama reddi kullanıcı tarafından görülebiliyor.
+
+### 📝 Anketler, testler ve yanıt incelemesi
+Anketler dar bir katalog kartı yerine doğrudan sorularla açılıyor. «Yanıt İncelemesi»nde çalışana ve teste/göreve göre filtreler eklendi ve açık soruların yanıtları artık bir değerlendirici olmadan kaybolmuyor.
+
+### 📊 Raporlar ve dışa aktarımlar
+Excel'e aktarma artık soru metnini kesmiyor. Assessment360 raporlarındaki hatalar düzeltildi; ReportsView.sql çökmesi ve raporda rol ile sorunun gösterimi dahil.
+
+### 🎁 Hediyeler, ipuçları ve entegrasyonlar
+«Hediyeler» sekmesinde artık bir değerlendirme karşılığında hediye verme kuralları var. «Veri Aktarımı» ekranına bir talimat bloğu eklendi. «Sistem Yönetimi → Entegrasyonlar»a 1C, LDAP ve Bitrix24 REST ile CharlieHR entegrasyonu eklendi.
+
+### 📚 Kütüphane ve yörüngeler
+Görüntüleyici ve Niki sohbetinde destek ile bir «Kitap» bloğu (EPUB/FB2/DJVU) eklendi. Kişisel hesapta hedef kitle, görevler ve etkinlikler içeren «Yörüngeler» sekmesi göründü.
+
+---
+
+## PL (Polski)
+
+## ✨ Najważniejsze w tym wydaniu
+
+### 🔐 Ulepszony wybór LMS i logowanie
+Wybór LMS podczas logowania i rejestracji jest teraz jaśniejszy: wyświetlana jest nazwa, zapamiętywany jest ostatni wybór i pokazywane jest ostrzeżenie. Okno „Nie pamiętam hasła” ma teraz potwierdzenie i wybór LMS, a odmowa resetowania jest widoczna dla użytkownika.
+
+### 📝 Ankiety, testy i przegląd odpowiedzi
+Ankiety otwierają się bezpośrednio z pytaniami, a nie na wąskiej karcie katalogu. W „Przeglądzie odpowiedzi” dodano filtry według pracownika i testu/zadania, a odpowiedzi na pytania otwarte nie giną już bez sprawdzającego.
+
+### 📊 Raporty i eksporty
+Eksport do Excela nie obcina już tekstu pytań. Naprawiono błędy w raportach Assessment360, w tym awarię ReportsView.sql oraz wyświetlanie roli i pytania w raporcie.
+
+### 🎁 Prezenty, podpowiedzi i integracje
+Zakładka „Prezenty” ma teraz zasady przyznawania prezentu za opinię. Na ekranie „Transfer danych” dodano blok instrukcji. Do „Zarządzanie systemem → Integracje” dodano 1C, LDAP i Bitrix24 REST oraz integrację CharlieHR.
+
+### 📚 Biblioteka i trajektorie
+Dodano blok „Książka” (EPUB/FB2/DJVU) z przeglądarką i obsługą w czacie Niki. W koncie osobistym pojawiła się zakładka „Trajektorie” z grupą odbiorców, zadaniami i wydarzeniami.
+
+---
+
+## PT (Português)
+
+## ✨ Destaques desta versão
+
+### 🔐 Seleção de LMS e login aprimorados
+A seleção de LMS durante o login e o registro ficou mais clara: o nome é exibido, a última escolha é lembrada e um aviso é mostrado. A caixa de diálogo «Esqueci a senha» agora tem confirmação e seleção de LMS, e a recusa de redefinição é visível para o usuário.
+
+### 📝 Enquetes, testes e revisão de respostas
+As enquetes abrem diretamente com as perguntas em vez de em um cartão estreito do catálogo. Em «Revisão de respostas», foram adicionados filtros por funcionário e teste/tarefa, e as respostas a perguntas abertas não são mais perdidas sem um revisor.
+
+### 📊 Relatórios e exportações
+A exportação para Excel não trunca mais o texto das perguntas. Bugs nos relatórios do Assessment360 foram corrigidos, incluindo o travamento do ReportsView.sql e a exibição de função e pergunta no relatório.
+
+### 🎁 Presentes, dicas e integrações
+A aba «Presentes» agora tem regras para oferecer um presente em troca de uma avaliação. Um bloco de instruções foi adicionado à tela «Transferência de dados». As integrações 1C, LDAP e Bitrix24 REST, além da integração CharlieHR, foram adicionadas a «Gerenciamento do sistema → Integrações».
+
+### 📚 Biblioteca e trajetórias
+Foi adicionado um bloco «Livro» (EPUB/FB2/DJVU) com visualizador e suporte no chat da Niki. Na conta pessoal, apareceu uma aba «Trajetórias» com público, tarefas e eventos.
+
+---
+
+## ES (Español)
+
+## ✨ Lo más destacado de esta versión
+
+### 🔐 Selección de LMS e inicio de sesión mejorados
+La selección de LMS al iniciar sesión y registrarse ahora es más clara: se muestra el nombre, se recuerda la última elección y se muestra una advertencia. El cuadro de diálogo «Olvidé mi contraseña» ahora tiene confirmación y selección de LMS, y el rechazo del restablecimiento es visible para el usuario.
+
+### 📝 Encuestas, pruebas y revisión de respuestas
+Las encuestas se abren directamente con las preguntas en lugar de en una tarjeta estrecha del catálogo. En «Revisión de respuestas» se añadieron filtros por empleado y prueba/tarea, y las respuestas a preguntas abiertas ya no se pierden sin un revisor.
+
+### 📊 Informes y exportaciones
+La exportación a Excel ya no trunca el texto de las preguntas. Se corrigieron errores en los informes de Assessment360, incluido el fallo de ReportsView.sql y la visualización de rol y pregunta en el informe.
+
+### 🎁 Regalos, sugerencias e integraciones
+La pestaña «Regalos» ahora tiene reglas para ofrecer un regalo a cambio de una reseña. Se añadió un bloque de instrucciones a la pantalla «Transferencia de datos». Se añadieron las integraciones 1C, LDAP y Bitrix24 REST, así como la integración CharlieHR, a «Gestión del sistema → Integraciones».
+
+### 📚 Biblioteca y trayectorias
+Se añadió un bloque «Libro» (EPUB/FB2/DJVU) con visor y soporte en el chat de Niki. En la cuenta personal apareció una pestaña «Trayectorias» con audiencia, tareas y eventos.
+
+---
+
+## VN (Tiếng Việt)
+
+## ✨ Điểm nổi bật trong bản phát hành này
+
+### 🔐 Cải thiện chọn LMS và đăng nhập
+Việc chọn LMS khi đăng nhập và đăng ký giờ rõ ràng hơn: tên được hiển thị, lựa chọn gần nhất được ghi nhớ và có cảnh báo. Hộp thoại «Quên mật khẩu» giờ có xác nhận và chọn LMS, và việc từ chối đặt lại hiển thị cho người dùng.
+
+### 📝 Khảo sát, bài kiểm tra và duyệt câu trả lời
+Khảo sát mở trực tiếp với các câu hỏi thay vì trên thẻ danh mục hẹp. Trong «Duyệt câu trả lời» đã thêm bộ lọc theo nhân viên và bài kiểm tra/nhiệm vụ, và câu trả lời cho câu hỏi mở không còn bị mất khi không có người chấm.
+
+### 📊 Báo cáo và xuất dữ liệu
+Xuất ra Excel không còn cắt bớt văn bản câu hỏi. Đã sửa lỗi trong báo cáo Assessment360, bao gồm lỗi ReportsView.sql và hiển thị vai trò và câu hỏi trong báo cáo.
+
+### 🎁 Quà tặng, gợi ý và tích hợp
+Tab «Quà tặng» giờ có quy tắc tặng quà để đổi lấy đánh giá. Một khối hướng dẫn đã được thêm vào màn hình «Chuyển dữ liệu». Tích hợp 1C, LDAP và Bitrix24 REST, cùng tích hợp CharlieHR, đã được thêm vào «Quản lý hệ thống → Tích hợp».
+
+### 📚 Thư viện và lộ trình
+Đã thêm khối «Sách» (EPUB/FB2/DJVU) với trình xem và hỗ trợ trong chat của Niki. Trong tài khoản cá nhân đã xuất hiện tab «Lộ trình» với đối tượng, nhiệm vụ và sự kiện.
+
+---
+
+## ZH (中文)
+
+## ✨ 本次发布亮点
+
+### 🔐 改进的 LMS 选择与登录
+登录和注册时的 LMS 选择现在更清晰：显示名称、记住上次选择并显示警告。「忘记密码」对话框现在有确认和 LMS 选择，重置被拒绝时用户可见。
+
+### 📝 问卷、测试与答案审核
+问卷现在直接打开问题，而不是在狭窄的目录卡片上。在「答案审核」中新增了按员工和测试/任务的筛选，开放问题的答案在没有审核人时不再丢失。
+
+### 📊 报告与导出
+导出到 Excel 不再截断问题文本。修复了 Assessment360 报告中的错误，包括 ReportsView.sql 崩溃以及报告中角色和问题的显示。
+
+### 🎁 礼物、提示与集成
+「礼物」标签页现在有以评价换取礼物的规则。「数据传输」屏幕新增了说明区块。在「系统管理 → 集成」中新增了 1C、LDAP 和 Bitrix24 REST，以及 CharlieHR 集成。
+
+### 📚 图书馆与轨迹
+新增了「书籍」区块（EPUB/FB2/DJVU），带查看器并支持在 Niki 聊天中使用。个人账户中出现了「轨迹」标签页，包含受众、任务和活动。
+
+---
+
+## JA (日本語)
+
+## ✨ このリリースのハイライト
+
+### 🔐 LMS 選択とログインの改善
+ログインおよび登録時の LMS 選択がより分かりやすくなりました。名前が表示され、前回の選択が記憶され、警告が表示されます。「パスワードをお忘れですか」ダイアログに確認と LMS 選択が追加され、リセット拒否がユーザーに表示されます。
+
+### 📝 アンケート、テスト、回答レビュー
+アンケートは狭いカタログカードではなく、直接質問とともに開くようになりました。「回答レビュー」に従業員とテスト/タスクによるフィルターが追加され、自由回答の回答がレビュー担当者なしで失われなくなりました。
+
+### 📊 レポートとエクスポート
+Excel へのエクスポートで質問テキストが切り捨てられなくなりました。Assessment360 レポートのバグ（ReportsView.sql のクラッシュやレポートでの役割と質問の表示を含む）が修正されました。
+
+### 🎁 ギフト、ヒント、連携
+「ギフト」タブにレビューに対するギフト提供のルールが追加されました。「データ移行」画面に説明ブロックが追加されました。「システム管理 → 連携」に 1C、LDAP、Bitrix24 REST、および CharlieHR 連携が追加されました。
+
+### 📚 ライブラリとトラジェクトリ
+ビューアーと Niki チャットでのサポートを備えた「書籍」ブロック（EPUB/FB2/DJVU）が追加されました。個人アカウントに、対象者、タスク、イベントを含む「トラジェクトリ」タブが登場しました。
+
+---
+
+## KZ (Қазақша)
+
+## ✨ Осы релиздегі басты жаңалықтар
+
+### 🔐 Жақсартылған ЛМС таңдау және кіру
+Кіру және тіркелу кезіндегі ЛМС таңдау енді түсінікті: атауы көрсетіледі, соңғы таңдау есте сақталады және ескерту көрсетіледі. «Құпия сөзді ұмыттым» диалогында енді растау және ЛМС таңдау бар, ал қалпына келтіруден бас тарту пайдаланушыға көрінеді.
+
+### 📝 Сауалнамалар, тесттер және жауаптарды тексеру
+Сауалнамалар тар каталог карточкасында емес, сұрақтармен бірден ашылады. «Жауаптарды тексеруде» қызметкер және тест/тапсырма бойынша сүзгілер қосылды, ал ашық сұрақтардың жауаптары тексерушісіз жоғалмайды.
+
+### 📊 Есептер және экспорттар
+Excel-ге экспорттау енді сұрақ мәтінін қысқартпайды. Assessment360 есептеріндегі қателер түзетілді, соның ішінде ReportsView.sql құлауы және есепте рөл мен сұрақтың көрсетілуі.
+
+### 🎁 Сыйлықтар, кеңестер және интеграциялар
+«Сыйлықтар» қойындысында енді пікір үшін сыйлық беру ережелері бар. «Деректерді тасымалдау» экранына нұсқаулық блогы қосылды. «Жүйені басқару → Интеграциялар» бөліміне 1C, LDAP және Bitrix24 REST, сондай-ақ CharlieHR интеграциясы қосылды.
+
+### 📚 Кітапхана және траекториялар
+Қарау құралы және Niki чатында қолдауы бар «Кітап» блогы (EPUB/FB2/DJVU) қосылды. Жеке кабинетте аудитория, тапсырмалар және іс-шаралар бар «Траекториялар» қойындысы пайда болды.
+
+---
+
+## AR (العربية)
+
+## ✨ أبرز ما في هذا الإصدار
+
+### 🔐 تحسين اختيار نظام إدارة التعلم وتسجيل الدخول
+أصبح اختيار نظام إدارة التعلم عند تسجيل الدخول والتسجيل أكثر وضوحًا: يظهر الاسم، ويُحفظ الاختيار الأخير، ويظهر تحذير. أصبح مربع حوار «نسيت كلمة المرور» يتضمن تأكيدًا واختيار نظام إدارة التعلم، ورفض إعادة التعيين مرئيًا للمستخدم.
+
+### 📝 الاستبيانات والاختبارات ومراجعة الإجابات
+تُفتح الاستبيانات مباشرة مع الأسئلة بدلًا من بطاقة الكتالوج الضيقة. في «مراجعة الإجابات» أُضيفت مرشحات حسب الموظف والاختبار/المهمة، ولم تعد إجابات الأسئلة المفتوحة تُفقد بدون مُراجع.
+
+### 📊 التقارير والتصدير
+لم يعد التصدير إلى Excel يقتطع نص الأسئلة. تم إصلاح أخطاء في تقارير Assessment360، بما في ذلك تعطل ReportsView.sql وعرض الدور والسؤال في التقرير.
+
+### 🎁 الهدايا والتلميحات والتكاملات
+أصبح لتبويب «الهدايا» قواعد لمنح هدية مقابل تقييم. أُضيفت كتلة إرشادات إلى شاشة «نقل البيانات». أُضيفت تكاملات 1C وLDAP وBitrix24 REST، بالإضافة إلى تكامل CharlieHR، إلى «إدارة النظام → التكاملات».
+
+### 📚 المكتبة والمسارات
+أُضيفت كتلة «كتاب» (EPUB/FB2/DJVU) مع عارض ودعم في محادثة Niki. وظهر في الحساب الشخصي تبويب «المسارات» مع الجمهور والمهام والفعاليات.
+
+---
+
+## ID (Bahasa Indonesia)
+
+## ✨ Sorotan rilis ini
+
+### 🔐 Pemilihan LMS dan login yang lebih baik
+Pemilihan LMS saat login dan pendaftaran kini lebih jelas: nama ditampilkan, pilihan terakhir diingat, dan peringatan ditampilkan. Dialog «Lupa kata sandi» kini memiliki konfirmasi dan pemilihan LMS, dan penolakan reset terlihat oleh pengguna.
+
+### 📝 Survei, tes, dan tinjauan jawaban
+Survei terbuka langsung dengan pertanyaan, bukan pada kartu katalog yang sempit. Di «Tinjauan jawaban» ditambahkan filter berdasarkan karyawan dan tes/tugas, dan jawaban pertanyaan terbuka tidak lagi hilang tanpa penilai.
+
+### 📊 Laporan dan ekspor
+Ekspor ke Excel tidak lagi memotong teks pertanyaan. Bug pada laporan Assessment360 telah diperbaiki, termasuk crash ReportsView.sql dan tampilan peran serta pertanyaan dalam laporan.
+
+### 🎁 Hadiah, petunjuk, dan integrasi
+Tab «Hadiah» kini memiliki aturan pemberian hadiah untuk ulasan. Blok instruksi ditambahkan ke layar «Transfer data». Integrasi 1C, LDAP, dan Bitrix24 REST, serta integrasi CharlieHR, ditambahkan ke «Manajemen sistem → Integrasi».
+
+### 📚 Perpustakaan dan lintasan
+Blok «Buku» (EPUB/FB2/DJVU) dengan penampil dan dukungan di obrolan Niki telah ditambahkan. Di akun pribadi muncul tab «Lintasan» dengan audiens, tugas, dan acara.
+
+---
+
+## MS (Bahasa Melayu)
+
+## ✨ Sorotan dalam keluaran ini
+
+### 🔐 Pemilihan LMS dan log masuk yang dipertingkat
+Pemilihan LMS semasa log masuk dan pendaftaran kini lebih jelas: nama dipaparkan, pilihan terakhir diingati dan amaran ditunjukkan. Dialog «Lupa kata laluan» kini mempunyai pengesahan dan pemilihan LMS, dan penolakan set semula kelihatan kepada pengguna.
+
+### 📝 Tinjauan, ujian dan semakan jawapan
+Tinjauan dibuka terus dengan soalan dan bukan pada kad katalog yang sempit. Dalam «Semakan jawapan» ditambah penapis mengikut pekerja dan ujian/tugasan, dan jawapan soalan terbuka tidak lagi hilang tanpa penyemak.
+
+### 📊 Laporan dan eksport
+Eksport ke Excel tidak lagi memotong teks soalan. Pepijat dalam laporan Assessment360 telah diperbaiki, termasuk ranap ReportsView.sql dan paparan peranan serta soalan dalam laporan.
+
+### 🎁 Hadiah, petunjuk dan integrasi
+Tab «Hadiah» kini mempunyai peraturan pemberian hadiah untuk ulasan. Blok arahan ditambah pada skrin «Pemindahan data». Integrasi 1C, LDAP dan Bitrix24 REST, serta integrasi CharlieHR, ditambah ke «Pengurusan sistem → Integrasi».
+
+### 📚 Perpustakaan dan trajektori
+Blok «Buku» (EPUB/FB2/DJVU) dengan pemapar dan sokongan dalam sembang Niki telah ditambah. Dalam akaun peribadi muncul tab «Trajektori» dengan audiens, tugasan dan acara.
+
+---
+
+## TH (ไทย)
+
+## ✨ ไฮไลต์ของรีลีสนี้
+
+### 🔐 การเลือก LMS และการเข้าสู่ระบบที่ดีขึ้น
+การเลือก LMS ขณะเข้าสู่ระบบและลงทะเบียนชัดเจนขึ้น: แสดงชื่อ จำตัวเลือกครั้งล่าสุด และแสดงคำเตือน กล่อง «ลืมรหัสผ่าน» มีการยืนยันและการเลือก LMS และการปฏิเสธการรีเซ็ตมองเห็นได้โดยผู้ใช้
+
+### 📝 แบบสอบถาม แบบทดสอบ และการตรวจทานคำตอบ
+แบบสอบถามเปิดพร้อมคำถามโดยตรง แทนที่จะเป็นบนการ์ดแค็ตตาล็อกที่แคบ ใน «การตรวจทานคำตอบ» มีการเพิ่มตัวกรองตามพนักงานและแบบทดสอบ/งาน และคำตอบของคำถามปลายเปิดไม่สูญหายเมื่อไม่มีผู้ตรวจ
+
+### 📊 รายงานและการส่งออก
+การส่งออกเป็น Excel ไม่ตัดข้อความคำถามอีกต่อไป แก้ไขข้อบกพร่องในรายงาน Assessment360 รวมถึง ReportsView.sql ล่ม และการแสดงบทบาทและคำถามในรายงาน
+
+### 🎁 ของขวัญ คำแนะนำ และการเชื่อมต่อ
+แท็บ «ของขวัญ» มีกฎการมอบของขวัญเพื่อแลกกับรีวิว เพิ่มบล็อกคำแนะนำในหน้าจอ «การถ่ายโอนข้อมูล» เพิ่มการเชื่อมต่อ 1C, LDAP และ Bitrix24 REST รวมถึงการเชื่อมต่อ CharlieHR ใน «การจัดการระบบ → การเชื่อมต่อ»
+
+### 📚 ห้องสมุดและเส้นทาง
+เพิ่มบล็อก «หนังสือ» (EPUB/FB2/DJVU) พร้อมตัวอ่านและการรองรับในแชตของ Niki ในบัญชีส่วนตัวมีแท็บ «เส้นทาง» พร้อมกลุ่มเป้าหมาย งาน และกิจกรรม
