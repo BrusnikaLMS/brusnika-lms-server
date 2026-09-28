@@ -1,0 +1,306 @@
+## RU (Русский)
+
+## ✨ Главное в этом релизе
+
+### 📊 Отчёты и автоматические отчёты
+Добавлены «Автоматические отчёты» с расписаниями, вкладками «Таблица / Запланированные отчёты / Архив» и пагинацией архива. В «Что проседает» появились пересдачи и процент ошибок в тестах, проблемный модуль больше не показывает модуль на 100% и выводит прочерк вместо пустой ячейки. Исправлены названия курсов, иконки и сброс таблицы при смене вида отчёта.
+
+### 📝 Оценка 360
+Проведён редизайн экранов модератора и мастера создания: степпер, вкладки-подчёркивания, список строками, фильтр по состоянию. Черновик теперь один и серверный, оценки каждого оценивающего доезжают до PDF и видны у неанонимных кампаний. Задачи Битрикса корректно снимаются при удалении оценки.
+
+### 📚 Курсы, тесты и SCORM
+Завершение курса из SCORM уводит в программу, повторные события не дублируют строку курса, а пакет с тестом после сдачи больше не держит ученика. В быстром создании теста появилась подсказка «отметьте верный ответ», добавлена защита от копирования с водяным знаком.
+
+### 🏢 Портал, вход и внешние ЛМС
+Вход через Битрикс24 по ссылке из задачи и «с телефона», из «ЛМС не отвечает» можно войти заново, а затянувшаяся загрузка показывает этап прямо на экране. Появились учебные группы без привязки к Битриксу, карточка внешней ЛМС и экран «Мобильное приложение» с QR-кодом.
+
+### 🔔 Уведомления и прочее
+Рассылка уважает «Настройку уведомлений» и не дублируется по модулям, баннер push корректно закрывается по тапу «Включить». Вкладка «Заказы» переименована в «Заказы и документы», а в Zoho People скрыты лишние пункты меню.
+
+---
+
+## EN (English)
+
+## ✨ Highlights of this release
+
+### 📊 Reports and automated reports
+Added "Automated reports" with schedules, "Table / Scheduled reports / Archive" tabs and archive pagination. "What's lagging" now shows retakes and test error percentage, the problematic module no longer displays a module at 100% and shows a dash instead of an empty cell. Fixed course names, icons and table reset when switching report views.
+
+### 📝 Assessment 360
+Redesigned the moderator and creation wizard screens: stepper, underline tabs, row-based list, state filter. The draft is now single and server-side, each reviewer's scores reach the PDF and are visible for non-anonymous campaigns. Bitrix tasks are correctly removed when an assessment is deleted.
+
+### 📚 Courses, tests and SCORM
+Completing a course from SCORM leads to the program, repeated events no longer duplicate the course row, and a test package after submission no longer keeps the student. Quick test creation now has a "mark the correct answer" hint, and copy protection with a watermark was added.
+
+### 🏢 Portal, login and external LMS
+Login via Bitrix24 from a task link and "from phone", you can log in again from "LMS not responding", and a long load shows the stage right on the screen. Added study groups without Bitrix binding, an external LMS card and a "Mobile app" screen with a QR code.
+
+### 🔔 Notifications and more
+Mailings respect "Notification settings" and are not duplicated across modules, the push banner correctly closes on the "Enable" tap. The "Orders" tab was renamed to "Orders and documents", and extra menu items are hidden in Zoho People.
+
+---
+
+## UA (Українська)
+
+## ✨ Головне в цьому релізі
+
+### 📊 Звіти та автоматичні звіти
+Додано «Автоматичні звіти» з розкладами, вкладками «Таблиця / Заплановані звіти / Архів» і пагінацією архіву. У «Що просідає» з'явилися перескладання та відсоток помилок у тестах, проблемний модуль більше не показує модуль на 100% і виводить прочерк замість порожньої клітинки. Виправлено назви курсів, іконки та скидання таблиці при зміні виду звіту.
+
+### 📝 Оцінювання 360
+Проведено редизайн екранів модератора та майстра створення: степпер, вкладки-підкреслення, список рядками, фільтр за станом. Чернетка тепер одна й серверна, оцінки кожного оцінювача доходять до PDF і видимі в неанонімних кампаніях. Завдання Бітрікса коректно знімаються при видаленні оцінки.
+
+### 📚 Курси, тести та SCORM
+Завершення курсу зі SCORM веде до програми, повторні події не дублюють рядок курсу, а пакет із тестом після складання більше не тримає учня. У швидкому створенні тесту з'явилася підказка «позначте правильну відповідь», додано захист від копіювання з водяним знаком.
+
+### 🏢 Портал, вхід і зовнішні ЛМС
+Вхід через Бітрікс24 за посиланням із завдання та «з телефону», з «ЛМС не відповідає» можна увійти знову, а затяжне завантаження показує етап прямо на екрані. З'явилися навчальні групи без прив'язки до Бітрікса, картка зовнішньої ЛМС і екран «Мобільний застосунок» із QR-кодом.
+
+### 🔔 Сповіщення та інше
+Розсилка поважає «Налаштування сповіщень» і не дублюється за модулями, банер push коректно закривається за тапом «Увімкнути». Вкладку «Замовлення» перейменовано на «Замовлення та документи», а в Zoho People приховано зайві пункти меню.
+
+---
+
+## FR (Français)
+
+## ✨ Points forts de cette version
+
+### 📊 Rapports et rapports automatiques
+Ajout des « Rapports automatiques » avec planifications, onglets « Tableau / Rapports planifiés / Archive » et pagination de l'archive. « Ce qui décroche » affiche désormais les reprises et le pourcentage d'erreurs aux tests, le module problématique n'affiche plus un module à 100 % et montre un tiret au lieu d'une cellule vide. Correction des noms de cours, des icônes et de la réinitialisation du tableau lors du changement de vue.
+
+### 📝 Évaluation 360
+Refonte des écrans du modérateur et de l'assistant de création : stepper, onglets soulignés, liste en lignes, filtre par état. Le brouillon est désormais unique et côté serveur, les notes de chaque évaluateur parviennent au PDF et sont visibles pour les campagnes non anonymes. Les tâches Bitrix sont correctement retirées lors de la suppression d'une évaluation.
+
+### 📚 Cours, tests et SCORM
+Terminer un cours depuis SCORM mène au programme, les événements répétés ne dupliquent plus la ligne du cours, et un paquet de test après soumission ne retient plus l'élève. La création rapide de test propose désormais l'indication « marquez la bonne réponse », et une protection contre la copie avec filigrane a été ajoutée.
+
+### 🏢 Portail, connexion et LMS externes
+Connexion via Bitrix24 depuis un lien de tâche et « depuis le téléphone », reconnexion possible depuis « LMS ne répond pas », et un chargement prolongé affiche l'étape directement à l'écran. Ajout de groupes d'étude sans lien avec Bitrix, d'une fiche LMS externe et d'un écran « Application mobile » avec QR code.
+
+### 🔔 Notifications et divers
+Les envois respectent les « Paramètres de notification » et ne sont plus dupliqués par module, la bannière push se ferme correctement au tap « Activer ». L'onglet « Commandes » est renommé « Commandes et documents », et des éléments de menu superflus sont masqués dans Zoho People.
+
+---
+
+## IT (Italiano)
+
+## ✨ In evidenza in questa versione
+
+### 📊 Report e report automatici
+Aggiunti i «Report automatici» con pianificazioni, schede «Tabella / Report pianificati / Archivio» e paginazione dell'archivio. «Cosa è in calo» ora mostra ripetizioni e percentuale di errori nei test, il modulo problematico non mostra più un modulo al 100% e visualizza un trattino al posto di una cella vuota. Corretti nomi dei corsi, icone e reset della tabella al cambio di vista.
+
+### 📝 Valutazione 360
+Ridisegnate le schermate del moderatore e della procedura di creazione: stepper, schede con sottolineatura, elenco a righe, filtro per stato. La bozza ora è unica e lato server, i punteggi di ogni valutatore arrivano al PDF e sono visibili per le campagne non anonime. Le attività Bitrix vengono rimosse correttamente all'eliminazione di una valutazione.
+
+### 📚 Corsi, test e SCORM
+Completare un corso da SCORM porta al programma, gli eventi ripetuti non duplicano più la riga del corso e un pacchetto di test dopo la consegna non trattiene più lo studente. La creazione rapida dei test ora ha il suggerimento «segna la risposta corretta» ed è stata aggiunta la protezione dalla copia con filigrana.
+
+### 🏢 Portale, accesso e LMS esterni
+Accesso tramite Bitrix24 da un link di attività e «dal telefono», nuovo accesso da «LMS non risponde» e un caricamento prolungato mostra la fase direttamente sullo schermo. Aggiunti gruppi di studio senza legame con Bitrix, la scheda di un LMS esterno e la schermata «App mobile» con QR code.
+
+### 🔔 Notifiche e altro
+Gli invii rispettano le «Impostazioni notifiche» e non vengono duplicati per modulo, il banner push si chiude correttamente al tap «Attiva». La scheda «Ordini» è stata rinominata «Ordini e documenti» e in Zoho People sono nascoste voci di menu superflue.
+
+---
+
+## DE (Deutsch)
+
+## ✨ Highlights dieser Version
+
+### 📊 Berichte und automatische Berichte
+„Automatische Berichte" mit Zeitplänen, Tabs „Tabelle / Geplante Berichte / Archiv" und Archiv-Paginierung hinzugefügt. „Was schwächelt" zeigt jetzt Wiederholungen und Fehlerquote in Tests, das problematische Modul zeigt kein Modul mehr bei 100 % und statt einer leeren Zelle einen Gedankenstrich. Kursnamen, Symbole und das Zurücksetzen der Tabelle beim Ansichtswechsel wurden korrigiert.
+
+### 📝 Bewertung 360
+Die Bildschirme von Moderator und Erstellungsassistent wurden neu gestaltet: Stepper, Unterstrich-Tabs, Listenzeilen, Statusfilter. Der Entwurf ist jetzt einheitlich und serverseitig, die Bewertungen jedes Bewerters erreichen das PDF und sind bei nicht anonymen Kampagnen sichtbar. Bitrix-Aufgaben werden beim Löschen einer Bewertung korrekt entfernt.
+
+### 📚 Kurse, Tests und SCORM
+Der Abschluss eines Kurses aus SCORM führt zum Programm, wiederholte Ereignisse duplizieren die Kurszeile nicht mehr, und ein Testpaket hält den Lernenden nach der Abgabe nicht mehr fest. Bei der schnellen Testerstellung gibt es jetzt den Hinweis „richtige Antwort markieren", und ein Kopierschutz mit Wasserzeichen wurde hinzugefügt.
+
+### 🏢 Portal, Anmeldung und externe LMS
+Anmeldung über Bitrix24 per Aufgabenlink und „vom Telefon", erneute Anmeldung aus „LMS antwortet nicht", und ein langes Laden zeigt die Phase direkt auf dem Bildschirm. Hinzugefügt wurden Lerngruppen ohne Bitrix-Bindung, eine Karte für externe LMS und ein Bildschirm „Mobile App" mit QR-Code.
+
+### 🔔 Benachrichtigungen und mehr
+Aussendungen beachten die „Benachrichtigungseinstellungen" und werden nicht pro Modul dupliziert, das Push-Banner schließt korrekt beim Tippen auf „Aktivieren". Der Tab „Bestellungen" wurde in „Bestellungen und Dokumente" umbenannt, und in Zoho People sind überflüssige Menüpunkte ausgeblendet.
+
+---
+
+## TR (Türkçe)
+
+## ✨ Bu sürümde öne çıkanlar
+
+### 📊 Raporlar ve otomatik raporlar
+Zamanlamalar, «Tablo / Planlanmış raporlar / Arşiv» sekmeleri ve arşiv sayfalaması ile «Otomatik raporlar» eklendi. «Nerede zayıf» artık tekrar sınavları ve test hata yüzdesini gösteriyor, sorunlu modül artık %100'de bir modül göstermiyor ve boş hücre yerine tire çıkarıyor. Ders adları, simgeler ve rapor görünümü değişince tablonun sıfırlanması düzeltildi.
+
+### 📝 Değerlendirme 360
+Moderatör ve oluşturma sihirbazı ekranları yeniden tasarlandı: adım göstergesi, alt çizgili sekmeler, satır listesi, duruma göre filtre. Taslak artık tek ve sunucu tarafında, her değerlendiricinin puanları PDF'e ulaşıyor ve anonim olmayan kampanyalarda görünüyor. Bir değerlendirme silindiğinde Bitrix görevleri doğru şekilde kaldırılıyor.
+
+### 📚 Dersler, testler ve SCORM
+SCORM'dan ders tamamlama programa yönlendiriyor, tekrarlanan olaylar ders satırını çoğaltmıyor ve teslimden sonra test paketi öğrenciyi tutmuyor. Hızlı test oluşturmada «doğru cevabı işaretleyin» ipucu eklendi ve filigranlı kopyalama koruması getirildi.
+
+### 🏢 Portal, giriş ve harici LMS
+Görev bağlantısından Bitrix24 ile giriş ve «telefondan», «LMS yanıt vermiyor» ekranından yeniden giriş, uzun süren yükleme aşamayı doğrudan ekranda gösteriyor. Bitrix'e bağlı olmayan çalışma grupları, harici LMS kartı ve QR kodlu «Mobil uygulama» ekranı eklendi.
+
+### 🔔 Bildirimler ve diğerleri
+Gönderimler «Bildirim ayarlarına» uyuyor ve modüller arasında çoğaltılmıyor, push banner «Etkinleştir» dokunuşuyla doğru kapanıyor. «Siparişler» sekmesi «Siparişler ve belgeler» olarak yeniden adlandırıldı ve Zoho People'da gereksiz menü öğeleri gizlendi.
+
+---
+
+## PL (Polski)
+
+## ✨ Najważniejsze w tym wydaniu
+
+### 📊 Raporty i raporty automatyczne
+Dodano „Raporty automatyczne" z harmonogramami, zakładkami „Tabela / Zaplanowane raporty / Archiwum" i paginacją archiwum. „Co kuleje" pokazuje teraz poprawki i procent błędów w testach, problematyczny moduł nie pokazuje już modułu na 100% i wyświetla myślnik zamiast pustej komórki. Poprawiono nazwy kursów, ikony i reset tabeli przy zmianie widoku raportu.
+
+### 📝 Ocena 360
+Przeprojektowano ekrany moderatora i kreatora tworzenia: stepper, zakładki z podkreśleniem, lista wierszami, filtr według stanu. Wersja robocza jest teraz jedna i po stronie serwera, oceny każdego oceniającego trafiają do PDF i są widoczne w nieanonimowych kampaniach. Zadania Bitrix są poprawnie usuwane przy usunięciu oceny.
+
+### 📚 Kursy, testy i SCORM
+Ukończenie kursu z SCORM prowadzi do programu, powtarzające się zdarzenia nie duplikują już wiersza kursu, a pakiet z testem po oddaniu nie zatrzymuje ucznia. W szybkim tworzeniu testu pojawiła się podpowiedź „zaznacz poprawną odpowiedź" oraz dodano ochronę przed kopiowaniem ze znakiem wodnym.
+
+### 🏢 Portal, logowanie i zewnętrzne LMS
+Logowanie przez Bitrix24 z linku w zadaniu i „z telefonu", ponowne logowanie z „LMS nie odpowiada", a długie ładowanie pokazuje etap bezpośrednio na ekranie. Dodano grupy szkoleniowe bez powiązania z Bitrixem, kartę zewnętrznego LMS i ekran „Aplikacja mobilna" z kodem QR.
+
+### 🔔 Powiadomienia i inne
+Wysyłki respektują „Ustawienia powiadomień" i nie są duplikowane między modułami, banner push zamyka się poprawnie po dotknięciu „Włącz". Zakładkę „Zamówienia" przemianowano na „Zamówienia i dokumenty", a w Zoho People ukryto zbędne pozycje menu.
+
+---
+
+## PT (Português)
+
+## ✨ Destaques desta versão
+
+### 📊 Relatórios e relatórios automáticos
+Adicionados os «Relatórios automáticos» com agendamentos, abas «Tabela / Relatórios agendados / Arquivo» e paginação do arquivo. «O que está fraco» agora mostra refazimentos e percentual de erros nos testes, o módulo problemático não exibe mais um módulo em 100% e mostra um traço em vez de célula vazia. Corrigidos nomes de cursos, ícones e redefinição da tabela ao trocar a visualização.
+
+### 📝 Avaliação 360
+Redesenhadas as telas do moderador e do assistente de criação: stepper, abas com sublinhado, lista em linhas, filtro por estado. O rascunho agora é único e no servidor, as notas de cada avaliador chegam ao PDF e ficam visíveis em campanhas não anônimas. As tarefas do Bitrix são removidas corretamente ao excluir uma avaliação.
+
+### 📚 Cursos, testes e SCORM
+Concluir um curso pelo SCORM leva ao programa, eventos repetidos não duplicam mais a linha do curso, e um pacote de teste após a entrega não retém mais o aluno. A criação rápida de teste agora tem a dica «marque a resposta correta», e foi adicionada proteção contra cópia com marca d'água.
+
+### 🏢 Portal, login e LMS externos
+Login via Bitrix24 por link de tarefa e «pelo telefone», novo login a partir de «LMS não responde», e um carregamento demorado mostra a etapa direto na tela. Adicionados grupos de estudo sem vínculo com o Bitrix, o cartão de LMS externo e a tela «Aplicativo móvel» com QR code.
+
+### 🔔 Notificações e mais
+Os envios respeitam as «Configurações de notificação» e não são duplicados por módulo, o banner de push fecha corretamente ao tocar em «Ativar». A aba «Pedidos» foi renomeada para «Pedidos e documentos», e itens de menu desnecessários foram ocultados no Zoho People.
+
+---
+
+## ES (Español)
+
+## ✨ Lo más destacado de esta versión
+
+### 📊 Informes e informes automáticos
+Se añadieron los «Informes automáticos» con programaciones, pestañas «Tabla / Informes programados / Archivo» y paginación del archivo. «Qué flojea» ahora muestra repeticiones y porcentaje de errores en los tests, el módulo problemático ya no muestra un módulo al 100% y muestra un guion en lugar de una celda vacía. Corregidos nombres de cursos, iconos y el reinicio de la tabla al cambiar de vista.
+
+### 📝 Evaluación 360
+Se rediseñaron las pantallas del moderador y del asistente de creación: stepper, pestañas con subrayado, lista por filas, filtro por estado. El borrador ahora es único y del lado del servidor, las puntuaciones de cada evaluador llegan al PDF y son visibles en campañas no anónimas. Las tareas de Bitrix se eliminan correctamente al borrar una evaluación.
+
+### 📚 Cursos, tests y SCORM
+Completar un curso desde SCORM lleva al programa, los eventos repetidos ya no duplican la fila del curso, y un paquete de test tras la entrega ya no retiene al alumno. La creación rápida de tests ahora tiene la sugerencia «marca la respuesta correcta», y se añadió protección contra copia con marca de agua.
+
+### 🏢 Portal, inicio de sesión y LMS externos
+Inicio de sesión vía Bitrix24 desde un enlace de tarea y «desde el teléfono», nuevo inicio desde «LMS no responde», y una carga prolongada muestra la etapa directamente en pantalla. Se añadieron grupos de estudio sin vínculo con Bitrix, la ficha de LMS externo y la pantalla «App móvil» con código QR.
+
+### 🔔 Notificaciones y más
+Los envíos respetan la «Configuración de notificaciones» y no se duplican por módulo, el banner push se cierra correctamente al tocar «Activar». La pestaña «Pedidos» se renombró a «Pedidos y documentos», y en Zoho People se ocultaron elementos de menú innecesarios.
+
+---
+
+## VN (Tiếng Việt)
+
+## ✨ Điểm nổi bật trong bản phát hành này
+
+### 📊 Báo cáo và báo cáo tự động
+Đã thêm «Báo cáo tự động» với lịch trình, các tab «Bảng / Báo cáo đã lên lịch / Lưu trữ» và phân trang lưu trữ. «Điều gì đang yếu» giờ hiển thị số lần thi lại và tỷ lệ lỗi trong bài kiểm tra, mô-đun có vấn đề không còn hiển thị mô-đun ở 100% và hiện dấu gạch thay vì ô trống. Đã sửa tên khóa học, biểu tượng và việc đặt lại bảng khi đổi chế độ xem.
+
+### 📝 Đánh giá 360
+Đã thiết kế lại màn hình của người kiểm duyệt và trình hướng dẫn tạo: thanh bước, tab gạch chân, danh sách theo dòng, lọc theo trạng thái. Bản nháp giờ là một và ở phía máy chủ, điểm của từng người đánh giá đến được PDF và hiển thị với chiến dịch không ẩn danh. Nhiệm vụ Bitrix được gỡ bỏ đúng cách khi xóa đánh giá.
+
+### 📚 Khóa học, bài kiểm tra và SCORM
+Hoàn thành khóa học từ SCORM dẫn đến chương trình, sự kiện lặp lại không còn nhân đôi dòng khóa học, và gói bài kiểm tra sau khi nộp không còn giữ học viên. Tạo bài kiểm tra nhanh giờ có gợi ý «đánh dấu câu trả lời đúng», và đã thêm chống sao chép với hình mờ.
+
+### 🏢 Cổng thông tin, đăng nhập và LMS bên ngoài
+Đăng nhập qua Bitrix24 từ liên kết nhiệm vụ và «từ điện thoại», đăng nhập lại từ «LMS không phản hồi», và quá trình tải lâu hiển thị giai đoạn ngay trên màn hình. Đã thêm nhóm học tập không gắn với Bitrix, thẻ LMS bên ngoài và màn hình «Ứng dụng di động» với mã QR.
+
+### 🔔 Thông báo và khác
+Việc gửi tuân thủ «Cài đặt thông báo» và không bị nhân đôi theo mô-đun, banner push đóng đúng khi nhấn «Bật». Tab «Đơn hàng» được đổi tên thành «Đơn hàng và tài liệu», và các mục menu thừa được ẩn trong Zoho People.
+
+---
+
+## ZH (中文)
+
+## ✨ 本次发布亮点
+
+### 📊 报告与自动报告
+新增「自动报告」，支持计划、「表格 / 计划报告 / 归档」标签页以及归档分页。「薄弱环节」现在显示重考次数和测试错误百分比，问题模块不再显示 100% 的模块，并在空单元格处显示破折号。修复了课程名称、图标以及切换报告视图时表格的重置。
+
+### 📝 360 度评估
+重新设计了审核者和创建向导界面：步骤条、下划线标签页、行式列表、按状态筛选。草稿现在只有一个且保存在服务器端，每位评估者的评分都能进入 PDF，并在非匿名活动中可见。删除评估时 Bitrix 任务会被正确移除。
+
+### 📚 课程、测试与 SCORM
+从 SCORM 完成课程会跳转到课程计划，重复事件不再重复写入课程记录，提交后的测试包也不再卡住学员。快速创建测试新增了「标记正确答案」提示，并加入了带水印的防复制保护。
+
+### 🏢 门户、登录与外部 LMS
+支持通过任务链接和「从手机」使用 Bitrix24 登录，从「LMS 无响应」可重新登录，长时间加载会直接在屏幕上显示当前阶段。新增了不绑定 Bitrix 的学习小组、外部 LMS 卡片以及带二维码的「移动应用」界面。
+
+### 🔔 通知及其他
+群发会遵循「通知设置」，不再按模块重复发送，推送横幅在点击「启用」后正确关闭。「订单」标签页更名为「订单与文档」，并在 Zoho People 中隐藏了多余菜单项。
+
+---
+
+## JA (日本語)
+
+## ✨ 今回のリリースのハイライト
+
+### 📊 レポートと自動レポート
+スケジュール、「テーブル / スケジュール済みレポート / アーカイブ」タブ、アーカイブのページネーションを備えた「自動レポート」を追加しました。「どこが弱いか」で再受験とテストの誤答率が表示され、問題モジュールは 100% のモジュールを表示しなくなり、空セルの代わりにダッシュを表示します。コース名、アイコン、レポート表示切替時のテーブルリセットを修正しました。
+
+### 📝 360 度評価
+モデレーター画面と作成ウィザードを再設計しました：ステッパー、下線タブ、行リスト、状態フィルター。下書きは単一のサーバー側になり、各評価者のスコアが PDF に反映され、非匿名キャンペーンで表示されます。評価を削除すると Bitrix のタスクが正しく解除されます。
+
+### 📚 コース、テスト、SCORM
+SCORM からのコース完了はプログラムへ遷移し、重複イベントがコース行を重複させなくなり、提出後のテストパッケージが受講者を引き止めなくなりました。テストのクイック作成に「正しい回答にチェック」のヒントを追加し、透かし入りのコピー防止を実装しました。
+
+### 🏢 ポータル、ログイン、外部 LMS
+タスクのリンクからの Bitrix24 ログインと「スマホから」、『LMS が応答しません』からの再ログイン、長時間の読み込みで段階を画面に直接表示します。Bitrix に紐づかない学習グループ、外部 LMS カード、QR コード付きの「モバイルアプリ」画面を追加しました。
+
+### 🔔 通知など
+配信は「通知設定」に従い、モジュール間で重複しなくなり、プッシュバナーは「有効にする」タップで正しく閉じます。「注文」タブは「注文と書類」に改名され、Zoho People では不要なメニュー項目が非表示になりました。
+
+---
+
+## KZ (Қазақша)
+
+## ✨ Осы шығарылымдағы басты жаңалықтар
+
+### 📊 Есептер және автоматты есептер
+Кестелері, «Кесте / Жоспарланған есептер / Мұрағат» қойындылары және мұрағат беттелуі бар «Автоматты есептер» қосылды. «Не әлсіз» бөлімінде қайта тапсырулар мен тест қателерінің пайызы көрсетіледі, проблемалық модуль енді 100% модульді көрсетпейді және бос ұяшықтың орнына сызықша шығарады. Курс атаулары, белгішелер және есеп түрін ауыстырғанда кестенің қалпына келуі түзетілді.
+
+### 📝 360 бағалау
+Модератор және құру шебері экрандары қайта жасалды: степпер, асты сызылған қойындылар, жолдар тізімі, күйі бойынша сүзгі. Жоба енді біреу және серверлік, әр бағалаушының бағалары PDF-ке жетеді және анонимді емес науқандарда көрінеді. Бағаны жойғанда Bitrix тапсырмалары дұрыс алынады.
+
+### 📚 Курстар, тесттер және SCORM
+SCORM-нан курсты аяқтау бағдарламаға әкеледі, қайталанатын оқиғалар курс жолын қайталамайды, ал тапсырылғаннан кейінгі тест пакеті оқушыны ұстап қалмайды. Тестті жылдам құруда «дұрыс жауапты белгілеңіз» кеңесі пайда болды, су таңбасы бар көшіруден қорғау қосылды.
+
+### 🏢 Портал, кіру және сыртқы LMS
+Тапсырма сілтемесінен Bitrix24 арқылы кіру және «телефоннан», «LMS жауап бермейді» экранынан қайта кіру, ал ұзақ жүктелу кезеңді тікелей экранда көрсетеді. Bitrix-ке байланбаған оқу топтары, сыртқы LMS картасы және QR коды бар «Мобильді қолданба» экраны қосылды.
+
+### 🔔 Хабарламалар және басқалары
+Жіберілімдер «Хабарлама параметрлерін» сақтайды және модульдер бойынша қайталанбайды, push баннері «Қосу» түртуімен дұрыс жабылады. «Тапсырыстар» қойындысы «Тапсырыстар мен құжаттар» болып өзгертілді, ал Zoho People-де артық мәзір элементтері жасырылды.
+
+---
+
+## AR (العربية)
+
+## ✨ أبرز ما في هذا الإصدار
+
+### 📊 التقارير والتقارير التلقائية
+تمت إضافة «التقارير التلقائية» مع الجداول الزمنية وتبويبات «الجدول / التقارير المجدولة / الأرشيف» وترقيم صفحات الأرشيف. يعرض «ما هو ضعيف» الآن إعادات الاختبار ونسبة الأخطاء في الاختبارات، ولم يعد الوحدة الإشكالية يعرض وحدة بنسبة 100% ويظهر شرطة بدل الخلية الفارغة. تم إصلاح أسماء الدورات والأيقونات وإعادة تعيين الجدول عند تغيير عرض التقرير.
+
+### 📝 تقييم 360
+أُعيد تصميم شاشات المشرف ومعالج الإنشاء: شريط الخطوات، تبويبات بخط سفلي، قائمة بصفوف، تصفية حسب الحالة. أصبحت المسودة واحدة وعلى الخادم، وتصل درجات كل مُقيِّم إلى ملف PDF وتظهر في الحملات غير المجهولة. تُزال مهام Bitrix بشكل صحيح عند حذف التقييم.
+
+### 📚 الدورات والاختبارات وSCORM
+إكمال الدورة من SCORM يؤدي إلى البرنامج، ولم تعد الأحداث المتكر
