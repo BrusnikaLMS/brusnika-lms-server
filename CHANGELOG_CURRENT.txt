@@ -1,0 +1,249 @@
+## RU (Русский)
+## ✨ Главное в этом релизе
+
+### 📧 Email-уведомления на серверной ЛМС
+Уведомления по электронной почте теперь корректно работают в серверной версии ЛМС.
+
+### 📁 Выбор папки при назначении материалов
+В диалоге выбора материалов появилась возможность выбрать папку — при этом назначается всё её поддерево.
+
+### 🐞 Исправлена «Отладка»
+Режим «Отладка» теперь использует имя портала из реестра, а не введённую вручную строку.
+
+---
+
+## EN (English)
+## ✨ Highlights of this release
+
+### 📧 Email notifications on Server LMS
+Email notifications now work correctly in the Server Edition of the LMS.
+
+### 📁 Folder selection when assigning materials
+The material selection dialog now lets you pick a folder — the entire subtree is assigned along with it.
+
+### 🐞 "Debug" fixed
+The "Debug" mode now uses the portal name from the registry instead of the manually typed string.
+
+---
+
+## UA (Українська)
+## ✨ Головне в цьому релізі
+
+### 📧 Email-сповіщення на серверній ЛМС
+Сповіщення електронною поштою тепер коректно працюють у серверній версії ЛМС.
+
+### 📁 Вибір папки під час призначення матеріалів
+У діалозі вибору матеріалів з'явилася можливість вибрати папку — при цьому призначається все її піддерево.
+
+### 🐞 Виправлено «Налагодження»
+Режим «Налагодження» тепер використовує назву порталу з реєстру, а не введений вручну рядок.
+
+---
+
+## FR (Français)
+## ✨ Points clés de cette version
+
+### 📧 Notifications par e-mail sur le LMS Serveur
+Les notifications par e-mail fonctionnent désormais correctement dans l'édition Serveur du LMS.
+
+### 📁 Sélection de dossier lors de l'attribution de matériels
+La boîte de dialogue de sélection des matériels permet désormais de choisir un dossier — tout son sous-arbre est attribué avec lui.
+
+### 🐞 Correction du « Débogage »
+Le mode « Débogage » utilise désormais le nom du portail issu du registre, et non la chaîne saisie manuellement.
+
+---
+
+## IT (Italiano)
+## ✨ Punti salienti di questa release
+
+### 📧 Notifiche email sul LMS Server
+Le notifiche email ora funzionano correttamente nell'edizione Server del LMS.
+
+### 📁 Selezione della cartella durante l'assegnazione dei materiali
+La finestra di selezione dei materiali ora consente di scegliere una cartella — viene assegnato l'intero sottoalbero.
+
+### 🐞 Corretto il «Debug»
+La modalità «Debug» ora utilizza il nome del portale dal registro invece della stringa digitata manualmente.
+
+---
+
+## DE (Deutsch)
+## ✨ Highlights dieses Releases
+
+### 📧 E-Mail-Benachrichtigungen im Server-LMS
+E-Mail-Benachrichtigungen funktionieren jetzt korrekt in der Server-Edition des LMS.
+
+### 📁 Ordnerauswahl bei der Materialzuweisung
+Im Dialog zur Materialauswahl kann nun ein Ordner gewählt werden — der gesamte Unterbaum wird mit zugewiesen.
+
+### 🐞 „Debug" korrigiert
+Der Modus „Debug" verwendet jetzt den Portalsnamen aus der Registry statt der manuell eingegebenen Zeichenfolge.
+
+---
+
+## TR (Türkçe)
+## ✨ Bu sürümdeki öne çıkanlar
+
+### 📧 Sunucu LMS'te e-posta bildirimleri
+E-posta bildirimleri artık LMS'in Sunucu sürümünde doğru şekilde çalışıyor.
+
+### 📁 Materyal atarken klasör seçimi
+Materyal seçim penceresi artık bir klasör seçmenize olanak tanıyor — tüm alt ağaç da atanır.
+
+### 🐞 "Hata Ayıklama" düzeltildi
+"Hata Ayıklama" modu artık elle yazılan dize yerine kayıt defterindeki portal adını kullanıyor.
+
+---
+
+## PL (Polski)
+## ✨ Najważniejsze w tym wydaniu
+
+### 📧 Powiadomienia e-mail w serwerowym LMS
+Powiadomienia e-mail działają teraz poprawnie w wersji serwerowej LMS.
+
+### 📁 Wybór folderu przy przypisywaniu materiałów
+W oknie wyboru materiałów można teraz wybrać folder — przypisywane jest całe jego poddrzewo.
+
+### 🐞 Poprawiono „Debugowanie"
+Tryb „Debugowanie" używa teraz nazwy portalu z rejestru, a nie ręcznie wpisanego ciągu.
+
+---
+
+## PT (Português)
+## ✨ Destaques desta versão
+
+### 📧 Notificações por e-mail no LMS Servidor
+As notificações por e-mail agora funcionam corretamente na edição Servidor do LMS.
+
+### 📁 Seleção de pasta ao atribuir materiais
+A caixa de diálogo de seleção de materiais agora permite escolher uma pasta — toda a sua subárvore é atribuída junto.
+
+### 🐞 Correção da "Depuração"
+O modo "Depuração" agora usa o nome do portal do registro, em vez da string digitada manualmente.
+
+---
+
+## ES (Español)
+## ✨ Lo más destacado de esta versión
+
+### 📧 Notificaciones por correo en el LMS Servidor
+Las notificaciones por correo electrónico ahora funcionan correctamente en la edición Servidor del LMS.
+
+### 📁 Selección de carpeta al asignar materiales
+El diálogo de selección de materiales ahora permite elegir una carpeta — se asigna todo su subárbol.
+
+### 🐞 Corrección de «Depuración»
+El modo «Depuración» ahora usa el nombre del portal del registro en lugar de la cadena escrita manualmente.
+
+---
+
+## VN (Tiếng Việt)
+## ✨ Điểm nổi bật trong bản phát hành này
+
+### 📧 Thông báo email trên LMS Máy chủ
+Thông báo qua email giờ đây hoạt động chính xác trên phiên bản Máy chủ của LMS.
+
+### 📁 Chọn thư mục khi gán tài liệu
+Hộp thoại chọn tài liệu giờ đây cho phép chọn một thư mục — toàn bộ cây con của nó cũng được gán theo.
+
+### 🐞 Đã sửa «Gỡ lỗi»
+Chế độ «Gỡ lỗi» giờ đây sử dụng tên cổng từ sổ đăng ký thay vì chuỗi nhập thủ công.
+
+---
+
+## ZH (中文)
+## ✨ 本次发布亮点
+
+### 📧 服务器版 LMS 的邮件通知
+邮件通知现已在 LMS 服务器版中正常工作。
+
+### 📁 分配材料时选择文件夹
+材料选择对话框现在支持选择文件夹——其整个子树将一并被分配。
+
+### 🐞 修复“调试”
+“调试”模式现在使用注册表中的门户名称，而非手动输入的字符串。
+
+---
+
+## JA (日本語)
+## ✨ このリリースのハイライト
+
+### 📧 サーバー版LMSでのメール通知
+メール通知がサーバー版LMSで正しく動作するようになりました。
+
+### 📁 教材割り当て時のフォルダ選択
+教材選択ダイアログでフォルダを選択できるようになり、そのサブツリー全体が割り当てられます。
+
+### 🐞 「デバッグ」の修正
+「デバッグ」モードは、手入力した文字列ではなくレジストリのポータル名を使用するようになりました。
+
+---
+
+## KZ (Қазақша)
+## ✨ Осы релиздегі басты жаңалықтар
+
+### 📧 Серверлік LMS-те email хабарламалары
+Email хабарламалары енді LMS-тің серверлік нұсқасында дұрыс жұмыс істейді.
+
+### 📁 Материалдарды тағайындау кезінде қалтаны таңдау
+Материалдарды таңдау терезесінде қалтаны таңдау мүмкіндігі пайда болды — оның бүкіл ішкі тармағы бірге тағайындалады.
+
+### 🐞 «Жөндеу» түзетілді
+«Жөндеу» режимі енді қолмен терілген жолды емес, тізілімдегі портал атауын пайдаланады.
+
+---
+
+## AR (العربية)
+## ✨ أبرز ما في هذا الإصدار
+
+### 📧 إشعارات البريد الإلكتروني على نظام LMS الخادم
+تعمل إشعارات البريد الإلكتروني الآن بشكل صحيح في إصدار الخادم من نظام LMS.
+
+### 📁 اختيار المجلد عند إسناد المواد
+يتيح مربع حوار اختيار المواد الآن اختيار مجلد — ويتم إسناد شجرته الفرعية بالكامل معه.
+
+### 🐞 إصلاح «التصحيح»
+يستخدم وضع «التصحيح» الآن اسم البوابة من السجل بدلاً من النص المكتوب يدويًا.
+
+---
+
+## ID (Bahasa Indonesia)
+## ✨ Sorotan rilis ini
+
+### 📧 Notifikasi email di LMS Server
+Notifikasi email kini berfungsi dengan benar di edisi Server LMS.
+
+### 📁 Pemilihan folder saat menetapkan materi
+Dialog pemilihan materi kini memungkinkan Anda memilih folder — seluruh sub-pohonnya ikut ditetapkan.
+
+### 🐞 Perbaikan "Debug"
+Mode "Debug" kini menggunakan nama portal dari registri, bukan string yang diketik manual.
+
+---
+
+## MS (Bahasa Melayu)
+## ✨ Sorotan dalam keluaran ini
+
+### 📧 Pemberitahuan e-mel pada LMS Pelayan
+Pemberitahuan e-mel kini berfungsi dengan betul dalam edisi Pelayan LMS.
+
+### 📁 Pemilihan folder semasa menetapkan bahan
+Dialog pemilihan bahan kini membolehkan anda memilih folder — keseluruhan sub-pokoknya turut ditetapkan.
+
+### 🐞 Pembetulan "Nyahpepijat"
+Mod "Nyahpepijat" kini menggunakan nama portal daripada daftar, bukan rentetan yang ditaip secara manual.
+
+---
+
+## TH (ไทย)
+## ✨ ไฮไลต์ของรีลีสนี้
+
+### 📧 การแจ้งเตือนทางอีเมลบน LMS เวอร์ชันเซิร์ฟเวอร์
+การแจ้งเตือนทางอีเมลทำงานได้อย่างถูกต้องแล้วใน LMS เวอร์ชันเซิร์ฟเวอร์
+
+### 📁 การเลือกโฟลเดอร์เมื่อมอบหมายสื่อการเรียน
+กล่องโต้ตอบเลือกสื่อการเรียนตอนนี้ให้คุณเลือกโฟลเดอร์ได้ โดยจะมอบหมายทั้งทรีย่อยของโฟลเดอร์นั้นด้วย
+
+### 🐞 แก้ไข "ดีบัก"
+โหมด "ดีบัก" ตอนนี้ใช้ชื่อพอร์ทัลจากรีจิสทรีแทนสตริงที่พิมพ์ด้วยตนเอง
