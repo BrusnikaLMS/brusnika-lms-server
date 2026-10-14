@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "noEmit": true,
+    "paths": {
+      "@course-studio/player": ["../../packages/player/src/index.ts"],
+      "@course-studio/editor": ["../../packages/editor/src/index.ts"],
+      "@course-studio/scorm-export": ["../../packages/scorm-export/src/index.ts"]
+    }
+  },
+  "include": ["src"]
+}

@@ -1,0 +1,340 @@
+## RU (Русский)
+## ✨ Главное в этом релизе
+
+### 📝 Создание уроков
+Форма создания урока больше не создаёт дубли черновиков при повторном сохранении.
+
+### 📊 Отчёты
+Отчёт по тесту больше не зависает на битой попытке, а при сбое построения показывается сообщение об ошибке.
+
+### 🎯 Назначения программ
+Исправлена правка назначения программы: прошлая запись больше не попадает в DETAIL_TEXT. Истёкшее назначение теперь уходит в «Просроченные», а не пропадает у ученика.
+
+### 👥 Оценка 360
+«Руководитель» и «Подчинённые» теперь подбираются по структуре у всех оцениваемых.
+
+### 🔗 Внешние ЛМС
+Список «Внешние ЛМС» больше не обрезает профили на 500 — лимит увеличен до 5000.
+
+---
+## EN (English)
+## ✨ Highlights of this release
+
+### 📝 Lesson creation
+The lesson creation form no longer creates duplicate drafts when saving again.
+
+### 📊 Reports
+A test report no longer hangs on a broken attempt, and a build failure now shows an error message.
+
+### 🎯 Program assignments
+Fixed editing of a program assignment: the previous entry no longer ends up in DETAIL_TEXT. An expired assignment now moves to "Overdue" instead of disappearing from the student.
+
+### 👥 360 assessment
+"Manager" and "Subordinates" are now matched by structure for all assessed employees.
+
+### 🔗 External LMS
+The "External LMS" list no longer cuts profiles off at 500 — the limit is raised to 5000.
+
+---
+## UA (Українська)
+## ✨ Головне в цьому релізі
+
+### 📝 Створення уроків
+Форма створення уроку більше не створює дублікатів чернеток при повторному збереженні.
+
+### 📊 Звіти
+Звіт за тестом більше не зависає на зламаній спробі, а в разі збою побудови показується повідомлення про помилку.
+
+### 🎯 Призначення програм
+Виправлено редагування призначення програми: попередній запис більше не потрапляє в DETAIL_TEXT. Прострочене призначення тепер переходить у «Прострочені», а не зникає в учня.
+
+### 👥 Оцінювання 360
+«Керівник» і «Підлеглі» тепер підбираються за структурою в усіх оцінюваних.
+
+### 🔗 Зовнішні ЛМС
+Список «Зовнішні ЛМС» більше не обрізає профілі на 500 — ліміт збільшено до 5000.
+
+---
+## FR (Français)
+## ✨ Points clés de cette version
+
+### 📝 Création de leçons
+Le formulaire de création de leçon ne crée plus de brouillons en double lors d'un nouvel enregistrement.
+
+### 📊 Rapports
+Un rapport de test ne reste plus bloqué sur une tentative corrompue, et un échec de génération affiche désormais un message d'erreur.
+
+### 🎯 Affectations de programmes
+Correction de la modification d'une affectation de programme : l'ancienne entrée ne se retrouve plus dans DETAIL_TEXT. Une affectation expirée passe désormais dans « En retard » au lieu de disparaître chez l'apprenant.
+
+### 👥 Évaluation 360
+« Manager » et « Subordonnés » sont désormais déterminés selon la structure pour toutes les personnes évaluées.
+
+### 🔗 LMS externes
+La liste « LMS externes » ne tronque plus les profils à 500 — la limite est portée à 5000.
+
+---
+## IT (Italiano)
+## ✨ Punti salienti di questa release
+
+### 📝 Creazione delle lezioni
+Il modulo di creazione della lezione non genera più bozze duplicate al momento di un nuovo salvataggio.
+
+### 📊 Report
+Un report di test non si blocca più su un tentativo corrotto e, in caso di errore di generazione, viene mostrato un messaggio di errore.
+
+### 🎯 Assegnazioni dei programmi
+Corretta la modifica di un'assegnazione di programma: la voce precedente non finisce più in DETAIL_TEXT. Un'assegnazione scaduta ora passa in «Scadute» invece di sparire dallo studente.
+
+### 👥 Valutazione 360
+«Responsabile» e «Subordinati» ora vengono determinati in base alla struttura per tutti i valutati.
+
+### 🔗 LMS esterne
+L'elenco «LMS esterne» non taglia più i profili a 500 — il limite è stato portato a 5000.
+
+---
+## DE (Deutsch)
+## ✨ Highlights dieses Releases
+
+### 📝 Unterrichtserstellung
+Das Formular zur Unterrichtserstellung erzeugt beim erneuten Speichern keine doppelten Entwürfe mehr.
+
+### 📊 Berichte
+Ein Testbericht hängt nicht mehr bei einem fehlerhaften Versuch, und bei einem Fehler beim Erstellen wird eine Fehlermeldung angezeigt.
+
+### 🎯 Programmzuweisungen
+Die Bearbeitung einer Programmzuweisung wurde korrigiert: Der vorherige Eintrag landet nicht mehr in DETAIL_TEXT. Eine abgelaufene Zuweisung wandert nun in „Überfällig“, statt beim Lernenden zu verschwinden.
+
+### 👥 360-Bewertung
+„Vorgesetzter“ und „Untergebene“ werden jetzt bei allen Bewerteten anhand der Struktur ermittelt.
+
+### 🔗 Externe LMS
+Die Liste „Externe LMS“ schneidet Profile nicht mehr bei 500 ab — das Limit wurde auf 5000 erhöht.
+
+---
+## TR (Türkçe)
+## ✨ Bu sürümdeki öne çıkanlar
+
+### 📝 Ders oluşturma
+Ders oluşturma formu, yeniden kaydedildiğinde artık yinelenen taslaklar oluşturmuyor.
+
+### 📊 Raporlar
+Bir test raporu artık bozuk bir denemede takılı kalmıyor ve oluşturma hatası durumunda bir hata mesajı gösteriliyor.
+
+### 🎯 Program atamaları
+Program ataması düzenlemesi düzeltildi: önceki kayıt artık DETAIL_TEXT içine girmiyor. Süresi geçen atama, öğrenciden kaybolmak yerine artık "Gecikmiş" durumuna geçiyor.
+
+### 👥 360 değerlendirme
+"Yönetici" ve "Astlar" artık tüm değerlendirilenler için yapıya göre belirleniyor.
+
+### 🔗 Harici LMS
+"Harici LMS" listesi artık profilleri 500'de kesmiyor — limit 5000'e çıkarıldı.
+
+---
+## PL (Polski)
+## ✨ Najważniejsze w tym wydaniu
+
+### 📝 Tworzenie lekcji
+Formularz tworzenia lekcji nie tworzy już zduplikowanych wersji roboczych przy ponownym zapisie.
+
+### 📊 Raporty
+Raport z testu nie zawiesza się już na uszkodzonej próbie, a w przypadku błędu generowania wyświetlany jest komunikat o błędzie.
+
+### 🎯 Przypisania programów
+Poprawiono edycję przypisania programu: poprzedni wpis nie trafia już do DETAIL_TEXT. Wygasłe przypisanie trafia teraz do „Przeterminowanych”, zamiast znikać u ucznia.
+
+### 👥 Ocena 360
+„Przełożony” i „Podwładni” są teraz dopasowywani według struktury u wszystkich ocenianych.
+
+### 🔗 Zewnętrzne LMS
+Lista „Zewnętrzne LMS” nie ucina już profili na 500 — limit zwiększono do 5000.
+
+---
+## PT (Português)
+## ✨ Destaques desta versão
+
+### 📝 Criação de aulas
+O formulário de criação de aula não gera mais rascunhos duplicados ao salvar novamente.
+
+### 📊 Relatórios
+Um relatório de teste não trava mais em uma tentativa corrompida, e uma falha de geração agora exibe uma mensagem de erro.
+
+### 🎯 Atribuições de programas
+Corrigida a edição de uma atribuição de programa: o registro anterior não vai mais para o DETAIL_TEXT. Uma atribuição expirada agora vai para "Atrasadas" em vez de desaparecer do aluno.
+
+### 👥 Avaliação 360
+"Gestor" e "Subordinados" agora são determinados pela estrutura para todos os avaliados.
+
+### 🔗 LMS externas
+A lista "LMS externas" não corta mais os perfis em 500 — o limite foi elevado para 5000.
+
+---
+## ES (Español)
+## ✨ Lo más destacado de esta versión
+
+### 📝 Creación de lecciones
+El formulario de creación de lecciones ya no genera borradores duplicados al guardar de nuevo.
+
+### 📊 Informes
+Un informe de test ya no se queda colgado en un intento dañado, y un fallo de generación ahora muestra un mensaje de error.
+
+### 🎯 Asignaciones de programas
+Corregida la edición de una asignación de programa: el registro anterior ya no acaba en DETAIL_TEXT. Una asignación caducada ahora pasa a «Vencidas» en lugar de desaparecer del alumno.
+
+### 👥 Evaluación 360
+«Responsable» y «Subordinados» ahora se determinan por estructura para todos los evaluados.
+
+### 🔗 LMS externas
+La lista «LMS externas» ya no corta los perfiles en 500 — el límite se ha elevado a 5000.
+
+---
+## VN (Tiếng Việt)
+## ✨ Điểm nổi bật trong bản phát hành này
+
+### 📝 Tạo bài học
+Biểu mẫu tạo bài học không còn tạo bản nháp trùng lặp khi lưu lại.
+
+### 📊 Báo cáo
+Báo cáo bài kiểm tra không còn bị treo ở lượt làm bài bị lỗi, và khi tạo báo cáo thất bại sẽ hiển thị thông báo lỗi.
+
+### 🎯 Phân công chương trình
+Đã sửa việc chỉnh sửa phân công chương trình: bản ghi trước đó không còn lọt vào DETAIL_TEXT. Phân công đã hết hạn giờ chuyển sang «Quá hạn» thay vì biến mất khỏi học viên.
+
+### 👥 Đánh giá 360
+«Quản lý» và «Cấp dưới» giờ được xác định theo cơ cấu cho tất cả người được đánh giá.
+
+### 🔗 LMS bên ngoài
+Danh sách «LMS bên ngoài» không còn cắt hồ sơ ở mức 500 — giới hạn đã tăng lên 5000.
+
+---
+## ZH (中文)
+## ✨ 本次发布亮点
+
+### 📝 课程创建
+课程创建表单在再次保存时不再生成重复草稿。
+
+### 📊 报告
+测试报告不再因损坏的作答而卡住，生成失败时会显示错误提示。
+
+### 🎯 项目分配
+修复了项目分配的编辑：上一条记录不再写入 DETAIL_TEXT。已过期的分配现在会进入“已逾期”，而不会从学员处消失。
+
+### 👥 360 评估
+“主管”和“下属”现在对所有被评估人按组织结构进行匹配。
+
+### 🔗 外部 LMS
+“外部 LMS”列表不再将配置文件截断在 500 —— 上限已提高到 5000。
+
+---
+## JA (日本語)
+## ✨ このリリースのハイライト
+
+### 📝 レッスン作成
+レッスン作成フォームで、再保存時に下書きが重複して作成されなくなりました。
+
+### 📊 レポート
+テストレポートが壊れた受験で停止しなくなり、生成に失敗した場合はエラーメッセージが表示されます。
+
+### 🎯 プログラムの割り当て
+プログラム割り当ての編集を修正しました。以前の記録が DETAIL_TEXT に入らなくなりました。期限切れの割り当ては、受講者から消えるのではなく「期限切れ」に移動します。
+
+### 👥 360 評価
+「上司」と「部下」が、すべての被評価者について組織構造に基づいて判定されるようになりました。
+
+### 🔗 外部 LMS
+「外部 LMS」一覧でプロフィールが 500 件で打ち切られなくなりました。上限は 5000 に引き上げられました。
+
+---
+## KZ (Қазақша)
+## ✨ Осы релиздегі басты жаңалықтар
+
+### 📝 Сабақ құру
+Сабақ құру формасы қайта сақтаған кезде жобаның көшірмелерін жасамайды.
+
+### 📊 Есептер
+Тест есебі бүлінген әрекетте тұрып қалмайды, ал құру сәтсіз болса, қате туралы хабарлама көрсетіледі.
+
+### 🎯 Бағдарлама тағайындаулары
+Бағдарлама тағайындауын өңдеу түзетілді: алдыңғы жазба енді DETAIL_TEXT ішіне түспейді. Мерзімі өткен тағайындау білім алушыдан жоғалып кетпей, «Мерзімі өткендер» бөліміне өтеді.
+
+### 👥 360 бағалау
+«Басшы» және «Қарамағындағылар» енді барлық бағаланушылар үшін құрылым бойынша анықталады.
+
+### 🔗 Сыртқы LMS
+«Сыртқы LMS» тізімі профильдерді 500-де қысқартпайды — шектеу 5000-ға көтерілді.
+
+---
+## AR (العربية)
+## ✨ أبرز ما في هذا الإصدار
+
+### 📝 إنشاء الدروس
+لم يعد نموذج إنشاء الدرس يُنشئ مسودات مكررة عند الحفظ مرة أخرى.
+
+### 📊 التقارير
+لم يعد تقرير الاختبار يتوقف عند محاولة تالفة، وعند فشل الإنشاء تظهر رسالة خطأ.
+
+### 🎯 إسنادات البرامج
+تم إصلاح تحرير إسناد البرنامج: لم يعد السجل السابق يظهر في DETAIL_TEXT. الإسناد المنتهي الصلاحية ينتقل الآن إلى «متأخر» بدلاً من أن يختفي من المتعلّم.
+
+### 👥 تقييم 360
+أصبح «المدير» و«المرؤوسون» يُحدَّدان حسب الهيكل لجميع الخاضعين للتقييم.
+
+### 🔗 أنظمة LMS الخارجية
+لم تعد قائمة «أنظمة LMS الخارجية» تقتطع الملفات عند 500 — تم رفع الحد إلى 5000.
+
+---
+## ID (Bahasa Indonesia)
+## ✨ Sorotan rilis ini
+
+### 📝 Pembuatan pelajaran
+Formulir pembuatan pelajaran tidak lagi membuat draf duplikat saat disimpan ulang.
+
+### 📊 Laporan
+Laporan tes tidak lagi macet pada percobaan yang rusak, dan kegagalan pembuatan kini menampilkan pesan kesalahan.
+
+### 🎯 Penugasan program
+Diperbaiki pengeditan penugasan program: entri sebelumnya tidak lagi masuk ke DETAIL_TEXT. Penugasan yang kedaluwarsa kini berpindah ke "Terlambat" alih-alih hilang dari siswa.
+
+### 👥 Penilaian 360
+"Atasan" dan "Bawahan" kini ditentukan berdasarkan struktur untuk semua yang dinilai.
+
+### 🔗 LMS eksternal
+Daftar "LMS eksternal" tidak lagi memotong profil pada 500 — batasnya dinaikkan menjadi 5000.
+
+---
+## MS (Bahasa Melayu)
+## ✨ Sorotan dalam keluaran ini
+
+### 📝 Penciptaan pelajaran
+Borang penciptaan pelajaran tidak lagi menghasilkan draf pendua apabila disimpan semula.
+
+### 📊 Laporan
+Laporan ujian tidak lagi tergantung pada percubaan yang rosak, dan kegagalan penjanaan kini memaparkan mesej ralat.
+
+### 🎯 Penetapan program
+Diperbaiki penyuntingan penetapan program: entri sebelumnya tidak lagi masuk ke DETAIL_TEXT. Penetapan yang tamat tempoh kini berpindah ke "Lewat Tempoh" dan bukan hilang daripada pelajar.
+
+### 👥 Penilaian 360
+"Pengurus" dan "Bawahan" kini ditentukan mengikut struktur untuk semua yang dinilai.
+
+### 🔗 LMS luaran
+Senarai "LMS luaran" tidak lagi memotong profil pada 500 — had dinaikkan kepada 5000.
+
+---
+## TH (ไทย)
+## ✨ ไฮไลต์ของรีลีสนี้
+
+### 📝 การสร้างบทเรียน
+ฟอร์มสร้างบทเรียนไม่สร้างฉบับร่างซ้ำอีกเมื่อบันทึกอีกครั้ง
+
+### 📊 รายงาน
+รายงานผลการทดสอบไม่ค้างอีกต่อไปเมื่อมีการทำแบบทดสอบที่เสีย และเมื่อสร้างรายงานล้มเหลวจะแสดงข้อความข้อผิดพลาด
+
+### 🎯 การมอบหมายโปรแกรม
+แก้ไขการแก้ไขการมอบหมายโปรแกรม: รายการก่อนหน้าไม่ถูกใส่ลงใน DETAIL_TEXT อีกต่อไป การมอบหมายที่หมดอายุจะย้ายไปที่ «เกินกำหนด» แทนที่จะหายไปจากผู้เรียน
+
+### 👥 การประเมิน 360
+«ผู้จัดการ» และ «ผู้ใต้บังคับบัญชา» ถูกจับคู่ตามโครงสร้างสำหรับผู้ถูกประเมินทุกคนแล้ว
+
+### 🔗 LMS ภายนอก
+รายการ «LMS ภายนอก» ไม่ตัดโปรไฟล์ที่ 500 อีกต่อไป — เพิ่มขีดจำกัดเป็น 5000

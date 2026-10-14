@@ -1,0 +1,44 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build
+build/
+dist/
+
+# H5P Data
+h5p/
+
+# Docker backups
+*-backup-*.tar.gz
+libraries-backup*.tar.gz
+content-backup*.tar.gz
+
+# Auto-generated docker-compose files
+docker-compose.generated.yml
+
+# Environment
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Coverage
+coverage/
+.nyc_output/
+
