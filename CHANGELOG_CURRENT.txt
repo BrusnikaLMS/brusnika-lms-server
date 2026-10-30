@@ -1,0 +1,9 @@
+## ✨ Highlights
+
+### 🤖 Automatic changelog generation from frontend commits
+
+Every server-version release now automatically pulls the frontend
+repository's `main` branch commit history since the previous release,
+summarizes it with an AI model, and uses that summary as this release's
+changelog — both in the Docker image label and the GitHub Release notes.
+No more manually copying frontend changes into the changelog by hand.
