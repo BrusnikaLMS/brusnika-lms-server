@@ -1,0 +1,300 @@
+## RU (Русский)
+## ✨ Главное в этом релизе
+
+### 📊 Единый модуль Excel-выгрузок
+Отчёты и выгрузки теперь формируются через общий модуль на exceljs: восемь отчётов переведены на него, включая отчёт по результатам оценки 360°, автоотчёты и конструктор отчётов. Выгрузки под импорт (курс, тест, урок, мероприятие, ИПР, субаккаунты, шаблон пользователей) сохраняют сетку ячеек неизменной.
+
+### 🎨 Оформление отчётов ближе к экрану
+В выгрузках появились цвета статусов, вариантов ответа и групп, баннер отчёта, полоски процентов и более тёмная шапка. Название над таблицей больше не обрезается соседней ячейкой, а листы отчётов назначений называются по отчёту.
+
+### 🎓 Обучение продукту
+Добавлен раздел «Обучение продукту» с кнопкой «Обучение» в шапке, страницей сценария в новом дизайне и сценариями «Тестирование», «Опрос», «База знаний», «Оценка 360°» и «ИПР». Появились обязательные экраны первого входа, передача обучения модератору и окно «Все 6 сценариев» со скидкой 20% в «Моём тарифе».
+
+### 🔧 Исправления
+Исправлены дубли строк после сортировки в отчёте «Пройденные за период», префилл назначения и снятие статуса «профиль пустой» после сохранения. Вкладка «Открыть в браузере» теперь открывается на хосте apiurl — сервера, выдавшего код.
+
+---
+
+## EN (English)
+## ✨ Highlights of this release
+
+### 📊 Unified Excel export module
+Reports and exports are now generated through a shared module built on exceljs: eight reports have been migrated, including the 360° assessment results report, auto-reports and the report builder. Import-ready exports (course, test, lesson, event, IDP, subaccounts, user template) keep the cell grid unchanged.
+
+### 🎨 Report styling closer to the screen
+Exports now include status, answer option and group colors, a report banner, percentage bars and a darker header. The title above the table is no longer clipped by a neighboring cell, and assignment report sheets are named after the report.
+
+### 🎓 Product learning
+A "Product learning" section has been added with a "Learning" button in the header, a scenario page in a new design, and the "Testing", "Survey", "Knowledge base", "360° assessment" and "IDP" scenarios. Mandatory first-login screens, handover of learning to a moderator, and an "All 6 scenarios" window with a 20% discount in "My plan" are now available.
+
+### 🔧 Fixes
+Fixed duplicate rows after sorting in the "Completed in period" report, assignment prefill, and clearing of the "profile is empty" status after saving. The "Open in browser" tab now opens on the apiurl host — the server that issued the code.
+
+---
+
+## UA (Українська)
+## ✨ Головне в цьому релізі
+
+### 📊 Єдиний модуль Excel-вивантажень
+Звіти та вивантаження тепер формуються через спільний модуль на exceljs: вісім звітів переведено на нього, зокрема звіт за результатами оцінювання 360°, автозвіти та конструктор звітів. Вивантаження під імпорт (курс, тест, урок, захід, ІПР, субакаунти, шаблон користувачів) зберігають сітку комірок незмінною.
+
+### 🎨 Оформлення звітів ближче до екрана
+У вивантаженнях з'явилися кольори статусів, варіантів відповіді та груп, банер звіту, смужки відсотків і темніший заголовок. Назва над таблицею більше не обрізається сусідньою коміркою, а аркуші звітів призначень називаються за звітом.
+
+### 🎓 Навчання продукту
+Додано розділ «Навчання продукту» з кнопкою «Навчання» у заголовку, сторінкою сценарію в новому дизайні та сценаріями «Тестування», «Опитування», «База знань», «Оцінювання 360°» та «ІПР». З'явилися обов'язкові екрани першого входу, передавання навчання модератору та вікно «Усі 6 сценаріїв» зі знижкою 20% у «Моєму тарифі».
+
+### 🔧 Виправлення
+Виправлено дублі рядків після сортування у звіті «Пройдені за період», префіл призначення та зняття статусу «профіль порожній» після збереження. Вкладка «Відкрити в браузері» тепер відкривається на хості apiurl — сервера, що видав код.
+
+---
+
+## FR (Français)
+## ✨ Les points clés de cette version
+
+### 📊 Module unifié d'export Excel
+Les rapports et exports sont désormais générés via un module commun basé sur exceljs : huit rapports y ont été migrés, dont le rapport des résultats d'évaluation 360°, les rapports automatiques et le générateur de rapports. Les exports prêts pour l'import (cours, test, leçon, événement, PDI, sous-comptes, modèle d'utilisateurs) conservent la grille de cellules inchangée.
+
+### 🎨 Une mise en forme des rapports plus fidèle à l'écran
+Les exports incluent désormais les couleurs des statuts, des options de réponse et des groupes, une bannière de rapport, des barres de pourcentage et un en-tête plus sombre. Le titre au-dessus du tableau n'est plus tronqué par une cellule voisine, et les feuilles des rapports d'affectation portent le nom du rapport.
+
+### 🎓 Formation produit
+Une section « Formation produit » a été ajoutée avec un bouton « Formation » dans l'en-tête, une page de scénario au nouveau design, et les scénarios « Test », « Sondage », « Base de connaissances », « Évaluation 360° » et « PDI ». Les écrans obligatoires de première connexion, la transmission de la formation à un modérateur et la fenêtre « Les 6 scénarios » avec 20 % de remise dans « Mon offre » sont disponibles.
+
+### 🔧 Corrections
+Correction des doublons de lignes après tri dans le rapport « Terminés sur la période », du préremplissage d'affectation et de la suppression du statut « profil vide » après enregistrement. L'onglet « Ouvrir dans le navigateur » s'ouvre désormais sur l'hôte apiurl — le serveur ayant émis le code.
+
+---
+
+## IT (Italiano)
+## ✨ In evidenza in questa versione
+
+### 📊 Modulo unificato per l'esportazione Excel
+I report e le esportazioni ora vengono generati tramite un modulo condiviso basato su exceljs: otto report sono stati migrati, inclusi il report dei risultati della valutazione 360°, i report automatici e il generatore di report. Le esportazioni pronte per l'importazione (corso, test, lezione, evento, PDI, sottaccount, modello utenti) mantengono invariata la griglia delle celle.
+
+### 🎨 Formattazione dei report più fedele allo schermo
+Le esportazioni ora includono i colori di stati, opzioni di risposta e gruppi, un banner del report, barre percentuali e un'intestazione più scura. Il titolo sopra la tabella non viene più tagliato dalla cella adiacente e i fogli dei report di assegnazione prendono il nome dal report.
+
+### 🎓 Formazione sul prodotto
+È stata aggiunta la sezione «Formazione sul prodotto» con un pulsante «Formazione» nell'intestazione, una pagina di scenario dal nuovo design e gli scenari «Test», «Sondaggio», «Base di conoscenza», «Valutazione 360°» e «PDI». Sono disponibili le schermate obbligatorie del primo accesso, la consegna della formazione a un moderatore e la finestra «Tutti e 6 gli scenari» con lo sconto del 20% in «Il mio piano».
+
+### 🔧 Correzioni
+Corretti i duplicati di riga dopo l'ordinamento nel report «Completati nel periodo», il precompilamento delle assegnazioni e la rimozione dello stato «profilo vuoto» dopo il salvataggio. La scheda «Apri nel browser» ora si apre sull'host apiurl — il server che ha emesso il codice.
+
+---
+
+## DE (Deutsch)
+## ✨ Das Wichtigste in diesem Release
+
+### 📊 Einheitliches Excel-Export-Modul
+Berichte und Exporte werden jetzt über ein gemeinsames Modul auf Basis von exceljs erzeugt: Acht Berichte wurden migriert, darunter der Bericht zu den Ergebnissen der 360°-Bewertung, automatische Berichte und der Berichtsgenerator. Importfertige Exporte (Kurs, Test, Lektion, Veranstaltung, PEP, Unterkonten, Benutzervorlage) behalten das Zellenraster unverändert.
+
+### 🎨 Berichtsformatierung näher am Bildschirm
+Die Exporte enthalten nun Farben für Status, Antwortoptionen und Gruppen, ein Berichtsbanner, Prozentbalken und eine dunklere Kopfzeile. Der Titel über der Tabelle wird nicht mehr von der benachbarten Zelle abgeschnitten, und die Blätter der Zuweisungsberichte sind nach dem Bericht benannt.
+
+### 🎓 Produktschulung
+Ein Bereich „Produktschulung" wurde hinzugefügt, mit einer Schaltfläche „Schulung" in der Kopfzeile, einer Szenarioseite im neuen Design sowie den Szenarien „Test", „Umfrage", „Wissensdatenbank", „360°-Bewertung" und „PEP". Pflichtbildschirme beim ersten Login, die Übergabe der Schulung an einen Moderator und das Fenster „Alle 6 Szenarien" mit 20 % Rabatt in „Mein Tarif" sind verfügbar.
+
+### 🔧 Fehlerbehebungen
+Behoben wurden doppelte Zeilen nach dem Sortieren im Bericht „Abgeschlossen im Zeitraum", das Vorausfüllen von Zuweisungen und das Entfernen des Status „Profil leer" nach dem Speichern. Der Tab „Im Browser öffnen" öffnet nun auf dem apiurl-Host — dem Server, der den Code ausgestellt hat.
+
+---
+
+## TR (Türkçe)
+## ✨ Bu sürümde öne çıkanlar
+
+### 📊 Birleşik Excel dışa aktarma modülü
+Raporlar ve dışa aktarımlar artık exceljs tabanlı ortak bir modül üzerinden oluşturuluyor: 360° değerlendirme sonuçları raporu, otomatik raporlar ve rapor oluşturucu dahil olmak üzere sekiz rapor taşındı. İçe aktarmaya hazır dışa aktarımlar (kurs, test, ders, etkinlik, BGP, alt hesaplar, kullanıcı şablonu) hücre ızgarasını değiştirmeden korur.
+
+### 🎨 Rapor biçimlendirmesi ekrana daha yakın
+Dışa aktarımlara durum, cevap seçeneği ve grup renkleri, rapor başlığı bandı, yüzde çubukları ve daha koyu bir üst bilgi eklendi. Tablonun üzerindeki başlık artık komşu hücre tarafından kesilmiyor ve atama raporu sayfaları raporun adını taşıyor.
+
+### 🎓 Ürün eğitimi
+Üst bilgide „Eğitim" düğmesi, yeni tasarımlı senaryo sayfası ve „Test", „Anket", „Bilgi tabanı", „360° değerlendirme" ve „BGP" senaryolarıyla bir „Ürün eğitimi" bölümü eklendi. Zorunlu ilk giriş ekranları, eğitimin bir moderatöre devredilmesi ve „Planım"da %20 indirimli „6 senaryonun tümü" penceresi kullanılabilir.
+
+### 🔧 Düzeltmeler
+„Dönem içinde tamamlananlar" raporunda sıralama sonrası yinelenen satırlar, atama ön doldurması ve kaydettikten sonra „profil boş" durumunun kaldırılması düzeltildi. „Tarayıcıda aç" sekmesi artık kodu veren sunucunun apiurl ana bilgisayarında açılıyor.
+
+---
+
+## PL (Polski)
+## ✨ Najważniejsze w tym wydaniu
+
+### 📊 Wspólny moduł eksportu Excel
+Raporty i eksporty są teraz generowane przez wspólny moduł oparty na exceljs: osiem raportów zostało przeniesionych, w tym raport wyników oceny 360°, raporty automatyczne i kreator raportów. Eksporty gotowe do importu (kurs, test, lekcja, wydarzenie, IPR, subkonta, szablon użytkowników) zachowują niezmienioną siatkę komórek.
+
+### 🎨 Formatowanie raportów bliższe ekranowi
+Eksporty zawierają teraz kolory statusów, opcji odpowiedzi i grup, baner raportu, paski procentowe i ciemniejszy nagłówek. Tytuł nad tabelą nie jest już przycinany przez sąsiednią komórkę, a arkusze raportów przypisań są nazwane od raportu.
+
+### 🎓 Szkolenie produktowe
+Dodano sekcję „Szkolenie produktowe" z przyciskiem „Szkolenie" w nagłówku, stroną scenariusza w nowym designie oraz scenariuszami „Test", „Ankieta", „Baza wiedzy", „Ocena 360°" i „IPR". Dostępne są obowiązkowe ekrany pierwszego logowania, przekazanie szkolenia moderatorowi oraz okno „Wszystkie 6 scenariuszy" z 20% zniżki w „Moim planie".
+
+### 🔧 Poprawki
+Naprawiono duplikaty wierszy po sortowaniu w raporcie „Ukończone w okresie", wstępne wypełnianie przypisań oraz usuwanie statusu „profil pusty" po zapisaniu. Karta „Otwórz w przeglądarce" otwiera się teraz na hoście apiurl — serwerze, który wydał kod.
+
+---
+
+## PT (Português)
+## ✨ Destaques desta versão
+
+### 📊 Módulo unificado de exportação Excel
+Relatórios e exportações agora são gerados por um módulo compartilhado baseado em exceljs: oito relatórios foram migrados, incluindo o relatório de resultados da avaliação 360°, relatórios automáticos e o construtor de relatórios. As exportações prontas para importação (curso, teste, aula, evento, PDI, subcontas, modelo de usuários) mantêm a grade de células inalterada.
+
+### 🎨 Formatação dos relatórios mais próxima da tela
+As exportações agora incluem cores de status, opções de resposta e grupos, um banner do relatório, barras de porcentagem e um cabeçalho mais escuro. O título acima da tabela não é mais cortado pela célula vizinha, e as planilhas dos relatórios de atribuição recebem o nome do relatório.
+
+### 🎓 Treinamento do produto
+Foi adicionada a seção "Treinamento do produto" com um botão "Treinamento" no cabeçalho, uma página de cenário com novo design e os cenários "Teste", "Pesquisa", "Base de conhecimento", "Avaliação 360°" e "PDI". Estão disponíveis as telas obrigatórias do primeiro acesso, a transferência do treinamento para um moderador e a janela "Todos os 6 cenários" com 20% de desconto em "Meu plano".
+
+### 🔧 Correções
+Corrigidos duplicatas de linhas após ordenação no relatório "Concluídos no período", o pré-preenchimento de atribuições e a remoção do status "perfil vazio" após salvar. A aba "Abrir no navegador" agora abre no host apiurl — o servidor que emitiu o código.
+
+---
+
+## ES (Español)
+## ✨ Lo más destacado de esta versión
+
+### 📊 Módulo unificado de exportación a Excel
+Los informes y las exportaciones ahora se generan mediante un módulo compartido basado en exceljs: se migraron ocho informes, incluido el informe de resultados de la evaluación 360°, los informes automáticos y el generador de informes. Las exportaciones listas para importar (curso, test, lección, evento, PDI, subcuentas, plantilla de usuarios) mantienen la cuadrícula de celdas sin cambios.
+
+### 🎨 Formato de informes más fiel a la pantalla
+Las exportaciones ahora incluyen colores de estados, opciones de respuesta y grupos, un banner del informe, barras de porcentaje y un encabezado más oscuro. El título sobre la tabla ya no se recorta por la celda contigua, y las hojas de los informes de asignación llevan el nombre del informe.
+
+### 🎓 Formación del producto
+Se añadió la sección «Formación del producto» con un botón «Formación» en el encabezado, una página de escenario con nuevo diseño y los escenarios «Test», «Encuesta», «Base de conocimiento», «Evaluación 360°» y «PDI». Están disponibles las pantallas obligatorias del primer acceso, la cesión de la formación a un moderador y la ventana «Los 6 escenarios» con un 20 % de descuento en «Mi plan».
+
+### 🔧 Correcciones
+Se corrigieron las filas duplicadas tras ordenar en el informe «Completados en el período», el prerrellenado de asignaciones y la eliminación del estado «perfil vacío» tras guardar. La pestaña «Abrir en el navegador» ahora se abre en el host apiurl — el servidor que emitió el código.
+
+---
+
+## VN (Tiếng Việt)
+## ✨ Điểm nổi bật trong bản phát hành này
+
+### 📊 Mô-đun xuất Excel thống nhất
+Báo cáo và xuất dữ liệu giờ đây được tạo qua một mô-đun dùng chung dựa trên exceljs: tám báo cáo đã được chuyển sang, bao gồm báo cáo kết quả đánh giá 360°, báo cáo tự động và trình tạo báo cáo. Các bản xuất sẵn sàng để nhập (khóa học, bài kiểm tra, bài học, sự kiện, KHDVCN, tài khoản phụ, mẫu người dùng) giữ nguyên lưới ô.
+
+### 🎨 Định dạng báo cáo gần với màn hình hơn
+Các bản xuất giờ đây có màu trạng thái, phương án trả lời và nhóm, biểu ngữ báo cáo, thanh phần trăm và tiêu đề đậm hơn. Tiêu đề phía trên bảng không còn bị ô bên cạnh cắt mất, và các trang tính báo cáo phân công được đặt tên theo báo cáo.
+
+### 🎓 Đào tạo sản phẩm
+Đã thêm mục «Đào tạo sản phẩm» với nút «Đào tạo» trên thanh tiêu đề, trang kịch bản theo thiết kế mới và các kịch bản «Kiểm tra», «Khảo sát», «Cơ sở kiến thức», «Đánh giá 360°» và «KHDVCN». Đã có các màn hình bắt buộc khi đăng nhập lần đầu, việc chuyển giao đào tạo cho người điều hành và cửa sổ «Cả 6 kịch bản» với ưu đãi 20% trong «Gói của tôi».
+
+### 🔧 Sửa lỗi
+Đã sửa lỗi trùng dòng sau khi sắp xếp trong báo cáo «Đã hoàn thành trong kỳ», điền sẵn phân công và việc gỡ trạng thái «hồ sơ trống» sau khi lưu. Tab «Mở trong trình duyệt» giờ mở trên máy chủ apiurl — máy chủ đã cấp mã.
+
+---
+
+## ZH (中文)
+## ✨ 本次发布亮点
+
+### 📊 统一的 Excel 导出模块
+报表和导出数据现在通过基于 exceljs 的共享模块生成：已有八个报表完成迁移，包括 360° 评估结果报表、自动报表和报表构建器。用于导入的导出文件（课程、测试、课程单元、活动、个人发展计划、子账户、用户模板）保持单元格网格不变。
+
+### 🎨 报表样式更贴近屏幕显示
+导出文件中新增了状态、答案选项和分组的颜色、报表横幅、百分比条以及更深的表头。表格上方的标题不再被相邻单元格截断，分配报表的工作表按报表名称命名。
+
+### 🎓 产品学习
+新增「产品学习」板块，页眉中有「学习」按钮，场景页面采用全新设计，并提供「测试」「问卷」「知识库」「360° 评估」和「个人发展计划」场景。现已提供首次登录的必填页面、将学习转交给管理员，以及「我的套餐」中带 20% 折扣的「全部 6 个场景」窗口。
+
+### 🔧 修复
+修复了「期间内已完成」报表排序后出现的重复行、分配预填充，以及保存后未清除「个人资料为空」状态的问题。「在浏览器中打开」标签页现在会在签发代码的 apiurl 主机上打开。
+
+---
+
+## JA (日本語)
+## ✨ このリリースの主なポイント
+
+### 📊 統一された Excel エクスポートモジュール
+レポートとエクスポートは、exceljs ベースの共通モジュールを通じて生成されるようになりました。360° 評価結果レポート、自動レポート、レポートビルダーを含む 8 つのレポートが移行されています。インポート用エクスポート（コース、テスト、レッスン、イベント、個別育成計画、サブアカウント、ユーザーテンプレート）はセルのグリッドを変えずに保ちます。
+
+### 🎨 画面に近づいたレポートの書式
+エクスポートにステータス、回答選択肢、グループの色、レポートバナー、パーセントバー、より濃いヘッダーが追加されました。表の上のタイトルは隣接するセルで切れなくなり、割り当てレポートのシートはレポート名で命名されます。
+
+### 🎓 製品学習
+ヘッダーの「学習」ボタン、新しいデザインのシナリオページ、「テスト」「アンケート」「ナレッジベース」「360° 評価」「個別育成計画」のシナリオを備えた「製品学習」セクションが追加されました。初回ログイン時の必須画面、モデレーターへの学習の引き継ぎ、「マイプラン」での 20% 割引付き「全 6 シナリオ」ウィンドウが利用可能です。
+
+### 🔧 修正
+「期間内に完了」レポートの並べ替え後の重複行、割り当ての事前入力、保存後の「プロフィールが空」ステータスの解除を修正しました。「ブラウザで開く」タブは、コードを発行したサーバーの apiurl ホストで開くようになりました。
+
+---
+
+## KZ (Қазақша)
+## ✨ Осы релиздегі басты жаңалықтар
+
+### 📊 Excel экспортының бірыңғай модулі
+Есептер мен экспорттар енді exceljs негізіндегі ортақ модуль арқылы жасалады: сегіз есеп көшірілді, оның ішінде 360° бағалау нәтижелері есебі, автоесептер және есеп құрастырушы. Импортқа арналған экспорттар (курс, тест, сабақ, іс-шара, ЖДЖ, қосалқы тіркелгілер, пайдаланушы үлгісі) ұяшық торын өзгеріссіз сақтайды.
+
+### 🎨 Есептердің безендірілуі экранға жақындады
+Экспорттарға мәртебелердің, жауап нұсқаларының және топтардың түстері, есеп баннері, пайыз жолақтары және неғұрлым қараңғы тақырып қосылды. Кестенің үстіндегі атау енді көрші ұяшықпен қиылып қалмайды, ал тағайындау есептерінің парақтары есеп атауымен аталады.
+
+### 🎓 Өнімді оқыту
+Тақырыпта «Оқыту» батырмасы, жаңа дизайндағы сценарий беті және «Тестілеу», «Сауалнама», «Білім қоры», «360° бағалау» және «ЖДЖ» сценарийлері бар «Өнімді оқыту» бөлімі қосылды. Бірінші кірудегі міндетті экрандар, оқытуды модераторға беру және «Менің тарифімде» 20% жеңілдігі бар «Барлық 6 сценарий» терезесі қолжетімді.
+
+### 🔧 Түзетулер
+«Кезең ішінде аяқталғандар» есебінде сұрыптаудан кейінгі қайталанатын жолдар, тағайындауды алдын ала толтыру және сақтағаннан кейін «профиль бос» мәртебесін алу түзетілді. «Браузерде ашу» қойындысы енді кодты берген сервердің apiurl хостында ашылады.
+
+---
+
+## AR (العربية)
+## ✨ أبرز ما في هذا الإصدار
+
+### 📊 وحدة موحّدة لتصدير Excel
+تُنشأ التقارير وعمليات التصدير الآن عبر وحدة مشتركة مبنية على exceljs: تم نقل ثمانية تقارير إليها، بما في ذلك تقرير نتائج تقييم 360° والتقارير التلقائية ومنشئ التقارير. تحافظ عمليات التصدير الجاهزة للاستيراد (الدورة، الاختبار، الدرس، الفعالية، خطة التطوير الفردي، الحسابات الفرعية، قالب المستخدمين) على شبكة الخلايا دون تغيير.
+
+### 🎨 تنسيق التقارير أقرب إلى الشاشة
+تتضمن عمليات التصدير الآن ألوان الحالات وخيارات الإجابة والمجموعات، ولافتة التقرير، وأشرطة النسب المئوية، وترويسة أغمق. لم يعد العنوان فوق الجدول يُقتطع بواسطة الخلية المجاورة، وتُسمّى أوراق تقارير الإسناد باسم التقرير.
+
+### 🎓 التعلّم المنتجي
+أُضيف قسم «التعلّم المنتجي» مع زر «التعلّم» في الترويسة، وصفحة سيناريو بتصميم جديد، وسيناريوهات «الاختبار» و«الاستبيان» و«قاعدة المعرفة» و«تقييم 360°» و«خطة التطوير الفردي». أصبحت شاشات الدخول الأول الإلزامية، وتسليم التعلّم إلى مشرف، ونافذة «السيناريوهات الستة» مع خصم 20% في «خطتي» متاحة.
+
+### 🔧 إصلاحات
+تم إصلاح تكرار الصفوف بعد الفرز في تقرير «المكتمل خلال الفترة»، والتعبئة المسبقة للإسناد، وإزالة حالة «الملف الشخصي فارغ» بعد الحفظ. تُفتح علامة التبويب «فتح في المتصفح» الآن على مضيف apiurl — الخادم الذي أصدر الرمز.
+
+---
+
+## ID (Bahasa Indonesia)
+## ✨ Sorotan rilis ini
+
+### 📊 Modul ekspor Excel terpadu
+Laporan dan ekspor kini dibuat melalui modul bersama berbasis exceljs: delapan laporan telah dimigrasikan, termasuk laporan hasil penilaian 360°, laporan otomatis, dan pembuat laporan. Ekspor siap impor (kursus, tes, pelajaran, acara, RPK, subakun, templat pengguna) menjaga kisi sel tetap tidak berubah.
+
+### 🎨 Pemformatan laporan lebih mendekati layar
+Ekspor kini menyertakan warna status, opsi jawaban, dan grup, banner laporan, bilah persentase, serta tajuk yang lebih gelap. Judul di atas tabel tidak lagi terpotong oleh sel di sebelahnya, dan lembar laporan penugasan dinamai sesuai laporan.
+
+### 🎓 Pembelajaran produk
+Bagian "Pembelajaran produk" telah ditambahkan dengan tombol "Pembelajaran" di tajuk, halaman skenario dengan desain baru, serta skenario "Tes", "Survei", "Basis pengetahuan", "Penilaian 360°", dan "RPK". Layar wajib saat masuk pertama kali, penyerahan pembelajaran kepada moderator, dan jendela "Semua 6 skenario" dengan diskon 20% di "Paket saya" kini tersedia.
+
+### 🔧 Perbaikan
+Diperbaiki baris duplikat setelah pengurutan pada laporan "Selesai dalam periode", pengisian awal penugasan, dan penghapusan status "profil kosong" setelah menyimpan. Tab "Buka di browser" kini terbuka pada host apiurl — server yang menerbitkan kode.
+
+---
+
+## MS (Bahasa Melayu)
+## ✨ Sorotan dalam keluaran ini
+
+### 📊 Modul eksport Excel bersepadu
+Laporan dan eksport kini dijana melalui modul kongsi berasaskan exceljs: lapan laporan telah dipindahkan, termasuk laporan keputusan penilaian 360°, laporan automatik dan pembina laporan. Eksport sedia import (kursus, ujian, pelajaran, acara, PPI, subakaun, templat pengguna) mengekalkan grid sel tanpa perubahan.
+
+### 🎨 Pemformatan laporan lebih hampir kepada skrin
+Eksport kini menyertakan warna status, pilihan jawapan dan kumpulan, sepanduk laporan, bar peratusan serta pengepala yang lebih gelap. Tajuk di atas jadual tidak lagi dipotong oleh sel bersebelahan, dan helaian laporan tugasan dinamakan mengikut laporan.
+
+### 🎓 Pembelajaran produk
+Bahagian "Pembelajaran produk" telah ditambah dengan butang "Pembelajaran" pada pengepala, halaman senario dengan reka bentuk baharu, serta senario "Ujian", "Tinjauan", "Pangkalan pengetahuan", "Penilaian 360°" dan "PPI". Skrin wajib semasa log masuk pertama, penyerahan pembelajaran kepada moderator dan tetingkap "Kesemua 6 senario" dengan diskaun 20% dalam "Pelan saya" kini tersedia.
+
+### 🔧 Pembetulan
+Dibetulkan baris pendua selepas pengisihan dalam laporan "Selesai dalam tempoh", praisi tugasan dan pembuangan status "profil kosong" selepas menyimpan. Tab "Buka dalam pelayar" kini dibuka pada hos apiurl — pelayan yang mengeluarkan kod.
+
+---
+
+## TH (ไทย)
+## ✨ ไฮไลต์ของรีลีสนี้
+
+### 📊 โมดูลส่งออก Excel แบบรวมศูนย์
+รายงานและการส่งออกถูกสร้างผ่านโมดูลที่ใช้ร่วมกันซึ่งอิง exceljs แล้ว โดยมีแปดรายงานที่ย้ายมาใช้ รวมถึงรายงานผลการประเมิน 360° รายงานอัตโนมัติ และตัวสร้างรายงาน การส่งออกที่พร้อมนำเข้า (หลักสูตร แบบทดสอบ บทเรียน กิจกรรม แผนพัฒนารายบุคคล บัญชีย่อย เทมเพลตผู้ใช้) คงตารางเซลล์ไว้ไม่เปลี่ยนแปลง
+
+### 🎨 การจัดรูปแบบรายงานใกล้เคียงหน้าจอมากขึ้น
+การส่งออกมีสีของสถานะ ตัวเลือกคำตอบ และกลุ่ม แบนเนอร์รายงาน แถบเปอร์เซ็นต์ และส่วนหัวที่เข้มขึ้นแล้ว ชื่อเรื่องเหนือตารางไม่ถูกตัดด้วยเซลล์ข้างเคียงอีกต่อไป และชีตของรายงานการมอบหมายตั้งชื่อตามรายงาน
+
+### 🎓 การเรียนรู้ผลิตภัณฑ์
+เพิ่มส่วน «การเรียนรู้ผลิตภัณฑ์» พร้อมปุ่ม «การเรียนรู้» ในส่วนหัว หน้าสถานการณ์ในดีไซน์ใหม่ และสถานการณ์ «แบบทดสอบ» «แบบสำรวจ» «ฐานความรู้» «การประเมิน 360°» และ «แผนพัฒนารายบุคคล» มีหน้าจอบังคับ
