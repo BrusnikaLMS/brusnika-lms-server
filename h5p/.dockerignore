@@ -1,0 +1,63 @@
+# Игнорируем node_modules
+node_modules/
+
+# Игнорируем build директорию (она будет создана в контейнере)
+build/
+
+# Игнорируем данные H5P (они монтируются как volumes)
+h5p/content/
+h5p/libraries/
+h5p/temporary-storage/
+h5p/user-data/
+
+# Игнорируем логи и временные файлы
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+
+# Игнорируем IDE файлы
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Игнорируем environment файлы
+.env
+.env.local
+.env.*.local
+
+# Игнорируем coverage
+coverage/
+
+# Игнорируем Git файлы
+.git/
+.gitignore
+.gitattributes
+
+# Игнорируем Docker файлы (не нужны в образе)
+docker-compose*.yml
+Dockerfile*
+.dockerignore
+
+# Игнорируем CI/CD файлы
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Игнорируем документацию и markdown файлы (кроме необходимых)
+README.md
+CHANGELOG.md
+CONTRIBUTING.md
+LICENSE
+
+# Игнорируем тесты (если есть)
+test/
+tests/
+__tests__/
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts

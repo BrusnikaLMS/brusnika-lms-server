@@ -1,0 +1,9 @@
+.env
+lms/.env
+lms/local/include/constants.php
+lms/local/include/config.php
+ssl/
+nginx-external/
+lms/local/lessons_images/
+lms/local/scorm/
+lms/local/include/

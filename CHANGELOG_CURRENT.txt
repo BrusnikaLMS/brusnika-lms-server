@@ -1,0 +1,324 @@
+## RU (Русский)
+
+## ✨ Главное в этом релизе
+
+### 🔗 Новые интеграции с внешними сервисами
+Добавлены плитки подключения для Asana, Notion, Freshservice, Klaviyo и HubSpot с настройкой пользователей, команд/отделов, уведомлений и задач. Для Freshservice добавлены отдельные поля домена организации и продукта, а для Klaviyo — опциональная синхронизация состава (профили как пользователи, списки как отделы).
+
+### 📚 Стабильность курсов и обучения
+Исправлено завершение модулей при повторных попытках курса и единая логика завершения модулей с переходами. Курс с перезаписанной строкой прогресса восстанавливается по PREVIEW_TEXT, а открытие ещё не начатого курса больше не приводит к падению.
+
+### 📥 Импорт и миграция данных
+Устранён пустой импорт SCORM-уроков с провайдером «CAM 1.3», добавлена поддержка переноса данных с прежнего ключа портала и корректная обработка сбоев переноса с различением отказа тарифа и токена цели.
+
+### 📝 Уроки, тесты и опросы
+Сохранение переносов строк в описании урока, адаптивные картинки и просмотр оригинала в лонгридах, засчитывание просмотра только по окончательной раскладке. В тестах — продолжение с места остановки и компактный прогресс, в опросах — разделение «Мои опросы» на «В процессе» и «Завершённые» с бейджем.
+
+### 🏢 Компания, отчёты и сертификаты
+В списке компании отображаются блокировки сотрудников без входа в ЛМС, заведение без подразделения привязывается к корню дерева, PDF-отчёты скачиваются вместо автооткрытия. Сертификат нельзя включить без шаблона, а программы отображаются в «Моём профиле → Мои сертификаты».
+
+---
+
+## EN (English)
+
+## ✨ Highlights of this release
+
+### 🔗 New integrations with external services
+Added connection tiles for Asana, Notion, Freshservice, Klaviyo and HubSpot with users, teams/departments, notifications and task wiring. Freshservice now has separate organisation and product domain fields, and Klaviyo supports optional roster sync (profiles as users, lists as departments).
+
+### 📚 Course and learning stability
+Fixed module completion on repeated course attempts and unified module completion with transitions. A course with an overwritten progress row is restored from PREVIEW_TEXT, and opening a not-yet-started course no longer crashes.
+
+### 📥 Data import and migration
+Fixed empty import of SCORM lessons with the «CAM 1.3» provider, added support for migrating data from the previous portal key, and proper handling of migration failures that distinguishes a tariff refusal from a target token issue.
+
+### 📝 Lessons, tests and polls
+Line breaks are preserved in lesson descriptions, longreads get responsive images and original viewing, and views are counted only by final layout. Tests resume from the stopping point with compact progress, and «My polls» is split into «In progress» and «Completed» with a badge.
+
+### 🏢 Company, reports and certificates
+The company list now shows blocked employees who never logged into the LMS, units without a department are attached to the tree root, and PDF reports download instead of auto-opening. A certificate can't be enabled without a template, and programmes appear in «My profile → My certificates».
+
+---
+
+## UA (Українська)
+
+## ✨ Головне в цьому релізі
+
+### 🔗 Нові інтеграції із зовнішніми сервісами
+Додано плитки підключення для Asana, Notion, Freshservice, Klaviyo та HubSpot із налаштуванням користувачів, команд/відділів, сповіщень і завдань. Для Freshservice додано окремі поля домену організації та продукту, а для Klaviyo — опційну синхронізацію складу (профілі як користувачі, списки як відділи).
+
+### 📚 Стабільність курсів і навчання
+Виправлено завершення модулів при повторних спробах курсу та єдину логіку завершення модулів із переходами. Курс із перезаписаним рядком прогресу відновлюється за PREVIEW_TEXT, а відкриття ще не розпочатого курсу більше не призводить до падіння.
+
+### 📥 Імпорт і міграція даних
+Усунено порожній імпорт SCORM-уроків із провайдером «CAM 1.3», додано підтримку перенесення даних з попереднього ключа порталу та коректну обробку збоїв перенесення з розрізненням відмови тарифу й токена цілі.
+
+### 📝 Уроки, тести й опитування
+Збереження перенесень рядків в описі уроку, адаптивні зображення та перегляд оригіналу в лонгрідах, зарахування перегляду лише за остаточним розкладом. У тестах — продовження з місця зупинки та компактний прогрес, в опитуваннях — поділ «Мої опитування» на «У процесі» та «Завершені» з бейджем.
+
+### 🏢 Компанія, звіти й сертифікати
+У списку компанії відображаються блокування співробітників без входу в ЛМС, підрозділ без відділу прив'язується до кореня дерева, PDF-звіти завантажуються замість авто відкриття. Сертифікат не можна ввімкнути без шаблону, а програми відображаються в «Моєму профілі → Мої сертифікати».
+
+---
+
+## FR (Français)
+
+## ✨ Les points clés de cette version
+
+### 🔗 Nouvelles intégrations avec des services externes
+Ajout de tuiles de connexion pour Asana, Notion, Freshservice, Klaviyo et HubSpot avec la configuration des utilisateurs, équipes/départements, notifications et tâches. Freshservice dispose désormais de champs de domaine distincts pour l'organisation et le produit, et Klaviyo prend en charge une synchronisation facultative de l'effectif (profils comme utilisateurs, listes comme départements).
+
+### 📚 Stabilité des cours et de l'apprentissage
+Correction de l'achèvement des modules lors de tentatives répétées d'un cours et unification de l'achèvement des modules avec les transitions. Un cours dont la ligne de progression a été écrasée est restauré à partir de PREVIEW_TEXT, et l'ouverture d'un cours non encore commencé ne provoque plus de plantage.
+
+### 📥 Importation et migration des données
+Correction de l'importation vide des leçons SCORM avec le fournisseur « CAM 1.3 », ajout de la prise en charge de la migration des données depuis l'ancienne clé du portail et gestion correcte des échecs de migration distinguant un refus de tarif d'un problème de jeton cible.
+
+### 📝 Leçons, tests et sondages
+Les sauts de ligne sont conservés dans les descriptions de leçons, les longues lectures bénéficient d'images adaptatives et de la vue originale, et la consultation n'est comptée que selon la mise en page finale. Les tests reprennent là où ils se sont arrêtés avec une progression compacte, et « Mes sondages » est scindé en « En cours » et « Terminés » avec un badge.
+
+### 🏢 Entreprise, rapports et certificats
+La liste de l'entreprise affiche désormais les employés bloqués n'ayant jamais accédé au LMS, les unités sans département sont rattachées à la racine de l'arborescence, et les rapports PDF se téléchargent au lieu de s'ouvrir automatiquement. Un certificat ne peut être activé sans modèle, et les programmes apparaissent dans « Mon profil → Mes certificats ».
+
+---
+
+## IT (Italiano)
+
+## ✨ Punti salienti di questa versione
+
+### 🔗 Nuove integrazioni con servizi esterni
+Aggiunte tile di connessione per Asana, Notion, Freshservice, Klaviyo e HubSpot con configurazione di utenti, team/reparti, notifiche e attività. Freshservice ora dispone di campi dominio separati per organizzazione e prodotto, mentre Klaviyo supporta una sincronizzazione facoltativa dell'organico (profili come utenti, liste come reparti).
+
+### 📚 Stabilità di corsi e apprendimento
+Corretto il completamento dei moduli nei tentativi ripetuti di un corso e unificata la logica di completamento dei moduli con le transizioni. Un corso con la riga di avanzamento sovrascritta viene ripristinato da PREVIEW_TEXT e l'apertura di un corso non ancora iniziato non causa più crash.
+
+### 📥 Importazione e migrazione dei dati
+Corretta l'importazione vuota delle lezioni SCORM con provider «CAM 1.3», aggiunto il supporto per la migrazione dei dati dalla precedente chiave del portale e una corretta gestione degli errori di migrazione che distingue il rifiuto del piano dal problema del token di destinazione.
+
+### 📝 Lezioni, test e sondaggi
+Le interruzioni di riga vengono conservate nelle descrizioni delle lezioni, i longread hanno immagini adattive e visualizzazione dell'originale, e la visualizzazione viene conteggiata solo in base al layout finale. I test riprendono dal punto di interruzione con un avanzamento compatto, e «I miei sondaggi» è suddiviso in «In corso» e «Completati» con un badge.
+
+### 🏢 Azienda, report e certificati
+L'elenco aziendale ora mostra i dipendenti bloccati che non hanno mai effettuato l'accesso al LMS, le unità senza reparto vengono collegate alla radice dell'albero e i report PDF vengono scaricati invece di aprirsi automaticamente. Un certificato non può essere attivato senza modello e i programmi compaiono in «Il mio profilo → I miei certificati».
+
+---
+
+## DE (Deutsch)
+
+## ✨ Das Wichtigste in diesem Release
+
+### 🔗 Neue Integrationen mit externen Diensten
+Neue Verbindungs-Kacheln für Asana, Notion, Freshservice, Klaviyo und HubSpot mit Konfiguration von Benutzern, Teams/Abteilungen, Benachrichtigungen und Aufgaben. Freshservice hat nun getrennte Domänenfelder für Organisation und Produkt, und Klaviyo unterstützt eine optionale Roster-Synchronisierung (Profile als Benutzer, Listen als Abteilungen).
+
+### 📚 Stabilität von Kursen und Lernen
+Die Modulabschluss-Logik bei wiederholten Kursversuchen wurde korrigiert und der Modulabschluss mit Übergängen vereinheitlicht. Ein Kurs mit überschriebener Fortschrittszeile wird aus PREVIEW_TEXT wiederhergestellt, und das Öffnen eines noch nicht begonnenen Kurses führt nicht mehr zum Absturz.
+
+### 📥 Datenimport und Migration
+Der leere Import von SCORM-Lektionen mit dem Anbieter «CAM 1.3» wurde behoben, die Migration von Daten aus dem bisherigen Portalschlüssel unterstützt und Migrationsfehler korrekt behandelt, wobei eine Tarifablehnung von einem Ziel-Token-Problem unterschieden wird.
+
+### 📝 Lektionen, Tests und Umfragen
+Zeilenumbrüche bleiben in Lektionsbeschreibungen erhalten, Longreads erhalten responsive Bilder und die Originalansicht, und Aufrufe werden nur nach dem endgültigen Layout gezählt. Tests werden ab der Abbruchstelle mit kompaktem Fortschritt fortgesetzt, und «Meine Umfragen» ist in «In Bearbeitung» und «Abgeschlossen» mit Badge unterteilt.
+
+### 🏢 Unternehmen, Berichte und Zertifikate
+Die Unternehmensliste zeigt nun gesperrte Mitarbeiter, die sich nie im LMS angemeldet haben, Einheiten ohne Abteilung werden an der Baumwurzel eingehängt, und PDF-Berichte werden heruntergeladen statt automatisch geöffnet. Ein Zertifikat kann nicht ohne Vorlage aktiviert werden, und Programme erscheinen unter «Mein Profil → Meine Zertifikate».
+
+---
+
+## TR (Türkçe)
+
+## ✨ Bu sürümde öne çıkanlar
+
+### 🔗 Harici servislerle yeni entegrasyonlar
+Asana, Notion, Freshservice, Klaviyo ve HubSpot için kullanıcı, ekip/bölüm, bildirim ve görev yapılandırmalı bağlantı kutucukları eklendi. Freshservice artık kuruluş ve ürün için ayrı alan adı alanlarına sahip, Klaviyo ise isteğe bağlı kadro senkronizasyonunu destekliyor (profiller kullanıcı, listeler bölüm olarak).
+
+### 📚 Kurs ve öğrenme kararlılığı
+Tekrarlanan kurs denemelerinde modül tamamlama düzeltildi ve modül tamamlama ile geçişler tek bir mantıkta birleştirildi. İlerleme satırı üzerine yazılmış bir kurs PREVIEW_TEXT'ten geri yükleniyor ve henüz başlanmamış bir kursun açılması artık çökmeye neden olmuyor.
+
+### 📥 Veri içe aktarma ve taşıma
+«CAM 1.3» sağlayıcılı SCORM derslerinin boş içe aktarılması giderildi, önceki portal anahtarından veri taşıma desteği eklendi ve taşıma hataları tarife reddi ile hedef belirteç sorunu ayırt edilerek doğru şekilde işleniyor.
+
+### 📝 Dersler, testler ve anketler
+Ders açıklamalarında satır sonları korunuyor, uzun okumalarda uyarlanabilir görseller ve orijinal görüntüleme sunuluyor, görüntüleme yalnızca nihai yerleşime göre sayılıyor. Testler kalınan yerden kompakt ilerlemeyle devam ediyor ve «Anketlerim» «Devam eden» ile «Tamamlanan» olarak rozetle ayrıldı.
+
+### 🏢 Şirket, raporlar ve sertifikalar
+Şirket listesi artık LMS'ye hiç giriş yapmamış engelli çalışanları gösteriyor, bölümü olmayan birimler ağacın köküne bağlanıyor ve PDF raporları otomatik açılmak yerine indiriliyor. Şablon olmadan sertifika etkinleştirilemiyor ve programlar «Profilim → Sertifikalarım» altında görünüyor.
+
+---
+
+## PL (Polski)
+
+## ✨ Najważniejsze w tym wydaniu
+
+### 🔗 Nowe integracje z zewnętrznymi usługami
+Dodano kafle połączeń dla Asany, Notion, Freshservice, Klaviyo i HubSpot z konfiguracją użytkowników, zespołów/działów, powiadomień i zadań. Freshservice ma teraz osobne pola domeny organizacji i produktu, a Klaviyo obsługuje opcjonalną synchronizację składu (profile jako użytkownicy, listy jako działy).
+
+### 📚 Stabilność kursów i nauki
+Naprawiono ukończenie modułów przy powtarzanych próbach kursu i ujednolicono ukończenie modułów z przejściami. Kurs z nadpisanym wierszem postępu jest odtwarzany z PREVIEW_TEXT, a otwarcie jeszcze nierozpoczętego kursu nie powoduje już awarii.
+
+### 📥 Import i migracja danych
+Usunięto pusty import lekcji SCORM z dostawcą «CAM 1.3», dodano obsługę migracji danych z poprzedniego klucza portalu oraz poprawne obsługiwanie błędów migracji z rozróżnieniem odmowy taryfy i problemu z tokenem docelowym.
+
+### 📝 Lekcje, testy i ankiety
+Zachowywane są podziały wierszy w opisach lekcji, longready mają responsywne obrazy i podgląd oryginału, a wyświetlenia są liczone tylko według ostatecznego układu. Testy wznawiają się od miejsca przerwania z kompaktowym postępem, a «Moje ankiety» podzielono na «W toku» i «Zakończone» z odznaką.
+
+### 🏢 Firma, raporty i certyfikaty
+Lista firmy pokazuje teraz zablokowanych pracowników, którzy nigdy nie zalogowali się do LMS, jednostki bez działu są przypinane do korzenia drzewa, a raporty PDF są pobierane zamiast automatycznie otwierane. Certyfikatu nie można włączyć bez szablonu, a programy pojawiają się w «Mój profil → Moje certyfikaty».
+
+---
+
+## PT (Português)
+
+## ✨ Destaques desta versão
+
+### 🔗 Novas integrações com serviços externos
+Adicionados blocos de conexão para Asana, Notion, Freshservice, Klaviyo e HubSpot com configuração de utilizadores, equipas/departamentos, notificações e tarefas. O Freshservice tem agora campos de domínio separados para organização e produto, e o Klaviyo suporta sincronização opcional de efetivos (perfis como utilizadores, listas como departamentos).
+
+### 📚 Estabilidade de cursos e aprendizagem
+Corrigida a conclusão de módulos em tentativas repetidas de um curso e unificada a conclusão de módulos com as transições. Um curso com a linha de progresso substituída é restaurado a partir de PREVIEW_TEXT, e abrir um curso ainda não iniciado já não provoca falhas.
+
+### 📥 Importação e migração de dados
+Corrigida a importação vazia de lições SCORM com o fornecedor «CAM 1.3», adicionado suporte para migrar dados da chave anterior do portal e tratamento correto de falhas de migração que distingue a recusa de tarifário de um problema de token de destino.
+
+### 📝 Lições, testes e inquéritos
+As quebras de linha são preservadas nas descrições das lições, os longreads têm imagens adaptáveis e visualização do original, e as visualizações só são contadas com a disposição final. Os testes retomam do ponto de paragem com progresso compacto, e «Os meus inquéritos» está dividido em «Em curso» e «Concluídos» com um selo.
+
+### 🏢 Empresa, relatórios e certificados
+A lista da empresa mostra agora colaboradores bloqueados que nunca iniciaram sessão no LMS, as unidades sem departamento são ligadas à raiz da árvore, e os relatórios PDF são transferidos em vez de abrirem automaticamente. Um certificado não pode ser ativado sem modelo, e os programas aparecem em «O meu perfil → Os meus certificados».
+
+---
+
+## ES (Español)
+
+## ✨ Lo más destacado de esta versión
+
+### 🔗 Nuevas integraciones con servicios externos
+Se añadieron mosaicos de conexión para Asana, Notion, Freshservice, Klaviyo y HubSpot con configuración de usuarios, equipos/departamentos, notificaciones y tareas. Freshservice ahora tiene campos de dominio separados para organización y producto, y Klaviyo admite una sincronización opcional de la plantilla (perfiles como usuarios, listas como departamentos).
+
+### 📚 Estabilidad de cursos y aprendizaje
+Se corrigió la finalización de módulos en intentos repetidos de un curso y se unificó la finalización de módulos con las transiciones. Un curso con la fila de progreso sobrescrita se restaura desde PREVIEW_TEXT, y abrir un curso aún no iniciado ya no provoca fallos.
+
+### 📥 Importación y migración de datos
+Se corrigió la importación vacía de lecciones SCORM con el proveedor «CAM 1.3», se añadió compatibilidad para migrar datos desde la clave anterior del portal y se gestionan correctamente los fallos de migración distinguiendo el rechazo de tarifa de un problema de token de destino.
+
+### 📝 Lecciones, tests y encuestas
+Se conservan los saltos de línea en las descripciones de las lecciones, los longreads tienen imágenes adaptativas y vista del original, y las visualizaciones solo se cuentan según el diseño final. Los tests se reanudan desde el punto de parada con un progreso compacto, y «Mis encuestas» se divide en «En curso» y «Completadas» con una insignia.
+
+### 🏢 Empresa, informes y certificados
+La lista de la empresa ahora muestra empleados bloqueados que nunca iniciaron sesión en el LMS, las unidades sin departamento se vinculan a la raíz del árbol, y los informes PDF se descargan en lugar de abrirse automáticamente. Un certificado no se puede activar sin plantilla, y los programas aparecen en «Mi perfil → Mis certificados».
+
+---
+
+## VN (Tiếng Việt)
+
+## ✨ Điểm nổi bật trong bản phát hành này
+
+### 🔗 Tích hợp mới với các dịch vụ bên ngoài
+Đã thêm các ô kết nối cho Asana, Notion, Freshservice, Klaviyo và HubSpot với cấu hình người dùng, nhóm/phòng ban, thông báo và nhiệm vụ. Freshservice nay có các trường tên miền riêng cho tổ chức và sản phẩm, còn Klaviyo hỗ trợ đồng bộ danh sách tùy chọn (hồ sơ là người dùng, danh sách là phòng ban).
+
+### 📚 Độ ổn định của khóa học và học tập
+Đã sửa việc hoàn thành mô-đun khi thử lại khóa học và thống nhất logic hoàn thành mô-đun với các chuyển tiếp. Khóa học có dòng tiến độ bị ghi đè được khôi phục từ PREVIEW_TEXT, và việc mở một khóa học chưa bắt đầu không còn gây lỗi.
+
+### 📥 Nhập và di chuyển dữ liệu
+Đã khắc phục việc nhập bài học SCORM trống với nhà cung cấp «CAM 1.3», thêm hỗ trợ di chuyển dữ liệu từ khóa cổng cũ và xử lý đúng các lỗi di chuyển, phân biệt việc từ chối gói dịch vụ với sự cố mã thông báo đích.
+
+### 📝 Bài học, bài kiểm tra và khảo sát
+Ngắt dòng được giữ nguyên trong mô tả bài học, bài đọc dài có hình ảnh thích ứng và xem bản gốc, và lượt xem chỉ được tính theo bố cục cuối cùng. Bài kiểm tra tiếp tục từ điểm dừng với tiến độ gọn gàng, và «Khảo sát của tôi» được chia thành «Đang thực hiện» và «Đã hoàn thành» kèm huy hiệu.
+
+### 🏢 Công ty, báo cáo và chứng chỉ
+Danh sách công ty nay hiển thị nhân viên bị khóa chưa từng đăng nhập LMS, đơn vị không có phòng ban được gắn vào gốc cây, và báo cáo PDF được tải xuống thay vì tự động mở. Không thể bật chứng chỉ khi chưa có mẫu, và các chương trình xuất hiện trong «Hồ sơ của tôi → Chứng chỉ của tôi».
+
+---
+
+## ZH (中文)
+
+## ✨ 本次发布亮点
+
+### 🔗 与外部服务的新集成
+新增 Asana、Notion、Freshservice、Klaviyo 和 HubSpot 的连接卡片，支持用户、团队/部门、通知和任务配置。Freshservice 现在拥有独立的组织域名和产品域名字段，Klaviyo 支持可选的名单同步（个人资料作为用户，列表作为部门）。
+
+### 📚 课程与学习稳定性
+修复了重复尝试课程时的模块完成问题，并统一了模块完成与跳转逻辑。进度行被覆盖的课程可从 PREVIEW_TEXT 恢复，打开尚未开始的课程不再导致崩溃。
+
+### 📥 数据导入与迁移
+修复了使用「CAM 1.3」提供商的 SCORM 课程导入为空的问题，新增从旧门户密钥迁移数据的支持，并正确处理迁移失败，区分套餐拒绝与目标令牌问题。
+
+### 📝 课程、测试与问卷
+课程描述中的换行得以保留，长文阅读支持自适应图片和查看原图，仅按最终布局计为已读。测试可从中断处继续并显示紧凑进度，「我的问卷」分为「进行中」和「已完成」并带有徽章。
+
+### 🏢 公司、报告与证书
+公司列表现在显示从未登录 LMS 的被锁定员工，无部门的单位挂载到树的根节点，PDF 报告改为下载而非自动打开。没有模板时无法启用证书，课程项目显示在「我的个人资料 → 我的证书」中。
+
+---
+
+## JA (日本語)
+
+## ✨ このリリースのハイライト
+
+### 🔗 外部サービスとの新しい連携
+Asana、Notion、Freshservice、Klaviyo、HubSpot の接続タイルを追加し、ユーザー、チーム/部署、通知、タスクを設定できるようにしました。Freshservice は組織と製品のドメインフィールドを分離し、Klaviyo は任意の名簿同期（プロフィールをユーザー、リストを部署として扱う）に対応しました。
+
+### 📚 コースと学習の安定性
+コースの再試行時のモジュール完了を修正し、モジュール完了と遷移のロジックを統一しました。進捗行が上書きされたコースは PREVIEW_TEXT から復元され、未開始のコースを開いてもクラッシュしなくなりました。
+
+### 📥 データのインポートと移行
+プロバイダー「CAM 1.3」の SCORM レッスンが空でインポートされる問題を修正し、以前のポータルキーからのデータ移行をサポートするとともに、移行失敗を正しく処理してプラン拒否と対象トークンの問題を区別するようにしました。
+
+### 📝 レッスン、テスト、アンケート
+レッスン説明の改行が保持され、ロングリードではレスポンシブ画像とオリジナル表示に対応し、閲覧は最終レイアウトでのみカウントされます。テストは中断地点からコンパクトな進捗で再開でき、「マイアンケート」は「進行中」と「完了」に分けられバッジが付きます。
+
+### 🏢 会社、レポート、証明書
+会社一覧に LMS に一度もログインしていないブロック中の従業員が表示され、部署のない単位はツリーのルートに紐付けられ、PDF レポートは自動で開かずダウンロードされるようになりました。テンプレートなしでは証明書を有効化できず、プログラムは「マイプロフィール → マイ証明書」に表示されます。
+
+---
+
+## KZ (Қазақша)
+
+## ✨ Осы релиздегі басты жаңалықтар
+
+### 🔗 Сыртқы қызметтермен жаңа интеграциялар
+Asana, Notion, Freshservice, Klaviyo және HubSpot үшін пайдаланушыларды, топтарды/бөлімдерді, хабарламаларды және тапсырмаларды баптайтын қосылу плиткалары қосылды. Freshservice енді ұйым мен өнім доменіне бөлек өрістерге ие, ал Klaviyo құрамды қосымша синхрондауды қолдайды (профильдер пайдаланушы ретінде, тізімдер бөлім ретінде).
+
+### 📚 Курстар мен оқытудың тұрақтылығы
+Курсты қайталап өту кезінде модульді аяқтау түзетілді және модульді аяқтау мен ауысулар бір логикаға біріктірілді. Прогресс жолы қайта жазылған курс PREVIEW_TEXT арқылы қалпына келтіріледі, ал басталмаған курсты ашу енді құлауға әкелмейді.
+
+### 📥 Деректерді импорттау және көшіру
+«CAM 1.3» провайдері бар SCORM сабақтарының бос импортталуы жойылды, порталдың бұрынғы кілтінен деректерді көшіруге қолдау қосылды және көшіру сәтсіздіктері тарифтен бас тартуды мақсатты токен мәселесінен ажырата отырып дұрыс өңделеді.
+
+### 📝 Сабақтар, тесттер және сауалнамалар
+Сабақ сипаттамасындағы жол үзілімдері сақталады, лонгридтерде бейімделген суреттер мен түпнұсқаны қарау бар, қаралым тек қорытынды орналасу бойынша есептеледі. Тесттер тоқтаған жерден ықшам прогреспен жалғасады, ал «Менің сауалнамаларым» «Орындалуда» және «Аяқталды» деп бөлініп, белгі қосылды.
+
+### 🏢 Компания, есептер және сертификаттар
+Компания тізімінде ЛМС-ке ешқашан кірмеген бұғатталған қызметкерлер көрсетіледі, бөлімшесі жоқ бірліктер ағаш түбіріне байланыстырылады, PDF-есептер автоматты ашылмай, жүктеледі. Үлгісіз сертификатты қосу мүмкін емес, ал бағдарламалар «Менің профилім → Менің сертификаттарым» бөлімінде көрсетіледі.
+
+---
+
+## AR (العربية)
+
+## ✨ أبرز ما في هذا الإصدار
+
+### 🔗 تكاملات جديدة مع خدمات خارجية
+أُضيفت بطاقات اتصال لـ Asana وNotion وFreshservice وKlaviyo وHubSpot مع إعداد المستخدمين والفرق/الأقسام والإشعارات والمهام. أصبح لدى Freshservice حقلا نطاق منفصلان للمؤسسة والمنتج، ويدعم Klaviyo مزامنة اختيارية للقائمة (الملفات الشخصية كمستخدمين والقوائم كأقسام).
+
+### 📚 استقرار الدورات والتعلّم
+تم إصلاح إكمال الوحدات عند محاولات الدورة المتكررة وتوحيد إكمال الوحدات مع الانتقالات. تُستعاد الدورة التي كُتب فوقها سطر التقدم من PREVIEW_TEXT، ولم يعد فتح دورة لم تبدأ بعد يؤدي إلى تعطّل.
+
+### 📥 استيراد البيانات وترحيلها
+تم إصلاح استيراد دروس SCORM الفارغ مع المزوّد «CAM 1.3»، وأُضيف دعم ترحيل البيانات من مفتاح البوابة السابق، ومعالجة صحيحة لأعطال الترحيل مع التمييز بين رفض الخطة ومشكلة رمز الهدف.
+
+### 📝 الدروس والاختبارات والاستبيانات
+يُحتفظ بفواصل الأسطر في أوصاف الدروس، وتدعم القراءات الطويلة الصور المتجاوبة وعرض الأصل، ولا يُحتسب الاطلاع إلا وفق التخطيط النهائي. تُستأنف الاختبارات من نقطة التوقف مع تقدم مُدمج، وينقسم «استبياناتي» إلى «قيد التنفيذ» و«مكتملة» مع شارة.
+
+### 🏢 الشركة والتقارير والشهادات
+تعرض قائمة الشركة الآن الموظفين المحظورين الذين لم يسجّلوا الدخول إلى نظام إدارة التعلّم قط، وتُربط الوحدات التي لا تنتمي إلى قسم بجذر الشجرة، وتُحمَّل تقارير PDF بدل فتحها تلقائيًا. لا يمكن تفعيل الشهادة دون قالب، وتظهر البرامج في «ملفي الشخصي ← شهاداتي».
+
+---
+
+## ID (Bahasa Indonesia)
+
+## ✨ Sorotan rilis ini
+
+### 🔗 Integrasi baru dengan layanan eksternal
+Ditambahkan ubin koneksi untuk Asana, Notion, Freshservice, Klaviyo, dan HubSpot dengan konfigurasi pengguna, tim/departemen, notifikasi, dan tugas. Freshservice kini memiliki kolom domain terpisah untuk organisasi dan produk, dan Klaviyo mendukung sinkronisasi daftar opsional (profil sebagai pengguna, daftar sebagai departemen).
+
+### 📚 Stabilitas kursus dan pembelajaran
+Diperbaiki penyelesaian modul pada percobaan kursus berulang dan disatukan logika penyelesaian modul dengan transisi. Kursus dengan baris progres yang tertimpa dipulihkan dari PREVIEW_TEXT, dan
