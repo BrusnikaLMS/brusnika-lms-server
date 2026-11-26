@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cforj-embed — Тестовый полигон для LMS</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f3f4f6; color: #1f2937; }
+    .header { background: #fff; border-bottom: 1px solid #e5e7eb; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .header h1 { font-size: 16px; font-weight: 700; }
+    .header .subtitle { font-size: 12px; color: #9ca3af; margin-left: 12px; }
+    .tabs { display: flex; gap: 2px; background: #e5e7eb; border-radius: 8px; padding: 2px; }
+    .tab { padding: 8px 20px; border-radius: 6px; border: none; background: transparent; cursor: pointer; font-size: 13px; font-weight: 600; color: #6b7280; transition: all 0.15s; }
+    .tab.active { background: #fff; color: #111827; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .container { display: flex; height: calc(100vh - 53px); }
+    .sidebar { width: 360px; background: #fff; border-right: 1px solid #e5e7eb; display: flex; flex-direction: column; overflow: hidden; }
+    .sidebar-header { padding: 16px; border-bottom: 1px solid #f3f4f6; }
+    .sidebar-header h2 { font-size: 13px; font-weight: 700; color: #374151; text-transform: uppercase; letter-spacing: 0.5px; }
+    .sidebar-content { flex: 1; overflow-y: auto; padding: 12px; }
+    .main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+    .iframe-container { flex: 1; padding: 16px; background: #f9fafb; }
+    .iframe-container iframe { width: 100%; height: 100%; border: 1px solid #e5e7eb; border-radius: 12px; background: #fff; }
+    .log-panel { height: 200px; background: #1f2937; border-top: 1px solid #374151; overflow-y: auto; }
+    .log-header { padding: 8px 16px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #374151; }
+    .log-header span { font-size: 11px; font-weight: 700; color: #9ca3af; text-transform: uppercase; letter-spacing: 1px; }
+    .log-body { padding: 8px 16px; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 12px; }
+    .log-entry { padding: 3px 0; border-bottom: 1px solid #374151; display: flex; gap: 8px; }
+    .log-time { color: #6b7280; min-width: 70px; }
+    .log-dir { font-weight: 700; min-width: 24px; }
+    .log-dir.in { color: #34d399; }
+    .log-dir.out { color: #818cf8; }
+    .log-type { color: #fbbf24; min-width: 180px; }
+    .log-data { color: #d1d5db; word-break: break-all; }
+    .btn { padding: 8px 16px; border-radius: 8px; border: 1px solid #e5e7eb; background: #fff; cursor: pointer; font-size: 13px; font-weight: 500; transition: all 0.15s; }
+    .btn:hover { background: #f9fafb; border-color: #d1d5db; }
+    .btn-primary { background: #6366f1; color: #fff; border-color: #6366f1; }
+    .btn-primary:hover { background: #4f46e5; }
+    .btn-sm { padding: 4px 10px; font-size: 11px; }
+    .btn-danger { color: #ef4444; border-color: #fca5a5; }
+    .btn-danger:hover { background: #fef2f2; }
+    .form-group { margin-bottom: 12px; }
+    .form-group label { display: block; font-size: 11px; font-weight: 600; color: #6b7280; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.3px; }
+    .form-group select, .form-group input { width: 100%; border: 1px solid #e5e7eb; border-radius: 6px; padding: 8px 10px; font-size: 13px; outline: none; }
+    .form-group select:focus, .form-group input:focus { border-color: #6366f1; }
+    .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+    .status-badge { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px; }
+    .status-badge.connected { background: #d1fae5; color: #065f46; }
+    .status-badge.waiting { background: #fef3c7; color: #92400e; }
+    .info-box { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 10px 14px; font-size: 12px; color: #1e40af; margin-bottom: 12px; line-height: 1.5; }
+    .info-box code { background: #dbeafe; padding: 1px 4px; border-radius: 3px; font-family: monospace; font-size: 11px; }
+    .course-id { font-family: monospace; font-size: 12px; background: #f3f4f6; padding: 6px 10px; border-radius: 6px; border: 1px solid #e5e7eb; margin: 8px 0; word-break: break-all; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div style="display:flex;align-items:center;">
+      <h1>cforj-embed</h1>
+      <span class="subtitle">Тестовый полигон для LMS (H5P-style, by courseId)</span>
+    </div>
+    <div class="tabs">
+      <button class="tab active" onclick="switchMode('editor')">Редактор</button>
+      <button class="tab" onclick="switchMode('player')">Плеер</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <div style="display:flex;align-items:center;justify-content:space-between;">
+          <h2>Управление</h2>
+          <span id="status" class="status-badge waiting">Ожидание...</span>
+        </div>
+      </div>
+      <div class="sidebar-content">
+
+        <!-- Editor controls -->
+        <div id="editor-controls">
+          <div class="info-box">
+            <strong>H5P-подход:</strong> LMS обменивается только <code>courseId</code>.<br>
+            Контент хранится в cforj-embed API.<br>
+            <code>CS_CREATE_COURSE</code> → создать курс, получить ID.<br>
+            <code>CS_LOAD_COURSE</code> → загрузить по ID.
+          </div>
+
+          <div class="actions">
+            <button class="btn btn-primary" onclick="createCourse()">Создать курс</button>
+            <button class="btn" onclick="loadCourseById()">Загрузить по ID</button>
+            <button class="btn" onclick="saveCourse()" style="background:#059669;color:#fff;border-color:#059669;">Сохранить</button>
+            <button class="btn" onclick="getCourse()">Получить JSON</button>
+          </div>
+
+          <div class="form-group">
+            <label>Course ID</label>
+            <input id="course-id-input" placeholder="Вставьте courseId..." />
+          </div>
+
+          <div id="current-course-id" style="display:none;">
+            <label style="font-size:11px;font-weight:600;color:#6b7280;text-transform:uppercase;">Текущий курс</label>
+            <div class="course-id" id="active-course-id">—</div>
+          </div>
+
+          <div class="form-group">
+            <label>Язык интерфейса</label>
+            <select onchange="sendConfig({locale: this.value})">
+              <option value="ru">Русский</option>
+              <option value="en">English</option>
+              <option value="es">Espanol</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Тема</label>
+            <select onchange="sendConfig({theme: this.value})">
+              <option value="light">Светлая</option>
+              <option value="dark">Тёмная</option>
+            </select>
+          </div>
+
+          <div class="actions">
+            <button class="btn btn-sm" onclick="listCourses()">Список курсов (API)</button>
+            <button class="btn btn-sm btn-danger" onclick="clearLog()">Очистить лог</button>
+          </div>
+
+          <div id="courses-list" style="display:none; margin-top:8px;">
+            <label style="font-size:11px;font-weight:600;color:#6b7280;text-transform:uppercase;">Курсы в БД</label>
+            <div id="courses-list-body" style="font-size:12px; max-height:150px; overflow-y:auto; margin-top:4px;"></div>
+          </div>
+        </div>
+
+        <!-- Player controls -->
+        <div id="player-controls" style="display:none;">
+          <div class="info-box">
+            <strong>Плеер</strong> — просто откройте <code>/player/{courseId}</code>.<br>
+            Или отправьте <code>CS_LOAD_PLAYER</code> с courseId.
+          </div>
+
+          <div class="form-group">
+            <label>Course ID для плеера</label>
+            <input id="player-course-id" placeholder="Вставьте courseId..." />
+          </div>
+
+          <div class="actions">
+            <button class="btn btn-primary" onclick="loadPlayer()">Загрузить в плеер</button>
+            <button class="btn" onclick="loadPlayerByUrl()">Открыть по URL</button>
+          </div>
+
+          <div class="form-group">
+            <label>Прогресс прохождения</label>
+            <div id="progress-info" style="font-size:13px;color:#6b7280;padding:8px 0;">Ожидание данных...</div>
+          </div>
+
+          <div class="actions">
+            <button class="btn btn-sm btn-danger" onclick="clearLog()">Очистить лог</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="iframe-container">
+        <iframe id="widget" src="about:blank" allow="clipboard-write"></iframe>
+      </div>
+      <div class="log-panel">
+        <div class="log-header">
+          <span>PostMessage Log</span>
+          <button class="btn btn-sm" style="color:#9ca3af;border-color:#4b5563;" onclick="clearLog()">Clear</button>
+        </div>
+        <div class="log-body" id="log"></div>
+      </div>
+    </div>
+  </div>
+
+<script>
+const CFORJ_URL = window.location.origin
+const API_URL = CFORJ_URL + '/api/embed/courses'
+
+let currentMode = 'editor'
+let activeCourseId = null
+
+// === MODE SWITCHING ===
+function switchMode(mode) {
+  currentMode = mode
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'))
+  event.target.classList.add('active')
+  document.getElementById('editor-controls').style.display = mode === 'editor' ? 'block' : 'none'
+  document.getElementById('player-controls').style.display = mode === 'player' ? 'block' : 'none'
+
+  const iframe = document.getElementById('widget')
+  const statusEl = document.getElementById('status')
+  statusEl.textContent = 'Загрузка...'
+  statusEl.className = 'status-badge waiting'
+
+  if (mode === 'editor') {
+    iframe.src = CFORJ_URL + '/editor'
+  } else {
+    iframe.src = 'about:blank'
+  }
+}
+
+// === POSTMESSAGE ===
+function sendToIframe(msg) {
+  const iframe = document.getElementById('widget')
+  if (iframe.contentWindow) {
+    iframe.contentWindow.postMessage(msg, '*')
+    addLog('out', msg.type, msg)
+  }
+}
+
+// === EDITOR ACTIONS ===
+function createCourse() {
+  sendToIframe({ type: 'CS_CREATE_COURSE', title: 'Тестовый курс от LMS' })
+}
+
+function loadCourseById() {
+  const id = document.getElementById('course-id-input').value.trim()
+  if (!id) return alert('Введите courseId')
+  sendToIframe({ type: 'CS_LOAD_COURSE', courseId: id })
+}
+
+function setCourseId(id) {
+  activeCourseId = id
+  document.getElementById('active-course-id').textContent = id
+  document.getElementById('current-course-id').style.display = 'block'
+  document.getElementById('course-id-input').value = id
+  document.getElementById('player-course-id').value = id
+}
+
+async function listCourses() {
+  try {
+    const res = await fetch(API_URL)
+    const courses = await res.json()
+    const el = document.getElementById('courses-list-body')
+    if (courses.length === 0) {
+      el.innerHTML = '<div style="color:#9ca3af;padding:4px;">Нет курсов</div>'
+    } else {
+      el.innerHTML = courses.map(c =>
+        '<div style="padding:4px 0;border-bottom:1px solid #f3f4f6;cursor:pointer;" onclick="loadCourseFromList(\'' + c.id + '\')">' +
+        '<strong>' + c.title + '</strong><br>' +
+        '<span style="font-size:10px;color:#9ca3af;">' + c.id + '</span></div>'
+      ).join('')
+    }
+    document.getElementById('courses-list').style.display = 'block'
+  } catch (e) {
+    alert('API error: ' + e.message)
+  }
+}
+
+function loadCourseFromList(id) {
+  setCourseId(id)
+  sendToIframe({ type: 'CS_LOAD_COURSE', courseId: id })
+}
+
+// === PLAYER ACTIONS ===
+function loadPlayer() {
+  const id = document.getElementById('player-course-id').value.trim()
+  if (!id) return alert('Введите courseId')
+  const iframe = document.getElementById('widget')
+  iframe.src = CFORJ_URL + '/player/' + id
+}
+
+function loadPlayerByUrl() {
+  const id = document.getElementById('player-course-id').value.trim()
+  if (!id) return alert('Введите courseId')
+  window.open(CFORJ_URL + '/player/' + id, '_blank')
+}
+
+function saveCourse() {
+  sendToIframe({ type: 'CS_SAVE_COURSE' })
+}
+
+function getCourse() {
+  sendToIframe({ type: 'CS_GET_COURSE' })
+}
+
+function sendConfig(config) {
+  sendToIframe({ type: 'CS_SET_CONFIG', config })
+}
+
+// === LISTEN ===
+window.addEventListener('message', (e) => {
+  const msg = e.data
+  if (!msg || typeof msg !== 'object' || !msg.type) return
+  if (!msg.type.startsWith('CS_')) return
+
+  addLog('in', msg.type, msg)
+  const statusEl = document.getElementById('status')
+
+  switch (msg.type) {
+    case 'CS_READY':
+      statusEl.textContent = 'Редактор готов'
+      statusEl.className = 'status-badge connected'
+      break
+    case 'CS_COURSE_CREATED':
+      setCourseId(msg.courseId)
+      statusEl.textContent = 'Курс создан'
+      statusEl.className = 'status-badge connected'
+      break
+    case 'CS_COURSE_LOADED':
+      setCourseId(msg.courseId)
+      statusEl.textContent = 'Курс загружен'
+      statusEl.className = 'status-badge connected'
+      break
+    case 'CS_COURSE_SAVED':
+      statusEl.textContent = 'Сохранено ✓'
+      statusEl.className = 'status-badge connected'
+      break
+    case 'CS_SAVE_ERROR':
+      statusEl.textContent = 'Ошибка сохранения'
+      statusEl.className = 'status-badge waiting'
+      alert('Save error: ' + msg.error)
+      break
+    case 'CS_COURSE_DATA':
+      console.log('Course data received:', msg)
+      alert('courseId: ' + msg.courseId + '\n\nJSON скопирован в консоль (F12)')
+      break
+    case 'CS_PLAYER_READY':
+      statusEl.textContent = 'Плеер готов'
+      statusEl.className = 'status-badge connected'
+      break
+    case 'CS_PROGRESS':
+      document.getElementById('progress-info').innerHTML =
+        '<strong>Score:</strong> ' + (msg.progress?.score ?? 0) +
+        ' | <strong>Screen:</strong> ' + (msg.progress?.currentScreenIndex ?? 0)
+      break
+    case 'CS_COMPLETE':
+      document.getElementById('progress-info').innerHTML =
+        '<strong style="color:#059669;">Курс завершён!</strong> Score: ' + (msg.score ?? 0)
+      break
+    case 'CS_ERROR':
+      statusEl.textContent = 'Ошибка'
+      statusEl.className = 'status-badge waiting'
+      alert('Error: ' + msg.error)
+      break
+  }
+})
+
+// === LOG ===
+function addLog(dir, type, data) {
+  const log = document.getElementById('log')
+  const time = new Date().toLocaleTimeString('ru', { hour: '2-digit', minute: '2-digit', second: '2-digit' })
+  const arrow = dir === 'in' ? '\u2190' : '\u2192'
+  const preview = JSON.stringify(data).substring(0, 200)
+  const entry = document.createElement('div')
+  entry.className = 'log-entry'
+  entry.innerHTML =
+    '<span class="log-time">' + time + '</span>' +
+    '<span class="log-dir ' + dir + '">' + arrow + '</span>' +
+    '<span class="log-type">' + type + '</span>' +
+    '<span class="log-data">' + preview + '</span>'
+  log.appendChild(entry)
+  log.scrollTop = log.scrollHeight
+}
+
+function clearLog() { document.getElementById('log').innerHTML = '' }
+
+// === INIT ===
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('widget').src = CFORJ_URL + '/editor'
+})
+</script>
+</body>
+</html>

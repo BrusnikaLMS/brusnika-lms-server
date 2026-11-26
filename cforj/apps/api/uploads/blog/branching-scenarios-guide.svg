@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg5" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#818cf8"/>
+      <stop offset="40%" style="stop-color:#6366f1"/>
+      <stop offset="70%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg5)"/>
+
+  <!-- Decorative blobs -->
+  <circle cx="250" cy="100" r="220" fill="white" opacity="0.03"/>
+  <circle cx="950" cy="530" r="220" fill="white" opacity="0.03"/>
+
+  <!-- Glow behind icon -->
+  <circle cx="600" cy="200" r="110" fill="white" opacity="0.07"/>
+
+  <!-- Decision tree / branching flowchart -->
+  <g transform="translate(600, 145)" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <!-- Top node (start) -->
+    <circle cx="0" cy="0" r="14" fill="white" opacity="0.2" stroke="white"/>
+    <circle cx="0" cy="0" r="5" fill="white" opacity="0.5"/>
+
+    <!-- Branch lines from top -->
+    <line x1="0" y1="14" x2="-55" y2="50"/>
+    <line x1="0" y1="14" x2="55" y2="50"/>
+
+    <!-- Level 2 nodes -->
+    <!-- Left diamond (decision) -->
+    <polygon points="-55,38 -42,50 -55,62 -68,50" fill="white" opacity="0.15" stroke="white"/>
+    <!-- Right diamond (decision) -->
+    <polygon points="55,38 68,50 55,62 42,50" fill="white" opacity="0.15" stroke="white"/>
+
+    <!-- Branch lines from level 2 -->
+    <line x1="-55" y1="62" x2="-85" y2="95"/>
+    <line x1="-55" y1="62" x2="-25" y2="95"/>
+    <line x1="55" y1="62" x2="25" y2="95"/>
+    <line x1="55" y1="62" x2="85" y2="95"/>
+
+    <!-- Level 3 nodes (rounded rects / endpoints) -->
+    <rect x="-100" y="90" width="30" height="18" rx="9" fill="white" opacity="0.2" stroke="white"/>
+    <rect x="-40" y="90" width="30" height="18" rx="9" fill="white" opacity="0.12" stroke="white"/>
+    <rect x="10" y="90" width="30" height="18" rx="9" fill="white" opacity="0.12" stroke="white"/>
+    <rect x="70" y="90" width="30" height="18" rx="9" fill="white" opacity="0.2" stroke="white"/>
+
+    <!-- Small checkmark in success node -->
+    <polyline points="-91,99 -87,103 -80,95" stroke="white" stroke-width="2" opacity="0.5"/>
+    <!-- Small checkmark in another success node -->
+    <polyline points="79,99 83,103 90,95" stroke="white" stroke-width="2" opacity="0.5"/>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="380" text-anchor="middle" fill="white" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="52" font-weight="700" letter-spacing="-1">
+    Branching Scenarios
+  </text>
+  <text x="600" y="440" text-anchor="middle" fill="white" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="52" font-weight="700" letter-spacing="-1">
+    Guide
+  </text>
+
+  <!-- Subtle divider -->
+  <rect x="550" y="465" width="100" height="3" rx="1.5" fill="white" opacity="0.4"/>
+
+  <!-- Subtitle -->
+  <text x="600" y="500" text-anchor="middle" fill="white" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="22" font-weight="400" opacity="0.8">
+    Design decision-based learning experiences
+  </text>
+
+  <!-- cforj logo -->
+  <text x="1150" y="600" text-anchor="end" fill="white" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" opacity="0.5" letter-spacing="2">
+    cforj
+  </text>
+</svg>

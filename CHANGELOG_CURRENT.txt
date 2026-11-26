@@ -1,0 +1,195 @@
+## RU (Русский)
+## ✨ Главное в этом релизе
+
+### 👥 Участники учебной группы из подразделения
+Теперь при формировании учебной группы можно добавлять участников прямо из подразделения. Это упрощает набор слушателей и избавляет от ручного ввода каждого участника.
+
+### 📊 Несколько типов объектов в дашборде отчётов
+В дашборде отчётов появилась возможность выбирать сразу несколько типов объектов. Это позволяет строить более гибкие срезы и сравнивать показатели по разным типам в одном представлении.
+
+---
+
+## EN (English)
+## ✨ Highlights of this release
+
+### 👥 Adding study group members from a department
+When forming a study group, you can now add members directly from a department. This simplifies enrolling learners and eliminates the need to enter each participant manually.
+
+### 📊 Multiple object types in the reports dashboard
+The reports dashboard now lets you select several object types at once. This enables more flexible breakdowns and lets you compare metrics across different types in a single view.
+
+---
+
+## UA (Українська)
+## ✨ Головне в цьому релізі
+
+### 👥 Учасники навчальної групи з підрозділу
+Тепер під час формування навчальної групи можна додавати учасників безпосередньо з підрозділу. Це спрощує набір слухачів і позбавляє від ручного введення кожного учасника.
+
+### 📊 Кілька типів об'єктів у дашборді звітів
+У дашборді звітів з'явилася можливість вибирати одразу кілька типів об'єктів. Це дозволяє будувати гнучкіші зрізи та порівнювати показники за різними типами в одному поданні.
+
+---
+
+## FR (Français)
+## ✨ Les points clés de cette version
+
+### 👥 Ajout de membres d'un groupe d'étude depuis un service
+Lors de la constitution d'un groupe d'étude, il est désormais possible d'ajouter des membres directement depuis un service. Cela simplifie l'inscription des apprenants et évite la saisie manuelle de chaque participant.
+
+### 📊 Plusieurs types d'objets dans le tableau de bord des rapports
+Le tableau de bord des rapports permet désormais de sélectionner plusieurs types d'objets à la fois. Cela offre des analyses plus flexibles et permet de comparer les indicateurs de différents types dans une même vue.
+
+---
+
+## IT (Italiano)
+## ✨ In evidenza in questa versione
+
+### 👥 Aggiunta dei membri del gruppo di studio da un reparto
+Durante la creazione di un gruppo di studio ora è possibile aggiungere membri direttamente da un reparto. Questo semplifica l'iscrizione dei partecipanti ed elimina l'inserimento manuale di ciascuno.
+
+### 📊 Più tipi di oggetto nella dashboard dei report
+La dashboard dei report ora consente di selezionare più tipi di oggetto contemporaneamente. Questo permette analisi più flessibili e il confronto degli indicatori tra tipi diversi in un'unica vista.
+
+---
+
+## DE (Deutsch)
+## ✨ Das Wichtigste in diesem Release
+
+### 👥 Teilnehmer von Lerngruppen aus einer Abteilung hinzufügen
+Beim Zusammenstellen einer Lerngruppe können Teilnehmer jetzt direkt aus einer Abteilung hinzugefügt werden. Das vereinfacht die Anmeldung von Lernenden und erspart die manuelle Eingabe jedes einzelnen Teilnehmers.
+
+### 📊 Mehrere Objekttypen im Berichts-Dashboard
+Im Berichts-Dashboard können nun mehrere Objekttypen gleichzeitig ausgewählt werden. Das ermöglicht flexiblere Auswertungen und den Vergleich von Kennzahlen verschiedener Typen in einer Ansicht.
+
+---
+
+## TR (Türkçe)
+## ✨ Bu sürümde öne çıkanlar
+
+### 👥 Eğitim grubu üyelerini birimden ekleme
+Bir eğitim grubu oluştururken artık üyeleri doğrudan bir birimden ekleyebilirsiniz. Bu, katılımcıların kaydını kolaylaştırır ve her katılımcının elle girilmesine gerek bırakmaz.
+
+### 📊 Rapor panosunda birden fazla nesne türü
+Rapor panosu artık aynı anda birden fazla nesne türü seçmenize olanak tanır. Bu, daha esnek kırılımlar oluşturmanızı ve farklı türlere ait göstergeleri tek bir görünümde karşılaştırmanızı sağlar.
+
+---
+
+## PL (Polski)
+## ✨ Najważniejsze w tym wydaniu
+
+### 👥 Dodawanie uczestników grupy szkoleniowej z działu
+Podczas tworzenia grupy szkoleniowej można teraz dodawać uczestników bezpośrednio z działu. Upraszcza to zapisywanie uczestników i eliminuje konieczność ręcznego wprowadzania każdej osoby.
+
+### 📊 Wiele typów obiektów na pulpicie raportów
+Pulpit raportów pozwala teraz wybrać jednocześnie kilka typów obiektów. Umożliwia to tworzenie bardziej elastycznych zestawień i porównywanie wskaźników dla różnych typów w jednym widoku.
+
+---
+
+## PT (Português)
+## ✨ Destaques desta versão
+
+### 👥 Adição de membros do grupo de estudo a partir de um departamento
+Ao formar um grupo de estudo, agora é possível adicionar membros diretamente a partir de um departamento. Isso simplifica a inscrição de participantes e elimina a necessidade de inserir cada um manualmente.
+
+### 📊 Vários tipos de objeto no painel de relatórios
+O painel de relatórios agora permite selecionar vários tipos de objeto ao mesmo tempo. Isso possibilita análises mais flexíveis e a comparação de indicadores entre diferentes tipos em uma única visualização.
+
+---
+
+## ES (Español)
+## ✨ Lo más destacado de esta versión
+
+### 👥 Añadir miembros del grupo de estudio desde un departamento
+Al formar un grupo de estudio, ahora se pueden añadir miembros directamente desde un departamento. Esto simplifica la inscripción de participantes y elimina la necesidad de introducir cada uno manualmente.
+
+### 📊 Varios tipos de objeto en el panel de informes
+El panel de informes ahora permite seleccionar varios tipos de objeto a la vez. Esto permite crear desgloses más flexibles y comparar indicadores de distintos tipos en una sola vista.
+
+---
+
+## VN (Tiếng Việt)
+## ✨ Điểm nổi bật trong bản phát hành này
+
+### 👥 Thêm thành viên nhóm học tập từ phòng ban
+Khi tạo nhóm học tập, giờ đây bạn có thể thêm thành viên trực tiếp từ một phòng ban. Điều này giúp việc ghi danh học viên đơn giản hơn và không cần nhập thủ công từng người.
+
+### 📊 Nhiều loại đối tượng trong bảng điều khiển báo cáo
+Bảng điều khiển báo cáo giờ đây cho phép chọn nhiều loại đối tượng cùng lúc. Điều này giúp tạo các phân tích linh hoạt hơn và so sánh các chỉ số giữa các loại khác nhau trong cùng một chế độ xem.
+
+---
+
+## ZH (中文)
+## ✨ 本次发布亮点
+
+### 👥 从部门添加学习小组成员
+在组建学习小组时，现在可以直接从部门添加成员。这简化了学员报名流程，无需再逐个手动录入参与者。
+
+### 📊 报表仪表板支持多种对象类型
+报表仪表板现在支持同时选择多种对象类型。这样可以构建更灵活的分析维度，并在同一视图中比较不同对象的指标。
+
+---
+
+## JA (日本語)
+## ✨ このリリースのハイライト
+
+### 👥 部門から学習グループのメンバーを追加
+学習グループを作成する際に、部門から直接メンバーを追加できるようになりました。これにより受講者の登録が簡単になり、参加者を一人ずつ手入力する必要がなくなります。
+
+### 📊 レポートダッシュボードで複数のオブジェクトタイプを選択
+レポートダッシュボードで複数のオブジェクトタイプを同時に選択できるようになりました。これにより、より柔軟な分析が可能になり、異なるタイプの指標を1つのビューで比較できます。
+
+---
+
+## KZ (Қазақша)
+## ✨ Осы релиздегі басты жаңалықтар
+
+### 👥 Оқу тобының қатысушыларын бөлімшеден қосу
+Енді оқу тобын құру кезінде қатысушыларды тікелей бөлімшеден қосуға болады. Бұл тыңдаушыларды тіркеуді жеңілдетеді және әр қатысушыны қолмен енгізудің қажетін жояды.
+
+### 📊 Есептер дашбордында бірнеше нысан түрі
+Есептер дашбордында енді бірнеше нысан түрін бір уақытта таңдауға болады. Бұл неғұрлым икемді қималар құруға және әртүрлі түрлер бойынша көрсеткіштерді бір көріністе салыстыруға мүмкіндік береді.
+
+---
+
+## AR (العربية)
+## ✨ أبرز ما في هذا الإصدار
+
+### 👥 إضافة أعضاء مجموعة الدراسة من قسم
+عند إنشاء مجموعة دراسة، أصبح بإمكانك الآن إضافة الأعضاء مباشرة من قسم. يسهّل ذلك تسجيل المتعلمين ويغني عن إدخال كل مشارك يدويًا.
+
+### 📊 أنواع متعددة من الكائنات في لوحة تقارير
+تتيح لوحة التقارير الآن اختيار عدة أنواع من الكائنات في وقت واحد. يتيح ذلك إنشاء تحليلات أكثر مرونة ومقارنة المؤشرات عبر أنواع مختلفة في عرض واحد.
+
+---
+
+## ID (Bahasa Indonesia)
+## ✨ Sorotan dalam rilis ini
+
+### 👥 Menambahkan anggota grup belajar dari departemen
+Saat membentuk grup belajar, kini Anda dapat menambahkan anggota langsung dari departemen. Ini menyederhanakan pendaftaran peserta dan menghilangkan kebutuhan memasukkan setiap peserta secara manual.
+
+### 📊 Beberapa jenis objek di dasbor laporan
+Dasbor laporan kini memungkinkan Anda memilih beberapa jenis objek sekaligus. Ini memungkinkan pembuatan rincian yang lebih fleksibel dan perbandingan metrik antar jenis yang berbeda dalam satu tampilan.
+
+---
+
+## MS (Bahasa Melayu)
+## ✨ Sorotan dalam keluaran ini
+
+### 👥 Menambah ahli kumpulan pembelajaran daripada jabatan
+Semasa membentuk kumpulan pembelajaran, anda kini boleh menambah ahli terus daripada jabatan. Ini memudahkan pendaftaran pelajar dan menghapuskan keperluan memasukkan setiap peserta secara manual.
+
+### 📊 Berbilang jenis objek dalam papan pemuka laporan
+Papan pemuka laporan kini membolehkan anda memilih beberapa jenis objek sekaligus. Ini membolehkan pecahan yang lebih fleksibel dan perbandingan metrik merentas jenis yang berbeza dalam satu paparan.
+
+---
+
+## TH (ไทย)
+## ✨ ไฮไลต์ของรีลีสนี้
+
+### 👥 เพิ่มสมาชิกกลุ่มเรียนจากหน่วยงาน
+เมื่อสร้างกลุ่มเรียน ตอนนี้คุณสามารถเพิ่มสมาชิกได้โดยตรงจากหน่วยงาน ช่วยให้การลงทะเบียนผู้เรียนง่ายขึ้นและไม่ต้องกรอกข้อมูลผู้เข้าร่วมทีละคนด้วยตนเอง
+
+### 📊 เลือกประเภทออบเจ็กต์ได้หลายประเภทในแดชบอร์ดรายงาน
+แดชบอร์ดรายงานตอนนี้ให้คุณเลือกประเภทออบเจ็กต์ได้หลายประเภทพร้อมกัน ช่วยให้สร้างการวิเคราะห์ที่ยืดหยุ่นขึ้นและเปรียบเทียบตัวชี้วัดระหว่างประเภทต่าง ๆ ได้ในมุมมองเดียว
